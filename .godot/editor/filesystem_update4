@@ -1,16 +1,2 @@
 res://Scenes/Title_Menu.tscn
 res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-res://Scenes/main.tscn
-res://Scenes/Game_Level_1.tscn
-res://Scenes/Pause_Menu.tscn
-res://Scenes/AutoLoads/Music_Controller.tscn
-res://Scenes/Asteroid.tscn
-res://Scenes/ball.tscn
-res://Scenes/block.tscn
-res://Scenes/Blocks_lvl1.tscn
-res://Scenes/breakable_block.tscn
-res://Scenes/hud.tscn
-res://Scenes/level_walls.tscn
-res://Scenes/new_ball.tscn
-res://Scenes/new_paddle.tscn
-res://Scenes/Options_Menu.tscn
