@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://qaj0lpuev2o7"]
+
+[ext_resource type="Script" uid="uid://bodoybu2govkk" path="res://Scripts/Music_Controller.gd" id="1_nxefo"]
+
+[node name="Music_Controller" type="Node"]
+script = ExtResource("1_nxefo")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+volume_db = -20.0
+autoplay = true
+
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+volume_db = -20.0
+
+[node name="SFXPlayer2" type="AudioStreamPlayer2D" parent="."]
+volume_db = -20.0

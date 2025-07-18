@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2j0nvaooe4gt"]
+
+[ext_resource type="Script" uid="uid://cvtlrenhjj8v1" path="res://Scripts/options_menu.gd" id="1_hex8v"]
+[ext_resource type="Theme" uid="uid://dpwixnssaflu4" path="res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres" id="3_yrcan"]
+
+[sub_resource type="Theme" id="Theme_vmg2h"]
+
+[node name="Options_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = SubResource("Theme_vmg2h")
+script = ExtResource("1_hex8v")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 400.0
+offset_top = 133.0
+offset_right = 737.0
+offset_bottom = 372.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Main Menu" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 88
+
+[node name="Options_Title" type="Label" parent="PanelContainer/Main Menu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = ExtResource("3_yrcan")
+theme_override_font_sizes/font_size = 47
+text = "OPTIONS"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Main Menu"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="PanelContainer/Main Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("3_yrcan")
+text = "Back
+"
+
+[connection signal="pressed" from="PanelContainer/Main Menu/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

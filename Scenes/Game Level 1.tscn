@@ -1,0 +1,163 @@
+[gd_scene load_steps=8 format=3 uid="uid://by6b56obrm1sf"]
+
+[ext_resource type="Script" uid="uid://dbogqekd7ifej" path="res://Scripts/game.gd" id="1_uqoqq"]
+[ext_resource type="PackedScene" uid="uid://cwsrahpfkndmv" path="res://Scenes/level_walls.tscn" id="2_sfp2t"]
+[ext_resource type="Script" uid="uid://cjbarsahvu0tt" path="res://Scripts/ball_factory.gd" id="3_cbr4n"]
+[ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_qibkd"]
+[ext_resource type="Script" uid="uid://cx8bb7libj74e" path="res://Scripts/block_spawner.gd" id="6_srjir"]
+[ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="7_tl1kq"]
+[ext_resource type="PackedScene" uid="uid://cgw556s26i85w" path="res://Scenes/character.tscn" id="8_rp3ch"]
+
+[node name="Game Level 1" type="Node2D"]
+script = ExtResource("1_uqoqq")
+
+[node name="Level Walls" parent="." instance=ExtResource("2_sfp2t")]
+
+[node name="Ball" type="Node2D" parent="."]
+
+[node name="ball_factory" type="Node2D" parent="Ball"]
+script = ExtResource("3_cbr4n")
+
+[node name="Ball" parent="Ball" instance=ExtResource("4_qibkd")]
+velocity = Vector2(150, 0)
+
+[node name="Ball_Shooter" type="Node2D" parent="Ball"]
+position = Vector2(576, 324)
+scale = Vector2(10, 10)
+
+[node name="Blocks" type="Node" parent="."]
+
+[node name="block_spawner" type="Node2D" parent="Blocks"]
+script = ExtResource("6_srjir")
+
+[node name="block1" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(576, 279)
+
+[node name="block2" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(596, 279)
+
+[node name="block3" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(616, 279)
+
+[node name="block4" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(636, 279)
+
+[node name="block5" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(656, 279)
+
+[node name="block6" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(676, 279)
+
+[node name="block7" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(576, 298)
+
+[node name="block8" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(596, 298)
+
+[node name="block9" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(616, 298)
+
+[node name="block10" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(636, 298)
+
+[node name="block11" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(656, 298)
+
+[node name="block12" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(676, 298)
+
+[node name="block13" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(576, 318)
+
+[node name="block14" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(596, 318)
+
+[node name="block15" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(616, 318)
+
+[node name="block16" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(636, 318)
+
+[node name="block17" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(656, 318)
+
+[node name="block18" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(676, 318)
+
+[node name="block19" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(576, 337)
+
+[node name="block20" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(596, 337)
+
+[node name="block21" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(616, 337)
+
+[node name="block22" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(636, 337)
+
+[node name="block23" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(656, 337)
+
+[node name="block24" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(676, 337)
+
+[node name="block25" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(576, 356)
+
+[node name="block26" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(596, 356)
+
+[node name="block27" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(616, 356)
+
+[node name="block28" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(636, 356)
+
+[node name="block29" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(656, 356)
+
+[node name="block30" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(676, 356)
+
+[node name="block31" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(576, 375)
+
+[node name="block32" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(596, 375)
+
+[node name="block33" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(616, 375)
+
+[node name="block34" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(636, 375)
+
+[node name="block35" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(656, 375)
+
+[node name="block36" parent="Blocks" instance=ExtResource("7_tl1kq")]
+position = Vector2(676, 375)
+
+<<<<<<< Updated upstream:Scenes/Game Level 1.tscn
+[node name="paddle" parent="." instance=ExtResource("8_rp3ch")]
+=======
+[node name="new_paddle" parent="." instance=ExtResource("8_egejd")]
+
+[node name="Ball_Shooter" type="Node2D" parent="."]
+>>>>>>> Stashed changes:Scenes/Game_Level_1.tscn
+position = Vector2(576, 324)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 3.0
+offset_top = 632.0
+offset_right = 166.0
+offset_bottom = 647.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 10
+text = "Press Esc to return to Main Menu"
+
+[editable path="paddle"]

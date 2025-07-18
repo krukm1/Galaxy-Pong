@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgw556s26i85w"]
+
+[ext_resource type="Script" uid="uid://qxiv0vfc4g4w" path="res://Marek Testing Stuff/Unused/old_paddle.gd" id="1_g227i"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ushfy"]
+
+[sub_resource type="Curve" id="Curve_owm7s"]
+_data = [Vector2(0, 0.303371), 0.0, -0.551868, 0, 0, Vector2(0.323864, 0.213483), -0.346067, -0.346067, 0, 0, Vector2(1, 0), -0.966792, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_nytcm"]
+colors = PackedColorArray(0.702038, 0.15835, 1, 1, 0.427274, 0.423705, 1, 1)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ebmjs"]
+blend_mode = 2
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_qxrlw"]
+
+[node name="old_paddle" type="CharacterBody2D"]
+modulate = Color(0.985879, 0.224089, 0.874417, 1)
+self_modulate = Color(0.838842, 0.000320358, 0.783123, 1)
+scale = Vector2(10, 10)
+motion_mode = 1
+script = ExtResource("1_g227i")
+rotation_speed = 0.05
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+show_behind_parent = true
+position = Vector2(-19.2, 0.001)
+amount = 20
+texture = SubResource("CanvasTexture_ushfy")
+lifetime = 5.0
+speed_scale = 4.87
+gravity = Vector2(0, 0)
+scale_amount_min = 41.4
+scale_amount_max = 51.51
+scale_amount_curve = SubResource("Curve_owm7s")
+color_ramp = SubResource("Gradient_nytcm")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+material = SubResource("CanvasItemMaterial_ebmjs")
+position = Vector2(-19.2, -2.825)
+polygon = PackedVector2Array(-0.799999, 6.025, 0.799999, 6.025, 0.799999, -0.375, -0.799999, -0.375)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-19.2, -2.98023e-07)
+scale = Vector2(1.6, 6.4)
+texture = SubResource("CanvasTexture_qxrlw")
