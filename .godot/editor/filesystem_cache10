@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1752729982
+::res://::1752803147
 icon.svg::CompressedTexture2D/CompressedTexture2D::6356242225274166370::1748707524::1748707725::1::::<><><>0<>0<>70efb1583c150d8aca9a63ff3d97056f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile/TextFile::-1::1748707524::0::1::::<><><>0<>0<><>::
-::res://Assets/::1748707564
-::res://Assets/Fonts/::1748708078
+README.md::TextFile::-1::1752716991::0::1::::<><><>0<>0<><>::
+::res://Assets/::1752801824
+::res://Assets/Fonts/::1752801824
 ArchitectsDaughter.ttf::FontFile/FontFile::6180336981415815115::1748707524::1748707725::1::::<><><>0<>0<>45c33c3f5684a2d5dd4e94b5888c2f89<>res://.godot/imported/ArchitectsDaughter.ttf-03dbd6a8d06100d88b7e8dd61be1b920.fontdata::
 cmunit.ttf::FontFile/FontFile::3744144931853854089::1748707524::1748707725::1::::<><><>0<>0<>7594ac48ce487b3c687bd6159186bada<>res://.godot/imported/cmunit.ttf-67e0a76e00ed08a1663dc5c8b12ef9dd.fontdata::
 cmuntb.ttf::FontFile/FontFile::7022703990039544149::1748707524::1748707725::1::::<><><>0<>0<>696e6092baf8602604b2acee4b006272<>res://.godot/imported/cmuntb.ttf-23f675b930471a32542db23fe1cb975f.fontdata::
@@ -16,10 +16,10 @@ DroidSans.ttf::FontFile/FontFile::7068796949910677619::1748707524::1748707725::1
 KiriFont.ttf::FontFile/FontFile::9110554298921390586::1748707524::1748707725::1::::<><><>0<>0<>5feda80e13040a72ae004c64dd55ffb4<>res://.godot/imported/KiriFont.ttf-0bc6107a9d6959d5346f98ebd2560be7.fontdata::
 Montreal-Bold.ttf::FontFile/FontFile::507583591941745798::1748707524::1748707725::1::::<><><>0<>0<>53e69094bc407b7d8259a59264824b7f<>res://.godot/imported/Montreal-Bold.ttf-54d7cf67cbccd8b31fa5ebc7f8cd961b.fontdata::
 Poco.ttf::FontFile/FontFile::5337250782204784793::1748707524::1748707725::1::::<><><>0<>0<>565c96f6122805025eb7f4a470c0c8b8<>res://.godot/imported/Poco.ttf-e9fb7ccb22ae482a26826b478259e715.fontdata::
-::res://Assets/Fonts/Title Screen Font Theme/::1752627694
+::res://Assets/Fonts/Title Screen Font Theme/::1752801824
 Organic Relief.ttf::FontFile/FontFile::8692691831746706164::1748707524::1748707725::1::::<><><>0<>0<>b83bfdfcb236ea14530dec859acacf25<>res://.godot/imported/Organic Relief.ttf-ee84e451974b1786251ee36e70f17ff6.fontdata::
-Title Button Theme.tres::Theme/Theme::8258038536869127257::1752627694::0::1::::<><><>0<>0<><>::uid://dv32mnkmt7xdc::::res://Assets/Fonts/Title Screen Font Theme/Organic Relief.ttf
-::res://Assets/Music/::1748707725
+Title Button Theme.tres::Theme::8258038536869127257::1752729987::0::1::::<><><>0<>0<><>::uid://dv32mnkmt7xdc::::res://Assets/Fonts/Title Screen Font Theme/Organic Relief.ttf
+::res://Assets/Music/::1752801824
 Developing_Dreams.mp3::AudioStreamMP3/AudioStreamMP3::3625061304010293386::1748707524::1748707725::1::::<><><>0<>0<>daf4890699abd9da4ff36d0b8d7faa87<>res://.godot/imported/Developing_Dreams.mp3-10628b75d57e1d156a64ed131b823146.mp3str::
 Escape_Route.mp3::AudioStreamMP3/AudioStreamMP3::8038646442853600783::1748707524::1748707725::1::::<><><>0<>0<>bba7e5023fec78557497f9394b494604<>res://.godot/imported/Escape_Route.mp3-6bc6ecc3e1aaac02c4e6baf91b9f2f76.mp3str::
 Freelancer.mp3::AudioStreamMP3/AudioStreamMP3::3309350002482321394::1748707524::1748707725::1::::<><><>0<>0<>6114f20256e0aa64950a4434b2ce610a<>res://.godot/imported/Freelancer.mp3-cee5b0ae63acca40eca257768908fe8e.mp3str::
@@ -28,7 +28,7 @@ Marek_Matt_song_V2.mp3::AudioStreamMP3/AudioStreamMP3::2425094879967992867::1748
 Moon_Cheese_Burger.mp3::AudioStreamMP3/AudioStreamMP3::8994706995761427651::1748707524::1748707725::1::::<><><>0<>0<>97a9bdfa097b425edc09e7c3b936bd1c<>res://.godot/imported/Moon_Cheese_Burger.mp3-631600bcffa420ebe0b7597c1ec00a4c.mp3str::
 Neutralize.mp3::AudioStreamMP3/AudioStreamMP3::9123262972525453339::1748707524::1748707725::1::::<><><>0<>0<>b0dbcc7ad829f1478035fe30aae7f3cb<>res://.godot/imported/Neutralize.mp3-d4745fd3b61e1b3f7a5221792a5f54a0.mp3str::
 Retrofuturism.mp3::AudioStreamMP3/AudioStreamMP3::7864536532501970810::1748707524::1748707725::1::::<><><>0<>0<>e082244c967bd939ee8eb1de24ddac36<>res://.godot/imported/Retrofuturism.mp3-320dedc93dfbe6c879d2a83d08ce90ca.mp3str::
-::res://Assets/Sounds/::1748707725
+::res://Assets/Sounds/::1752801824
 block_break_sound.mp3::AudioStreamMP3/AudioStreamMP3::5092736863664392196::1748707524::1748707725::1::::<><><>0<>0<>426598f6066508fca61110f2e73db230<>res://.godot/imported/block_break_sound.mp3-04ede11aa7e23aebac719dabb6cffb5a.mp3str::
 button1.mp3::AudioStreamMP3/AudioStreamMP3::3860758154957872275::1748707524::1748707725::1::::<><><>0<>0<>4d2b2cb08f45a7274bb1f2ee54906f92<>res://.godot/imported/button1.mp3-3cd461406f1c7aae94ddf752fe8f4ef2.mp3str::
 button2.mp3::AudioStreamMP3/AudioStreamMP3::464462615892982444::1748707524::1748707725::1::::<><><>0<>0<>713ecca760e803d9dd50b832560d241c<>res://.godot/imported/button2.mp3-7a677cde57b609fe8f33ed28e5c3a7ef.mp3str::
@@ -40,13 +40,13 @@ level_complete_sound.mp3::AudioStreamMP3/AudioStreamMP3::5179264000622372160::17
 load.mp3::AudioStreamMP3/AudioStreamMP3::7011714724938854129::1748707524::1748707725::1::::<><><>0<>0<>120fcf1a6873d8feee710634a6c97745<>res://.godot/imported/load.mp3-3adbf949dca81246eda36b5c711e9da7.mp3str::
 lost_ball.mp3::AudioStreamMP3/AudioStreamMP3::8663249923617948485::1748707524::1748707725::1::::<><><>0<>0<>84e0701fb73f9f2efb58bb9502edb10d<>res://.godot/imported/lost_ball.mp3-a3c445bd540bf94f5b784aa901c9ada1.mp3str::
 start_button.mp3::AudioStreamMP3/AudioStreamMP3::4938458232576687741::1748707524::1748707725::1::::<><><>0<>0<>351c32501fd19cf3ad0f71f66c032eff<>res://.godot/imported/start_button.mp3-be19c80d62d7af793b9e08511f9cd9c2.mp3str::
-::res://Assets/Sprites/::1748707725
+::res://Assets/Sprites/::1752801824
 Arcade_Tetris_Atari_Block_Tiles.png::CompressedTexture2D/CompressedTexture2D::2471110259247088759::1748707524::1748707725::1::::<><><>0<>0<>3cb17859c0761be0e1965c59e6fb8d79<>res://.godot/imported/Arcade_Tetris_Atari_Block_Tiles.png-6226f8f49cc0849d386fd61d27cecec6.ctex::
 astroid_sprite.png::CompressedTexture2D/CompressedTexture2D::8555711930816498452::1748707524::1748707725::1::::<><><>0<>0<>4061862c5d74d7dad806a48d5ac0cae9<>res://.godot/imported/astroid_sprite.png-0c9dacd6c475546e036770b9af5c40b3.ctex::
 ball.png::CompressedTexture2D/CompressedTexture2D::4774964387491174059::1748707524::1748707725::1::::<><><>0<>0<>211950e08c16a49fcf5eb01d403ae7dd<>res://.godot/imported/ball.png-f7daf3e9206963eab7c6cd6da748e585.ctex::
 basic_block_set.png::CompressedTexture2D/CompressedTexture2D::643752944784447636::1748707524::1748707725::1::::<><><>0<>0<>58f09bcbc157ab3d8200b94e383ffd62<>res://.godot/imported/basic_block_set.png-ce58ec42c31061eec1f5db70dd0eae9d.ctex::
 energy_ball.png::CompressedTexture2D/CompressedTexture2D::5814182062414825767::1748707524::1748707725::1::::<><><>0<>0<>70ba32150fa15732e087c636e231db3f<>res://.godot/imported/energy_ball.png-2cba5c38aa53f35a89736e0a7824e928.ctex::
-::res://Assets/Sprites/paddle_sprites/::1748707725
+::res://Assets/Sprites/paddle_sprites/::1752801824
 blue_paddle.png::CompressedTexture2D/CompressedTexture2D::4240935222874502944::1748707524::1748707725::1::::<><><>0<>0<>fcc56c9ac529547c434a3f8bf5c7e291<>res://.godot/imported/blue_paddle.png-cf2acfd9bf135326535c15992eaa90cb.ctex::
 blue_paddle_curved.png::CompressedTexture2D/CompressedTexture2D::7290639751658919693::1748707524::1748707725::1::::<><><>0<>0<>8be339e852f824609858bd3904db541d<>res://.godot/imported/blue_paddle_curved.png-1605ba270d0cd2f336d4a4859c41dd02.ctex::
 green_paddle.png::CompressedTexture2D/CompressedTexture2D::6591296432609649685::1748707524::1748707725::1::::<><><>0<>0<>f2821890d83b9ef51234b3a01808f361<>res://.godot/imported/green_paddle.png-06741aa6100586c72f54166b98a31723.ctex::
@@ -55,18 +55,7 @@ pink_paddle.png::CompressedTexture2D/CompressedTexture2D::7761144211596057253::1
 pink_paddle_curved.png::CompressedTexture2D/CompressedTexture2D::8256544067273753696::1748707524::1748707725::1::::<><><>0<>0<>051ae36b7f445dab63e5fefbe8a07226<>res://.godot/imported/pink_paddle_curved.png-1283bd64c8d416467d89bb9f12e5f488.ctex::
 red_paddle.png::CompressedTexture2D/CompressedTexture2D::6493265937990726860::1748707524::1748707725::1::::<><><>0<>0<>d74f0f9cf03b0c5a49be7cd02303f1dd<>res://.godot/imported/red_paddle.png-51b9680d6b9729fbcc2f2b1206d00219.ctex::
 red_paddle_curved.png::CompressedTexture2D/CompressedTexture2D::8976309400037732300::1748707524::1748707725::1::::<><><>0<>0<>b58abc1bf6fe40369b3f27c7ec48ad83<>res://.godot/imported/red_paddle_curved.png-f931dcd117074626bebcf61e7d9f48ea.ctex::
-::res://Marek Testing Stuff/::1748707564
-::res://Marek Testing Stuff/Scenes/::1752627733
-breakable_block.tscn::PackedScene/PackedScene::6952666500604370942::1748707524::0::1::::<><><>0<>0<><>::uid://cogp83o64xhtc::::res://icon.svg
-Pause_Menu.tscn::PackedScene/PackedScene::6381208539021169010::1752627733::0::1::::<><><>0<>0<><>::uid://cgma4ukmqbxer::::res://Marek Testing Stuff/Scripts/pause_screen.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-::res://Marek Testing Stuff/Scripts/::1748707564
-new_paddle2.gd::GDScript/GDScript::4048259550871132503::1748707524::0::1::::<>CharacterBody2D<><>0<>0<><>::
-pause_screen.gd::GDScript/GDScript::5218799816768075261::1748707524::0::1::::<>Control<><>0<>0<><>::
-title_screen.gd::GDScript/GDScript::3891239207796473938::1748707524::0::1::::<>Control<><>0<>0<><>::
-::res://Marek Testing Stuff/Unused/::1748707564
-old_paddle.gd::GDScript/GDScript::1171026769921671408::1748707524::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player_Character2.gd::GDScript/GDScript::7790721510913727033::1748707524::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scenes/::1752627694
+::res://Scenes/::1752801824
 Asteroid.tscn::PackedScene/PackedScene::6925192306101897086::1748707524::0::1::::<><><>0<>0<><>::uid://c0mpp6pdd3qfu::::res://Scripts/asteroid.gd<>uid://dt5plcjjhdeeu::::res://Assets/Sprites/astroid_sprite.png
 ball.tscn::PackedScene/PackedScene::641910444864671406::1748707524::0::1::::<><><>0<>0<><>::uid://k4w1wuprx84c::::res://Scripts/ball.gd<>uid://co3oy130yl17h::::res://Assets/Sprites/energy_ball.png
 block.tscn::PackedScene/PackedScene::3247062633274058678::1748707524::0::1::::<><><>0<>0<><>::uid://c0axqtxdcqy3v::::res://Scripts/block.gd<>uid://bbha3bvj1hp1p::::res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png
@@ -74,26 +63,26 @@ Blocks_lvl1.tscn::PackedScene/PackedScene::1079976966246542071::1748707524::0::1
 breakable_block.tscn::PackedScene/PackedScene::6952666500604370942::1748707524::0::1::::<><><>0<>0<><>::uid://cogp83o64xhtc::::res://icon.svg
 character.tscn::PackedScene/PackedScene::2419373418769684417::1748707524::0::1::::<><><>0<>0<><>::uid://qxiv0vfc4g4w::::res://Marek Testing Stuff/Unused/old_paddle.gd
 Game Level 1.tscn::PackedScene/PackedScene::4135064582111416417::1748708047::0::1::::<><><>0<>0<><>::uid://dbogqekd7ifej::::res://Scripts/game.gd<>uid://cwsrahpfkndmv::::res://Scenes/level_walls.tscn<>uid://cjbarsahvu0tt::::res://Scripts/ball_factory.gd<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://cx8bb7libj74e::::res://Scripts/block_spawner.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://cgw556s26i85w::::res://Scenes/character.tscn
-Game_Level_1.tscn::PackedScene/PackedScene::4135064582111416417::1752627694::0::1::::<><><>0<>0<><>::uid://dbogqekd7ifej::::res://Scripts/Game_Level_1.gd<>uid://cwsrahpfkndmv::::res://Scenes/level_walls.tscn<>uid://cjbarsahvu0tt::::res://Scripts/ball_factory.gd<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://cx8bb7libj74e::::res://Scripts/block_spawner.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://dcpol23arf233::::res://Scenes/new_paddle.tscn
+Game_Level_1.tscn::PackedScene::4135064582111416417::1752730030::0::1::::<><><>0<>0<><>::uid://dbogqekd7ifej::::res://Scripts/Game_Level_1.gd<>uid://cwsrahpfkndmv::::res://Scenes/level_walls.tscn<>uid://cjbarsahvu0tt::::res://Scripts/ball_factory.gd<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://cx8bb7libj74e::::res://Scripts/block_spawner.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://dcpol23arf233::::res://Scenes/new_paddle.tscn
 hud.tscn::PackedScene/PackedScene::2802781602163237846::1748707524::0::1::::<><><>0<>0<><>::uid://cwcdsy4jf0wc1::::res://Scripts/hud.gd<>uid://b14hljltsiala::::res://Assets/Fonts/ConnectionBold.otf
 level_walls.tscn::PackedScene/PackedScene::6355187306949592993::1748707524::0::1::::<><><>0<>0<><>::uid://xhec7pg5bxw8::::res://Scripts/level_walls.gd
-main.tscn::PackedScene/PackedScene::4508251305171378982::1752627694::0::1::::<><><>0<>0<><>::uid://nveclgqufi5j::::res://Scripts/main.gd<>uid://dcpol23arf233::::res://Scenes/new_paddle.tscn<>uid://cjbarsahvu0tt::::res://Scripts/ball_factory.gd<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://pnfcewflq4fj::::res://Scenes/Blocks_lvl1.tscn<>uid://bf6xnypam6eve::::res://Scenes/hud.tscn<>uid://c5wu510x5puqw::::res://Scenes/Asteroid.tscn
+main.tscn::PackedScene::4508251305171378982::1752730030::0::1::::<><><>0<>0<><>::uid://nveclgqufi5j::::res://Scripts/main.gd<>uid://dcpol23arf233::::res://Scenes/new_paddle.tscn<>uid://cjbarsahvu0tt::::res://Scripts/ball_factory.gd<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://pnfcewflq4fj::::res://Scenes/Blocks_lvl1.tscn<>uid://bf6xnypam6eve::::res://Scenes/hud.tscn<>uid://c5wu510x5puqw::::res://Scenes/Asteroid.tscn
 new_ball.tscn::PackedScene/PackedScene::6442304573701805891::1748707524::0::1::::<><><>0<>0<><>::uid://dsq5ghtxcoa67::::res://Scripts/new_ball.gd<>uid://caba73raw2nwt::::res://Assets/Sprites/ball.png
 new_paddle.tscn::PackedScene/PackedScene::7331476547705872888::1748707524::0::1::::<><><>0<>0<><>::uid://bp223ehsa1aan::::res://Scripts/new_paddle.gd<>uid://k1l5v03ccmyk::::res://Assets/Sprites/paddle_sprites/green_paddle_curved.png
 old_paddle.tscn::PackedScene/PackedScene::5241267480702722726::1748707524::0::1::::<><><>0<>0<><>::uid://qxiv0vfc4g4w::::res://Marek Testing Stuff/Unused/old_paddle.gd
 Options_Menu.tscn::PackedScene/PackedScene::4301641105491787283::1748707524::0::1::::<><><>0<>0<><>::uid://cvtlrenhjj8v1::::res://Scripts/options_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-Pause_Menu.tscn::PackedScene/PackedScene::6381208539021169010::1752627694::0::1::::<><><>0<>0<><>::uid://cgma4ukmqbxer::::res://Scripts/pause_screen.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-Title_Menu.tscn::PackedScene/PackedScene::6981931694438665791::1752627694::0::1::::<><><>0<>0<><>::uid://cgvw1iq1qdx0l::::res://Scripts/title_screen.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-::res://Scenes/AutoLoads/::1748707564
+Pause_Menu.tscn::PackedScene::6381208539021169010::1752730030::0::1::::<><><>0<>0<><>::uid://cgma4ukmqbxer::::res://Scripts/pause_screen.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
+Title_Menu.tscn::PackedScene::6981931694438665791::1752730030::0::1::::<><><>0<>0<><>::uid://cgvw1iq1qdx0l::::res://Scripts/title_screen.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
+::res://Scenes/AutoLoads/::1752801824
 background_star_fields.tscn::PackedScene/PackedScene::7279675772893937745::1748707524::0::1::::<><><>0<>0<><>::
 Music_Controller.tscn::PackedScene/PackedScene::1123613197834867472::1748707524::0::1::::<><><>0<>0<><>::uid://bodoybu2govkk::::res://Scripts/Music_Controller.gd
-::res://Scenes/Matt's Testing Stuff/::1748707564
+::res://Scenes/Matt's Testing Stuff/::1752801824
 test_ball.gd::GDScript/GDScript::6316857058146112808::1748707524::0::1::::<>RigidBody2D<><>0<>0<><>::
 test_ball.tscn::PackedScene/PackedScene::1614939935382936907::1748707524::0::1::::<><><>0<>0<><>::uid://cv86yibuft7s3::::res://Scenes/Matt's Testing Stuff/test_ball.gd<>uid://co3oy130yl17h::::res://Assets/Sprites/energy_ball.png
 test_level.tscn::PackedScene/PackedScene::5082458853938301005::1748707524::0::1::::<><><>0<>0<><>::uid://dcpol23arf233::::res://Scenes/new_paddle.tscn<>uid://xaj3bpsw8frn::::res://Scenes/Matt's Testing Stuff/test_ball.tscn
 test_paddle.gd::GDScript/GDScript::1481285063012265975::1748707524::0::1::::<>CharacterBody2D<><>0<>0<><>::
 test_paddle.tscn::PackedScene/PackedScene::8821911226245646723::1748707524::0::1::::<><><>0<>0<><>::uid://vdsswe78jm4v::::res://Scenes/Matt's Testing Stuff/test_paddle.gd<>uid://k1l5v03ccmyk::::res://Assets/Sprites/paddle_sprites/green_paddle_curved.png
-::res://Scripts/::1748708078
+::res://Scripts/::1752801824
 Asteroid.gd::GDScript/GDScript::6553274184723154606::1748708078::0::1::::<>RigidBody2D<><>0<>0<><>::
 ball.gd::GDScript/GDScript::763138782845430536::1748707524::0::1::::<>RigidBody2D<><>0<>0<><>::
 ball_factory.gd::GDScript/GDScript::5406636642146165837::1748707524::0::1::::<>Node2D<><>0<>0<><>::

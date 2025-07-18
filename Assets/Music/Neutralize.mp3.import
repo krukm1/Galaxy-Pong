@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/Neutralize.mp3-d4745fd3b61e1b3f7a5221792a5f54
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
