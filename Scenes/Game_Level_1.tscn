@@ -1,12 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://by6b56obrm1sf"]
+[gd_scene load_steps=6 format=3 uid="uid://by6b56obrm1sf"]
 
 [ext_resource type="Script" uid="uid://dbogqekd7ifej" path="res://Scripts/Game_Level_1.gd" id="1_uqoqq"]
 [ext_resource type="PackedScene" uid="uid://cwsrahpfkndmv" path="res://Scenes/level_walls.tscn" id="2_sfp2t"]
-[ext_resource type="Script" uid="uid://cjbarsahvu0tt" path="res://Scripts/ball_factory.gd" id="3_cbr4n"]
 [ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_qibkd"]
-[ext_resource type="Script" uid="uid://cx8bb7libj74e" path="res://Scripts/block_spawner.gd" id="6_srjir"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="7_tl1kq"]
-[ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/new_paddle.tscn" id="8_egejd"]
+[ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="8_egejd"]
 
 [node name="Game_Level_1" type="Node2D"]
 script = ExtResource("1_uqoqq")
@@ -15,16 +13,10 @@ script = ExtResource("1_uqoqq")
 
 [node name="Ball" type="Node" parent="."]
 
-[node name="ball_factory" type="Node2D" parent="Ball"]
-script = ExtResource("3_cbr4n")
-
 [node name="Ball" parent="Ball" instance=ExtResource("4_qibkd")]
 continuous_cd = 2
 
 [node name="Blocks" type="Node" parent="."]
-
-[node name="block_spawner" type="Node2D" parent="Blocks"]
-script = ExtResource("6_srjir")
 
 [node name="block1" parent="Blocks" instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 275)
@@ -134,12 +126,8 @@ position = Vector2(606, 371)
 [node name="block36" parent="Blocks" instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 371)
 
-[node name="new_paddle" parent="." instance=ExtResource("8_egejd")]
+[node name="Paddle" parent="." instance=ExtResource("8_egejd")]
 position = Vector2(576, 583)
-
-[node name="Ball_Shooter" type="Node2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(10, 10)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)

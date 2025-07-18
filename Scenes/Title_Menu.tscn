@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c6qdnosrc0bfj"]
 
-[ext_resource type="Script" uid="uid://cgvw1iq1qdx0l" path="res://Scripts/title_screen.gd" id="1_vr14v"]
+[ext_resource type="Script" uid="uid://cgvw1iq1qdx0l" path="res://Scripts/title_menu.gd" id="1_vr14v"]
 [ext_resource type="Theme" uid="uid://dpwixnssaflu4" path="res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres" id="2_sigpu"]
 
 [sub_resource type="Theme" id="Theme_vmg2h"]

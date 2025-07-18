@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dcpol23arf233"]
 
-[ext_resource type="Script" uid="uid://bp223ehsa1aan" path="res://Scripts/new_paddle.gd" id="1_yt8rt"]
-[ext_resource type="Texture2D" uid="uid://k1l5v03ccmyk" path="res://Assets/Sprites/paddle_sprites/green_paddle_curved.png" id="2_0upuo"]
+[ext_resource type="Script" uid="uid://bp223ehsa1aan" path="res://Scripts/paddle.gd" id="1_krcey"]
+[ext_resource type="Texture2D" uid="uid://k1l5v03ccmyk" path="res://Assets/Sprites/paddle_sprites/green_paddle_curved.png" id="2_fe6ia"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_yt8rt"]
 
@@ -16,11 +16,11 @@ colors = PackedColorArray(0.427274, 0.423705, 1, 1, 0.18, 1, 0.303, 0.498039, 0.
 [node name="new_paddle" type="CharacterBody2D"]
 collision_layer = 7
 collision_mask = 7
-script = ExtResource("1_yt8rt")
+script = ExtResource("1_krcey")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 0.010472
-texture = ExtResource("2_0upuo")
+texture = ExtResource("2_fe6ia")
 offset = Vector2(-1.99, -2.87)
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]

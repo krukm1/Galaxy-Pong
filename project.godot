@@ -13,7 +13,7 @@ config_version=5
 config/name="Galaxy-Pong"
 run/main_scene="uid://c6qdnosrc0bfj"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="uid://dm58ep251dsh2"
+config/icon="uid://cw2gc8v4l337j"
 
 [autoload]
 

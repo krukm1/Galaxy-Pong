@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm58ep251dsh2"
-path="res://.godot/imported/Galaxy-Pong-icon.png-eba40eef68aa68ee3dc9075ebd837c59.ctex"
+uid="uid://cw2gc8v4l337j"
+path="res://.godot/imported/galaxy-pong-icon.png-231beab21fb3e665548374fe0d3ebfcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Galaxy-Pong-icon.png"
-dest_files=["res://.godot/imported/Galaxy-Pong-icon.png-eba40eef68aa68ee3dc9075ebd837c59.ctex"]
+source_file="res://galaxy-pong-icon.png"
+dest_files=["res://.godot/imported/galaxy-pong-icon.png-231beab21fb3e665548374fe0d3ebfcc.ctex"]
 
 [params]
 
