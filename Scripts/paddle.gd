@@ -1,34 +1,40 @@
 extends CharacterBody2D
 
-@onready var centerpoint: Node2D = $"../centerpoint"
+# --- Node reference ---
+@onready var centerpoint: Node2D = $"../centerpoint"  # Reference to the centerpoint node, assumed to be a sibling
 
-const ROTATION_SPEED = 3  # Radians per second
-const RADIUS_CHANGE_SPEED = 200.0  # Units per second
-const MIN_RADIUS = 150.0
-const MAX_RADIUS = 300.0
+# --- Constants for movement and limits ---
+const ROTATION_SPEED = 3  # Speed at which the paddle rotates (radians per second)
+const RADIUS_CHANGE_SPEED = 200.0  # Optional: Speed at which radius could be changed (not used yet)
+const MIN_RADIUS = 150.0  # Minimum allowed radius from center
+const MAX_RADIUS = 300.0  # Maximum allowed radius from center
 
-@export var radius: float = 300.0
-var angle: float = 0.0
-var center: Vector2
+# --- State variables ---
+@export var radius: float = 300.0  # Distance from the centerpoint (adjustable in editor)
+var angle: float = 0.0  # Current angle around the center (in radians)
+var center: Vector2  # World position of the centerpoint
 
+# --- Called when the node enters the scene tree ---
 func _ready() -> void:
-	var cp = get_parent().get_node("centerpoint")
-	print("centerpoint position: ", cp.global_position)
-	center = cp.global_position
-	angle = PI / 2
-	
+	var cp = get_parent().get_node("centerpoint")  # Look up the centerpoint node
+	print("centerpoint position: ", cp.global_position)  # Debug: print its position
+	center = cp.global_position  # Store the centerpoint's world position
+	angle = PI / 2  # Start at the bottom of the circle (facing up)
+
+# --- Called every physics frame ---
 func _physics_process(delta: float) -> void:
-	var input_direction := Input.get_axis("ui_right", "ui_left")
-#	var vertical_input := Input.get_axis("ui_up", "ui_down")
-	
-	# Rotate angle based on horizontal input
+	var input_direction := Input.get_axis("ui_right", "ui_left")  # Read input for clockwise/counterclockwise rotation
+	# var vertical_input := Input.get_axis("ui_up", "ui_down")  # (Optional: for radius control, currently unused)
+
+	# If input is pressed, update the angle based on rotation speed
 	if input_direction != 0:
 		angle += input_direction * ROTATION_SPEED * delta
-		angle = fmod(angle, TAU)
-	
-	# Update position based on angle and radius
+		angle = fmod(angle, TAU)  # Wrap the angle so it stays within 0 to 2π
+
+	# Calculate the paddle’s position along the circular path using angle and radius
 	global_position = center + Vector2(cos(angle), sin(angle)) * radius
-	
-	# Face the center, then rotate 90 degrees clockwise to stand upright
+
+	# Make the paddle face toward the centerpoint...
 	look_at(center)
+	# ...then rotate 90° clockwise so it's upright (perpendicular to its orbit direction)
 	rotation += PI / 2
