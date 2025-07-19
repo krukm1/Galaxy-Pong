@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-@export var velocity:= Vector2(250,0) # How fast the ball will move.
+@export var velocity:= Vector2(0,250) # How fast the ball will move.
 
 func _physics_process(delta: float) -> void:
 	
@@ -12,7 +12,6 @@ func _physics_process(delta: float) -> void:
 			print("Ball collided with Asteroid")
 			velocity = velocity.bounce(collision_info.get_normal())
 			collision_info.get_collider().queue_free()
-
 
 func _on_asteroid_ball_bounce(delta) -> void:
 	var collision_info = move_and_collide(velocity * delta,false,0.15)

@@ -11,10 +11,15 @@ script = ExtResource("1_uqoqq")
 
 [node name="Level_Walls" parent="." instance=ExtResource("2_sfp2t")]
 
-[node name="Ball" type="Node" parent="."]
-
-[node name="Ball" parent="Ball" instance=ExtResource("4_qibkd")]
+[node name="Ball" parent="." instance=ExtResource("4_qibkd")]
+position = Vector2(576, 553)
 continuous_cd = 2
+
+[node name="Paddle" parent="." instance=ExtResource("8_egejd")]
+position = Vector2(576, 583)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
 
 [node name="Blocks" type="Node" parent="."]
 
@@ -125,12 +130,6 @@ position = Vector2(606, 371)
 
 [node name="block36" parent="Blocks" instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 371)
-
-[node name="Paddle" parent="." instance=ExtResource("8_egejd")]
-position = Vector2(576, 583)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 324)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 3.0
