@@ -26,9 +26,15 @@ func _physics_process(delta: float) -> void:
 	var input_direction := Input.get_axis("ui_right", "ui_left")  # Read input for clockwise/counterclockwise rotation
 	# var vertical_input := Input.get_axis("ui_up", "ui_down")  # (Optional: for radius control, currently unused)
 
+# Check if Shift is held -> apply speed multiplier for paddle
+	var is_shift_pressed := Input.is_action_pressed("ui_shift")
+	var current_rotation_speed = ROTATION_SPEED
+	if is_shift_pressed:
+		current_rotation_speed *= 2.5  # Or any multiplier you want
+
 	# If input is pressed, update the angle based on rotation speed
 	if input_direction != 0:
-		angle += input_direction * ROTATION_SPEED * delta
+		angle += input_direction * current_rotation_speed * delta
 		angle = fmod(angle, TAU)  # Wrap the angle so it stays within 0 to 2π
 
 	# Calculate the paddle’s position along the circular path using angle and radius
