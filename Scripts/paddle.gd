@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@onready var centerpoint: Node2D = $"../centerpoint"
+
 const ROTATION_SPEED = 3  # Radians per second
 const RADIUS_CHANGE_SPEED = 200.0  # Units per second
 const MIN_RADIUS = 150.0
@@ -10,8 +12,10 @@ var angle: float = 0.0
 var center: Vector2
 
 func _ready() -> void:
-	center = get_viewport().get_camera_2d().get_screen_center_position()
-	angle = PI / 2  # Start at the bottom of the screen
+	var cp = get_parent().get_node("centerpoint")
+	print("centerpoint position: ", cp.global_position)
+	center = cp.global_position
+	angle = PI / 2
 	
 func _physics_process(delta: float) -> void:
 	var input_direction := Input.get_axis("ui_right", "ui_left")
