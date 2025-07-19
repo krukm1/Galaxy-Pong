@@ -1,19 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcpol23arf233"]
+[gd_scene load_steps=3 format=3 uid="uid://dcpol23arf233"]
 
 [ext_resource type="Script" uid="uid://bp223ehsa1aan" path="res://Scripts/paddle.gd" id="1_krcey"]
 [ext_resource type="Texture2D" uid="uid://k1l5v03ccmyk" path="res://Assets/Sprites/paddle_sprites/green_paddle_curved.png" id="2_fe6ia"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_yt8rt"]
-
-[sub_resource type="Curve" id="Curve_0upuo"]
-_data = [Vector2(0, 0.303371), 0.0, -0.551868, 0, 0, Vector2(0.323864, 0.213483), -0.346067, -0.346067, 0, 0, Vector2(1, 0), -0.966792, 0.0, 0, 0]
-point_count = 3
-
-[sub_resource type="Gradient" id="Gradient_gkgw8"]
-offsets = PackedFloat32Array(0, 0.00404859, 1)
-colors = PackedColorArray(0.427274, 0.423705, 1, 1, 0.18, 1, 0.303, 0.498039, 0.1, 1, 0.235, 0.498039)
-
-[node name="new_paddle" type="CharacterBody2D"]
+[node name="paddle" type="CharacterBody2D"]
 collision_layer = 7
 collision_mask = 7
 script = ExtResource("1_krcey")
@@ -22,40 +12,6 @@ script = ExtResource("1_krcey")
 rotation = 0.010472
 texture = ExtResource("2_fe6ia")
 offset = Vector2(-1.99, -2.87)
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-show_behind_parent = true
-position = Vector2(49, -1)
-rotation = 0.374591
-scale = Vector2(0.5, 0.5)
-amount = 20
-texture = SubResource("CanvasTexture_yt8rt")
-lifetime = 5.0
-speed_scale = 5.0
-emission_shape = 1
-emission_sphere_radius = 0.5
-gravity = Vector2(0, 0)
-scale_amount_min = 12.55
-scale_amount_max = 30.0
-scale_amount_curve = SubResource("Curve_0upuo")
-color_ramp = SubResource("Gradient_gkgw8")
-
-[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
-show_behind_parent = true
-position = Vector2(-47, 0)
-rotation = -0.158079
-scale = Vector2(0.5, 0.5)
-amount = 20
-texture = SubResource("CanvasTexture_yt8rt")
-lifetime = 5.0
-speed_scale = 5.0
-emission_shape = 1
-emission_sphere_radius = 0.5
-gravity = Vector2(0, 0)
-scale_amount_min = 30.0
-scale_amount_max = 30.0
-scale_amount_curve = SubResource("Curve_0upuo")
-color_ramp = SubResource("Gradient_gkgw8")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, 0, 8, 0, 32, -3, 48, -7, 51, -6, 51, -2, 48, 0, 32, 4, 8, 7, 0.0751114, 7, -8, 7, -8, 7, -32, 4, -48, 0, -52, -2, -52, -6, -48, -7, -32, -3, -8, 0)
