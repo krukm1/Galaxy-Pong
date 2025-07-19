@@ -16,3 +16,5 @@ data_*/
 mono_crash.*.json
 .godot/editor/filesystem_cache*
 /.godot
+.godot/editor/filesystem_cache10
+.godot/uid_cache.bin
