@@ -24,8 +24,8 @@ func _physics_process(delta: float) -> void:
 			if collider == paddle:
 				# If the paddle was hit, gently nudge the bounce direction toward the center to help keep the ball in play longer
 				var to_center = (paddle.center - global_position).normalized() * velocity.length()
-				# Blend the bounce with the assist vector, then normalize to maintain constant speed
-				velocity = bounced_velocity.lerp(to_center, 0.2).normalized() * base_speed
+				# Blend the bounce with the assist vector, then normalize to maintain constant speed.
+				velocity = bounced_velocity.lerp(to_center, 0.35).normalized() * base_speed
 			else:
 				# For all other collisions, bounce and reset speed to base_speed
 				velocity = bounced_velocity.normalized() * base_speed

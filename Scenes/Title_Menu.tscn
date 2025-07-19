@@ -82,11 +82,10 @@ offset_right = 921.0
 offset_bottom = 489.0
 theme = ExtResource("2_sigpu")
 theme_override_font_sizes/normal_font_size = 14
-text = "Creators
-     Marek and Mateusz
+text = "Creator
+     Mateusz
 
-Special Thanks To
-     Your Mother"
+Special Thanks to Marek"
 
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
