@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1753025996
+::res://::1753037447
 galaxy-pong-icon.png::CompressedTexture2D/CompressedTexture2D::6373103767371845545::1752805933::1752805933::1::::<><><>0<>0<>93a47455b69ac85060e366959c871bcb<>res://.godot/imported/galaxy-pong-icon.png-231beab21fb3e665548374fe0d3ebfcc.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6356242225274166370::1748707524::1748707725::1::::<><><>0<>0<>70efb1583c150d8aca9a63ff3d97056f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1752716991::0::1::::<><><>0<>0<><>::
@@ -19,7 +19,7 @@ Montreal-Bold.ttf::FontFile/FontFile::507583591941745798::1748707524::1748707725
 Poco.ttf::FontFile/FontFile::5337250782204784793::1748707524::1748707725::1::::<><><>0<>0<>565c96f6122805025eb7f4a470c0c8b8<>res://.godot/imported/Poco.ttf-e9fb7ccb22ae482a26826b478259e715.fontdata::
 ::res://Assets/Fonts/Title Screen Font Theme/::1753026000
 Organic Relief.ttf::FontFile/FontFile::8692691831746706164::1748707524::1748707725::1::::<><><>0<>0<>b83bfdfcb236ea14530dec859acacf25<>res://.godot/imported/Organic Relief.ttf-ee84e451974b1786251ee36e70f17ff6.fontdata::
-Title Button Theme.tres::Theme::8258038536869127257::1753026000::0::1::::<><><>0<>0<><>::uid://dv32mnkmt7xdc::::res://Assets/Fonts/Title Screen Font Theme/Organic Relief.ttf
+Title Button Theme.tres::Theme/Theme::8258038536869127257::1753026000::0::1::::<><><>0<>0<><>::uid://dv32mnkmt7xdc::::res://Assets/Fonts/Title Screen Font Theme/Organic Relief.ttf
 ::res://Assets/Music/::1752803539
 Developing_Dreams.mp3::AudioStreamMP3/AudioStreamMP3::3625061304010293386::1748707524::1752803531::1::::<><><>0<>0<>0ed267e35c48718eb1baab56d8527c32<>res://.godot/imported/Developing_Dreams.mp3-10628b75d57e1d156a64ed131b823146.mp3str::
 Escape_Route.mp3::AudioStreamMP3/AudioStreamMP3::8038646442853600783::1748707524::1748707725::1::::<><><>0<>0<>bba7e5023fec78557497f9394b494604<>res://.godot/imported/Escape_Route.mp3-6bc6ecc3e1aaac02c4e6baf91b9f2f76.mp3str::
@@ -29,8 +29,9 @@ Marek_Matt_song_V2.mp3::AudioStreamMP3/AudioStreamMP3::2425094879967992867::1748
 Moon_Cheese_Burger.mp3::AudioStreamMP3/AudioStreamMP3::8994706995761427651::1748707524::1748707725::1::::<><><>0<>0<>97a9bdfa097b425edc09e7c3b936bd1c<>res://.godot/imported/Moon_Cheese_Burger.mp3-631600bcffa420ebe0b7597c1ec00a4c.mp3str::
 Neutralize.mp3::AudioStreamMP3/AudioStreamMP3::9123262972525453339::1748707524::1752803539::1::::<><><>0<>0<>55f59c71f2b249861cd64dd3a3763649<>res://.godot/imported/Neutralize.mp3-d4745fd3b61e1b3f7a5221792a5f54a0.mp3str::
 Retrofuturism.mp3::AudioStreamMP3/AudioStreamMP3::7864536532501970810::1748707524::1748707725::1::::<><><>0<>0<>e082244c967bd939ee8eb1de24ddac36<>res://.godot/imported/Retrofuturism.mp3-320dedc93dfbe6c879d2a83d08ce90ca.mp3str::
-::res://Assets/Sounds/::1752801824
+::res://Assets/Sounds/::1753037447
 block_break_sound.mp3::AudioStreamMP3/AudioStreamMP3::5092736863664392196::1748707524::1748707725::1::::<><><>0<>0<>426598f6066508fca61110f2e73db230<>res://.godot/imported/block_break_sound.mp3-04ede11aa7e23aebac719dabb6cffb5a.mp3str::
+block_hit_sound.mp3::AudioStreamMP3/AudioStreamMP3::2657676845595445450::1753037303::1753037447::1::::<><><>0<>0<>f016c0c01eb043d75419abed6176b417<>res://.godot/imported/block_hit_sound.mp3-ef43497d0e83c54209e78892300bd689.mp3str::
 button1.mp3::AudioStreamMP3/AudioStreamMP3::3860758154957872275::1748707524::1748707725::1::::<><><>0<>0<>4d2b2cb08f45a7274bb1f2ee54906f92<>res://.godot/imported/button1.mp3-3cd461406f1c7aae94ddf752fe8f4ef2.mp3str::
 button2.mp3::AudioStreamMP3/AudioStreamMP3::464462615892982444::1748707524::1748707725::1::::<><><>0<>0<>713ecca760e803d9dd50b832560d241c<>res://.godot/imported/button2.mp3-7a677cde57b609fe8f33ed28e5c3a7ef.mp3str::
 button_hover.mp3::AudioStreamMP3/AudioStreamMP3::2900592458249907034::1748707524::1748707725::1::::<><><>0<>0<>15f227b1c854ce09ea6bb3d4925ed12a<>res://.godot/imported/button_hover.mp3-73954b79dbba1c3eadcfcdc2183bb1cb.mp3str::
@@ -41,40 +42,39 @@ level_complete_sound.mp3::AudioStreamMP3/AudioStreamMP3::5179264000622372160::17
 load.mp3::AudioStreamMP3/AudioStreamMP3::7011714724938854129::1748707524::1748707725::1::::<><><>0<>0<>120fcf1a6873d8feee710634a6c97745<>res://.godot/imported/load.mp3-3adbf949dca81246eda36b5c711e9da7.mp3str::
 lost_ball.mp3::AudioStreamMP3/AudioStreamMP3::8663249923617948485::1748707524::1748707725::1::::<><><>0<>0<>84e0701fb73f9f2efb58bb9502edb10d<>res://.godot/imported/lost_ball.mp3-a3c445bd540bf94f5b784aa901c9ada1.mp3str::
 start_button.mp3::AudioStreamMP3/AudioStreamMP3::4938458232576687741::1748707524::1748707725::1::::<><><>0<>0<>351c32501fd19cf3ad0f71f66c032eff<>res://.godot/imported/start_button.mp3-be19c80d62d7af793b9e08511f9cd9c2.mp3str::
-::res://Assets/Sprites/::1753026214
+::res://Assets/Sprites/::1753026238
 Arcade_Tetris_Atari_Block_Tiles.png::CompressedTexture2D/CompressedTexture2D::2471110259247088759::1748707524::1748707725::1::::<><><>0<>0<>3cb17859c0761be0e1965c59e6fb8d79<>res://.godot/imported/Arcade_Tetris_Atari_Block_Tiles.png-6226f8f49cc0849d386fd61d27cecec6.ctex::
 astroid_sprite.png::CompressedTexture2D/CompressedTexture2D::8555711930816498452::1748707524::1748707725::1::::<><><>0<>0<>4061862c5d74d7dad806a48d5ac0cae9<>res://.godot/imported/astroid_sprite.png-0c9dacd6c475546e036770b9af5c40b3.ctex::
-ball.png::CompressedTexture2D/CompressedTexture2D::4774964387491174059::1748707524::1748707725::1::::<><><>0<>0<>211950e08c16a49fcf5eb01d403ae7dd<>res://.godot/imported/ball.png-f7daf3e9206963eab7c6cd6da748e585.ctex::
 basic_block_set.png::CompressedTexture2D/CompressedTexture2D::643752944784447636::1748707524::1748707725::1::::<><><>0<>0<>58f09bcbc157ab3d8200b94e383ffd62<>res://.godot/imported/basic_block_set.png-ce58ec42c31061eec1f5db70dd0eae9d.ctex::
-CelestialObjects.png::CompressedTexture2D::5320135976319484048::1753026214::1753026214::1::::<><><>0<>0<>9bc453785fd473c2c9e8147bb4a5587a<>res://.godot/imported/CelestialObjects.png-7a7c12ae90bce29c52b215894bf19d2c.ctex::
+CelestialObjects.png::CompressedTexture2D/CompressedTexture2D::5320135976319484048::1753026214::1753026214::1::::<><><>0<>0<>9bc453785fd473c2c9e8147bb4a5587a<>res://.godot/imported/CelestialObjects.png-7a7c12ae90bce29c52b215894bf19d2c.ctex::
 energy_ball.png::CompressedTexture2D/CompressedTexture2D::5814182062414825767::1748707524::1748707725::1::::<><><>0<>0<>70ba32150fa15732e087c636e231db3f<>res://.godot/imported/energy_ball.png-2cba5c38aa53f35a89736e0a7824e928.ctex::
 ::res://Assets/Sprites/Asteroids/::1753026204
 ::res://Assets/Sprites/Asteroids/Aseprite/::1753026204
 ::res://Assets/Sprites/Asteroids/PNGs/::1753026205
-Asteroid 01 - Base.png::CompressedTexture2D::8341876594612587123::1753026204::1753026205::1::::<><><>0<>0<>6822beca9e4ce3c144e5dece61500f93<>res://.godot/imported/Asteroid 01 - Base.png-2a5d832ec913d31815666a4abe2bda8a.ctex::
-Asteroid 01 - Explode.png::CompressedTexture2D::7492865065702564871::1753026204::1753026205::1::::<><><>0<>0<>d9c6a89eb8ab466eb0b3922be40789b1<>res://.godot/imported/Asteroid 01 - Explode.png-166b85ae9c125f9a8a44dd7b153ea8c7.ctex::
+Asteroid 01 - Base.png::CompressedTexture2D/CompressedTexture2D::8341876594612587123::1753026204::1753026205::1::::<><><>0<>0<>6822beca9e4ce3c144e5dece61500f93<>res://.godot/imported/Asteroid 01 - Base.png-2a5d832ec913d31815666a4abe2bda8a.ctex::
+Asteroid 01 - Explode.png::CompressedTexture2D/CompressedTexture2D::7492865065702564871::1753026204::1753026205::1::::<><><>0<>0<>d9c6a89eb8ab466eb0b3922be40789b1<>res://.godot/imported/Asteroid 01 - Explode.png-166b85ae9c125f9a8a44dd7b153ea8c7.ctex::
 ::res://Assets/Sprites/Backgrounds/::1753026204
 ::res://Assets/Sprites/Backgrounds/Aseprite/::1753026204
 ::res://Assets/Sprites/Backgrounds/PNGs/::1753026204
 ::res://Assets/Sprites/Backgrounds/PNGs/Condesed/::1753026206
-Starry background  - Layer 01 - Void.png::CompressedTexture2D::3460573807418239368::1753026204::1753026206::1::::<><><>0<>0<>2cb03d64c4317bd11e5057913697168d<>res://.godot/imported/Starry background  - Layer 01 - Void.png-39b55844593e7069b424f99130211c44.ctex::
-Starry background  - Layer 02 - Stars.png::CompressedTexture2D::2847580303816938509::1753026204::1753026206::1::::<><><>0<>0<>801ade12f7d72397137edce7c3a9dfc6<>res://.godot/imported/Starry background  - Layer 02 - Stars.png-550ef5b59358ca6133deacb2e47e1261.ctex::
-Starry background  - Layer 03 - Stars.png::CompressedTexture2D::716568253728229298::1753026204::1753026206::1::::<><><>0<>0<>c6dc9f570a90edea4d05d4fa9ee54d27<>res://.godot/imported/Starry background  - Layer 03 - Stars.png-d63df7cc940035c17cf44bdcadab2de3.ctex::
+Starry background  - Layer 01 - Void.png::CompressedTexture2D/CompressedTexture2D::3460573807418239368::1753026204::1753026206::1::::<><><>0<>0<>2cb03d64c4317bd11e5057913697168d<>res://.godot/imported/Starry background  - Layer 01 - Void.png-39b55844593e7069b424f99130211c44.ctex::
+Starry background  - Layer 02 - Stars.png::CompressedTexture2D/CompressedTexture2D::2847580303816938509::1753026204::1753026206::1::::<><><>0<>0<>801ade12f7d72397137edce7c3a9dfc6<>res://.godot/imported/Starry background  - Layer 02 - Stars.png-550ef5b59358ca6133deacb2e47e1261.ctex::
+Starry background  - Layer 03 - Stars.png::CompressedTexture2D/CompressedTexture2D::716568253728229298::1753026204::1753026206::1::::<><><>0<>0<>c6dc9f570a90edea4d05d4fa9ee54d27<>res://.godot/imported/Starry background  - Layer 03 - Stars.png-d63df7cc940035c17cf44bdcadab2de3.ctex::
 ::res://Assets/Sprites/Backgrounds/PNGs/Split up/::1753026205
-Starry background  - Layer 01 - Solid colour.png::CompressedTexture2D::4018688885760015206::1753026204::1753026205::1::::<><><>0<>0<>41ee176513f78d96e73a3b4150468d9e<>res://.godot/imported/Starry background  - Layer 01 - Solid colour.png-55d5215773f5aaf71236121b1d7b27e1.ctex::
-Starry background  - Layer 02 - Shadows 2.png::CompressedTexture2D::1426442281984366227::1753026204::1753026205::1::::<><><>0<>0<>8d7c997c41a4fda1b35231bad8dc5ca0<>res://.godot/imported/Starry background  - Layer 02 - Shadows 2.png-007169d9cffb7386404a83a878ffc329.ctex::
-Starry background  - Layer 02 - Shadows.png::CompressedTexture2D::4365867350718222991::1753026204::1753026205::1::::<><><>0<>0<>2bae8d28fd12e2756597696b2df74981<>res://.godot/imported/Starry background  - Layer 02 - Shadows.png-eb1181967936294cc89ef52d17f65733.ctex::
-Starry background  - Layer 03 - Stars 2.png::CompressedTexture2D::5757475327495579505::1753026204::1753026205::1::::<><><>0<>0<>4b941050920560bdc4ba0760bab96b58<>res://.godot/imported/Starry background  - Layer 03 - Stars 2.png-8366437b0a9c3c4048740ecf8429ae93.ctex::
-Starry background  - Layer 03 - Stars.png::CompressedTexture2D::3240134085433619338::1753026204::1753026205::1::::<><><>0<>0<>8d8105b136b4a58af56ff32e7915c57e<>res://.godot/imported/Starry background  - Layer 03 - Stars.png-fb2a734993207d64cefa948a95508a64.ctex::
-Starry background - Layer X - Big Star 2.png::CompressedTexture2D::5798104856943775396::1753026204::1753026205::1::::<><><>0<>0<>17e553f58f8c39c6fdd887ed0dadab99<>res://.godot/imported/Starry background - Layer X - Big Star 2.png-7d522348fa77d72b9928cbf59fab4079.ctex::
-Starry background - Layer X - Big Star.png::CompressedTexture2D::4621947543746873988::1753026204::1753026205::1::::<><><>0<>0<>22f7d716182d74a80e37dbe45b8f0326<>res://.godot/imported/Starry background - Layer X - Big Star.png-36b0d5216b064fc426fd2f30a64c9120.ctex::
-Starry background - Layer X -Black hole.png::CompressedTexture2D::6214465051331041923::1753026204::1753026205::1::::<><><>0<>0<>5ccc39c6d68e53a2146c919ef2b02676<>res://.godot/imported/Starry background - Layer X -Black hole.png-3dbaa05e74e1f039a4dee43ebfab3d0d.ctex::
-Starry background - Layer X -Rotary Star 2.png::CompressedTexture2D::6223120101482775710::1753026204::1753026205::1::::<><><>0<>0<>14e4c204db9c1a8ff32c90bc6c69a33a<>res://.godot/imported/Starry background - Layer X -Rotary Star 2.png-aa84746b165c5b2191dd24b2caf26cab.ctex::
-Starry background - Layer X -Rotary Star.png::CompressedTexture2D::7428374170910672201::1753026204::1753026205::1::::<><><>0<>0<>535b092599bc9a0a6c2c252983a96b45<>res://.godot/imported/Starry background - Layer X -Rotary Star.png-7fd96432240327d644eaa22cae86b511.ctex::
+Starry background  - Layer 01 - Solid colour.png::CompressedTexture2D/CompressedTexture2D::4018688885760015206::1753026204::1753026205::1::::<><><>0<>0<>41ee176513f78d96e73a3b4150468d9e<>res://.godot/imported/Starry background  - Layer 01 - Solid colour.png-55d5215773f5aaf71236121b1d7b27e1.ctex::
+Starry background  - Layer 02 - Shadows 2.png::CompressedTexture2D/CompressedTexture2D::1426442281984366227::1753026204::1753026205::1::::<><><>0<>0<>8d7c997c41a4fda1b35231bad8dc5ca0<>res://.godot/imported/Starry background  - Layer 02 - Shadows 2.png-007169d9cffb7386404a83a878ffc329.ctex::
+Starry background  - Layer 02 - Shadows.png::CompressedTexture2D/CompressedTexture2D::4365867350718222991::1753026204::1753026205::1::::<><><>0<>0<>2bae8d28fd12e2756597696b2df74981<>res://.godot/imported/Starry background  - Layer 02 - Shadows.png-eb1181967936294cc89ef52d17f65733.ctex::
+Starry background  - Layer 03 - Stars 2.png::CompressedTexture2D/CompressedTexture2D::5757475327495579505::1753026204::1753026205::1::::<><><>0<>0<>4b941050920560bdc4ba0760bab96b58<>res://.godot/imported/Starry background  - Layer 03 - Stars 2.png-8366437b0a9c3c4048740ecf8429ae93.ctex::
+Starry background  - Layer 03 - Stars.png::CompressedTexture2D/CompressedTexture2D::3240134085433619338::1753026204::1753026205::1::::<><><>0<>0<>8d8105b136b4a58af56ff32e7915c57e<>res://.godot/imported/Starry background  - Layer 03 - Stars.png-fb2a734993207d64cefa948a95508a64.ctex::
+Starry background - Layer X - Big Star 2.png::CompressedTexture2D/CompressedTexture2D::5798104856943775396::1753026204::1753026205::1::::<><><>0<>0<>17e553f58f8c39c6fdd887ed0dadab99<>res://.godot/imported/Starry background - Layer X - Big Star 2.png-7d522348fa77d72b9928cbf59fab4079.ctex::
+Starry background - Layer X - Big Star.png::CompressedTexture2D/CompressedTexture2D::4621947543746873988::1753026204::1753026205::1::::<><><>0<>0<>22f7d716182d74a80e37dbe45b8f0326<>res://.godot/imported/Starry background - Layer X - Big Star.png-36b0d5216b064fc426fd2f30a64c9120.ctex::
+Starry background - Layer X -Black hole.png::CompressedTexture2D/CompressedTexture2D::6214465051331041923::1753026204::1753026205::1::::<><><>0<>0<>5ccc39c6d68e53a2146c919ef2b02676<>res://.godot/imported/Starry background - Layer X -Black hole.png-3dbaa05e74e1f039a4dee43ebfab3d0d.ctex::
+Starry background - Layer X -Rotary Star 2.png::CompressedTexture2D/CompressedTexture2D::6223120101482775710::1753026204::1753026205::1::::<><><>0<>0<>14e4c204db9c1a8ff32c90bc6c69a33a<>res://.godot/imported/Starry background - Layer X -Rotary Star 2.png-aa84746b165c5b2191dd24b2caf26cab.ctex::
+Starry background - Layer X -Rotary Star.png::CompressedTexture2D/CompressedTexture2D::7428374170910672201::1753026204::1753026205::1::::<><><>0<>0<>535b092599bc9a0a6c2c252983a96b45<>res://.godot/imported/Starry background - Layer X -Rotary Star.png-7fd96432240327d644eaa22cae86b511.ctex::
 ::res://Assets/Sprites/Effects/::1753026204
 ::res://Assets/Sprites/Effects/Aseprite/::1753026204
 ::res://Assets/Sprites/Effects/PNGs/::1753026205
-Asteroid - Flame.png::CompressedTexture2D::2488902530488702796::1753026204::1753026205::1::::<><><>0<>0<>13e0cacaef036c034c0752b62a6daa1f<>res://.godot/imported/Asteroid - Flame.png-71f25933103f1e20c0d9fab657a9d94f.ctex::
+Asteroid - Flame.png::CompressedTexture2D/CompressedTexture2D::2488902530488702796::1753026204::1753026205::1::::<><><>0<>0<>13e0cacaef036c034c0752b62a6daa1f<>res://.godot/imported/Asteroid - Flame.png-71f25933103f1e20c0d9fab657a9d94f.ctex::
 ::res://Assets/Sprites/paddle_sprites/::1752801824
 blue_paddle.png::CompressedTexture2D/CompressedTexture2D::4240935222874502944::1748707524::1748707725::1::::<><><>0<>0<>fcc56c9ac529547c434a3f8bf5c7e291<>res://.godot/imported/blue_paddle.png-cf2acfd9bf135326535c15992eaa90cb.ctex::
 blue_paddle_curved.png::CompressedTexture2D/CompressedTexture2D::7290639751658919693::1748707524::1748707725::1::::<><><>0<>0<>8be339e852f824609858bd3904db541d<>res://.godot/imported/blue_paddle_curved.png-1605ba270d0cd2f336d4a4859c41dd02.ctex::
@@ -87,30 +87,32 @@ red_paddle_curved.png::CompressedTexture2D/CompressedTexture2D::8976309400037732
 ::res://Assets/Sprites/Planets/::1753026204
 ::res://Assets/Sprites/Planets/Aseprite/::1753026204
 ::res://Assets/Sprites/Planets/PNGs/::1753026205
-Earth-Like planet - Without back glow.png::CompressedTexture2D::7202853490757489187::1753026204::1753026205::1::::<><><>0<>0<>c78cdda070f9246fc7c291222990d7f9<>res://.godot/imported/Earth-Like planet - Without back glow.png-3b914f02d93564a6b657f6f3ee4c7070.ctex::
-Earth-Like planet.png::CompressedTexture2D::466009418646074166::1753026204::1753026205::1::::<><><>0<>0<>24aab7d5bf999463ee9394630b7a7061<>res://.godot/imported/Earth-Like planet.png-7980075f53505f310ba83140053f4e0a.ctex::
-::res://Scenes/::1753026155
+Earth-Like planet - Without back glow.png::CompressedTexture2D/CompressedTexture2D::7202853490757489187::1753026204::1753026205::1::::<><><>0<>0<>c78cdda070f9246fc7c291222990d7f9<>res://.godot/imported/Earth-Like planet - Without back glow.png-3b914f02d93564a6b657f6f3ee4c7070.ctex::
+Earth-Like planet.png::CompressedTexture2D/CompressedTexture2D::466009418646074166::1753026204::1753026205::1::::<><><>0<>0<>24aab7d5bf999463ee9394630b7a7061<>res://.godot/imported/Earth-Like planet.png-7980075f53505f310ba83140053f4e0a.ctex::
+::res://Scenes/::1753037423
 Asteroid.tscn::PackedScene/PackedScene::6925192306101897086::1752805248::0::1::::<><><>0<>0<><>::uid://dt5plcjjhdeeu::::res://Assets/Sprites/astroid_sprite.png
 ball.tscn::PackedScene/PackedScene::641910444864671406::1752937407::0::1::::<><><>0<>0<><>::uid://k4w1wuprx84c::::res://Scripts/ball.gd<>uid://co3oy130yl17h::::res://Assets/Sprites/energy_ball.png
-block.tscn::PackedScene/PackedScene::3247062633274058678::1752806056::0::1::::<><><>0<>0<><>::uid://c0axqtxdcqy3v::::res://Scripts/block.gd<>uid://bbha3bvj1hp1p::::res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png
-Game_Level_1.tscn::PackedScene/PackedScene::4135064582111416417::1753025721::0::1::::<><><>0<>0<><>::uid://dbogqekd7ifej::::res://Scripts/Game_Level_1.gd<>uid://cwsrahpfkndmv::::res://Scenes/level_walls.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn
-Game_Level_2.tscn::PackedScene::4077750799553927218::1753026005::0::1::::<><><>0<>0<><>::uid://yie6iyqjer5a::::res://Scripts/game_level_2.gd<>uid://cwsrahpfkndmv::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+block.tscn::PackedScene/PackedScene::3247062633274058678::1753028550::0::1::::<><><>0<>0<><>::uid://c0axqtxdcqy3v::::res://Scripts/block.gd<>uid://bbha3bvj1hp1p::::res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png
+block_2hit.tscn::PackedScene::7446071602970577358::1753037366::0::1::::<><><>0<>0<><>::uid://cer00wtmgp4k8::::res://Scripts/block_2hit.gd<>uid://bbha3bvj1hp1p::::res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png
+Game_Level_1.tscn::PackedScene::4135064582111416417::1753037423::0::1::::<><><>0<>0<><>::uid://dbogqekd7ifej::::res://Scripts/game_level_1.gd<>uid://cwsrahpfkndmv::::res://Scenes/level_walls.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn
+Game_Level_2.tscn::PackedScene::4077750799553927218::1753037422::0::1::::<><><>0<>0<><>::uid://yie6iyqjer5a::::res://Scripts/game_level_2.gd<>uid://cwsrahpfkndmv::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://dec6ygnre6t4q::::res://Scenes/block_2hit.tscn
 level_walls.tscn::PackedScene/PackedScene::6355187306949592993::1752804863::0::1::::<><><>0<>0<><>::uid://xhec7pg5bxw8::::res://Scripts/level_walls.gd
 Options_Menu.tscn::PackedScene/PackedScene::4301641105491787283::1752804987::0::1::::<><><>0<>0<><>::uid://cvtlrenhjj8v1::::res://Scripts/options_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
 paddle.tscn::PackedScene/PackedScene::7331476547705872888::1752938579::0::1::::<><><>0<>0<><>::uid://bp223ehsa1aan::::res://Scripts/paddle.gd<>uid://k1l5v03ccmyk::::res://Assets/Sprites/paddle_sprites/green_paddle_curved.png
 Pause_Menu.tscn::PackedScene/PackedScene::8599179814012605099::1752953865::0::1::::<><><>0<>0<><>::uid://broc2673awmki::::res://Scripts/Pause_Menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-Title_Menu.tscn::PackedScene::6981931694438665791::1753026155::0::1::::<><><>0<>0<><>::uid://cgvw1iq1qdx0l::::res://Scripts/title_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-::res://Scenes/AutoLoads/::1752805248
+Title_Menu.tscn::PackedScene::6981931694438665791::1753037366::0::1::::<><><>0<>0<><>::uid://cgvw1iq1qdx0l::::res://Scripts/title_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
+::res://Scenes/AutoLoads/::1753037366
 background_star_fields.tscn::PackedScene/PackedScene::7279675772893937745::1748707524::0::1::::<><><>0<>0<><>::
-Music_Controller.tscn::PackedScene/PackedScene::1123613197834867472::1752805248::0::1::::<><><>0<>0<><>::uid://bodoybu2govkk::::res://Scripts/Music_Controller.gd
-::res://Scripts/::1753026005
+Music_Controller.tscn::PackedScene::1123613197834867472::1753037366::0::1::::<><><>0<>0<><>::uid://bodoybu2govkk::::res://Scripts/Music_Controller.gd
+::res://Scripts/::1753037323
 ball.gd::GDScript/GDScript::763138782845430536::1752954164::0::1::::<>RigidBody2D<><>0<>0<><>::
 block.gd::GDScript/GDScript::6528988555486909549::1748707524::0::1::::<>StaticBody2D<><>0<>0<><>::
+block_2hit.gd::GDScript/GDScript::5090254918842985473::1753036745::0::1::::<>StaticBody2D<><>0<>0<><>::
 game_level_1.gd::GDScript/GDScript::7258745283654083653::1752953864::0::1::::<>Node2D<><>0<>0<><>::
-game_level_2.gd::GDScript::1701345954928651888::1753026005::0::1::::<>Node2D<><>0<>0<><>::
+game_level_2.gd::GDScript/GDScript::1701345954928651888::1753037217::0::1::::<>Node2D<><>0<>0<><>::
 level_walls.gd::GDScript/GDScript::1629042191744079057::1748707524::0::1::::<>Area2D<><>0<>0<><>::
 main_menu.gd::GDScript/GDScript::8740632870246258073::1748707524::0::1::::<>CanvasLayer<><>0<>0<><>::
-Music_Controller.gd::GDScript/GDScript::3376150609494969570::1748707524::0::1::::<>Node<><>0<>0<><>::
+Music_Controller.gd::GDScript::3376150609494969570::1753037323::0::1::::<>Node<><>0<>0<><>::
 options_menu.gd::GDScript/GDScript::6286728737035157856::1752951562::0::1::::<>Control<><>0<>0<><>::
 paddle.gd::GDScript/GDScript::3496681120383123421::1752948554::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Pause_Menu.gd::GDScript/GDScript::3608703643448120124::1752952989::0::1::::<>Control<><>0<>0<><>::

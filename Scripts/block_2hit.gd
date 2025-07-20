@@ -22,4 +22,4 @@ func _physics_process(delta: float) -> void:
 		else:
 			# ✅ Change sprite color to white on first hit
 			sprite_2d.modulate = Color("#ffffff")
-			Music_Controller.play_block_break()  # Sound it when on first hit
+			Music_Controller.play_block_hit()  # Sound it when on first hit

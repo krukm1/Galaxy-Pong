@@ -9,7 +9,7 @@ script = ExtResource("1_nxefo")
 volume_db = -20.0
 autoplay = true
 
-[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+[node name="SFXPlayer1" type="AudioStreamPlayer2D" parent="."]
 volume_db = -20.0
 
 [node name="SFXPlayer2" type="AudioStreamPlayer2D" parent="."]
