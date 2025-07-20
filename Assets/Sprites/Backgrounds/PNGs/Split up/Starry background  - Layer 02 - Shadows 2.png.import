@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caba73raw2nwt"
-path="res://.godot/imported/ball.png-f7daf3e9206963eab7c6cd6da748e585.ctex"
+uid="uid://uk8kcfewxjtr"
+path="res://.godot/imported/Starry background  - Layer 02 - Shadows 2.png-007169d9cffb7386404a83a878ffc329.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/ball.png"
-dest_files=["res://.godot/imported/ball.png-f7daf3e9206963eab7c6cd6da748e585.ctex"]
+source_file="res://Assets/Sprites/Backgrounds/PNGs/Split up/Starry background  - Layer 02 - Shadows 2.png"
+dest_files=["res://.godot/imported/Starry background  - Layer 02 - Shadows 2.png-007169d9cffb7386404a83a878ffc329.ctex"]
 
 [params]
 

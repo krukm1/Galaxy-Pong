@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bydj7vv8lr22y"]
+[gd_scene load_steps=7 format=3 uid="uid://bydj7vv8lr22y"]
 
 [ext_resource type="Script" uid="uid://yie6iyqjer5a" path="res://Scripts/game_level_2.gd" id="1_uee3w"]
 [ext_resource type="PackedScene" uid="uid://cwsrahpfkndmv" path="res://Scenes/level_walls.tscn" id="2_df86t"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_yw441"]
 [ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_bepv1"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="5_qpnds"]
+[ext_resource type="PackedScene" uid="uid://dec6ygnre6t4q" path="res://Scenes/block_2hit.tscn" id="6_df86t"]
 
 [node name="Game_Level_1" type="Node2D"]
 script = ExtResource("1_uee3w")
@@ -24,115 +25,120 @@ continuous_cd = 2
 [node name="camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 324)
 
-[node name="Blocks" type="Node" parent="."]
+[node name="block" type="Node" parent="."]
 
-[node name="block1" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block1" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(526, 275)
 
-[node name="block2" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block2" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(546, 275)
 
-[node name="block3" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block3" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(566, 275)
 
-[node name="block4" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block4" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(586, 275)
 
-[node name="block5" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block5" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(606, 275)
 
-[node name="block6" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block6" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(626, 275)
 
-[node name="block7" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block7" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(526, 294)
 
-[node name="block8" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block8" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(546, 294)
 
-[node name="block9" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block9" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(566, 294)
 
-[node name="block10" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block10" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(586, 294)
 
-[node name="block11" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block11" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(606, 294)
 
-[node name="block12" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block12" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(626, 294)
 
-[node name="block13" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block13" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(526, 314)
 
-[node name="block14" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block14" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(546, 314)
 
-[node name="block15" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block15" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(566, 314)
 
-[node name="block16" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block16" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(586, 314)
 
-[node name="block17" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block17" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(606, 314)
 
-[node name="block18" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block18" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(626, 314)
 
-[node name="block19" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block19" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(526, 333)
 
-[node name="block20" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block20" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(546, 333)
 
-[node name="block21" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block21" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(566, 333)
 
-[node name="block22" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block22" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(586, 333)
 
-[node name="block23" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block23" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(606, 333)
 
-[node name="block24" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block24" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(626, 333)
 
-[node name="block25" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block25" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(526, 352)
 
-[node name="block26" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block26" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(546, 352)
 
-[node name="block27" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block27" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(566, 352)
 
-[node name="block28" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block28" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(586, 352)
 
-[node name="block29" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block29" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(606, 352)
 
-[node name="block30" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block30" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(626, 352)
 
-[node name="block31" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block31" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(526, 371)
 
-[node name="block32" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block32" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(546, 371)
 
-[node name="block33" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block33" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(566, 371)
 
-[node name="block34" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block34" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(586, 371)
 
-[node name="block35" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block35" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(606, 371)
 
-[node name="block36" parent="Blocks" instance=ExtResource("5_qpnds")]
+[node name="block36" parent="block" instance=ExtResource("5_qpnds")]
 position = Vector2(626, 371)
+
+[node name="block_2hit" type="Node" parent="."]
+
+[node name="block_2hit" parent="block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(576, 408)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 3.0
