@@ -8,8 +8,13 @@
 [node name="Title_Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme = SubResource("Theme_vmg2h")
 script = ExtResource("1_vr14v")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
 
 [node name="Panel_Container" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
