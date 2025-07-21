@@ -4,7 +4,14 @@ var level_completed := false
 var level_paths := [
 	"res://Scenes/Game_Level_1.tscn",
 	"res://Scenes/Game_Level_2.tscn",
-	"res://Scenes/Game_Level_3.tscn"
+	"res://Scenes/Game_Level_3.tscn",
+	"res://Scenes/Game_Level_4.tscn",
+	"res://Scenes/Game_Level_5.tscn",
+	"res://Scenes/Game_Level_6.tscn",
+	"res://Scenes/Game_Level_7.tscn",
+	"res://Scenes/Game_Level_8.tscn",
+	"res://Scenes/Game_Level_9.tscn",
+	"res://Scenes/Game_Level_10.tscn",
 ]
 
 func _process(_delta):

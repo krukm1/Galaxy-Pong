@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
-	Music_Controller.play_level3_music()
+	Music_Controller.play_level7_music()
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):

@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://n7s06c5tgjta"]
+
+[ext_resource type="Script" uid="uid://d174fldt65rn1" path="res://Scripts/game_level_10.gd" id="1_7k0sd"]
+[ext_resource type="PackedScene" uid="uid://cwsrahpfkndmv" path="res://Scenes/level_walls.tscn" id="2_r2nnw"]
+[ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_r1juy"]
+[ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_5m630"]
+[ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_h154k"]
+[ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="6_6ek1h"]
+
+[node name="Game_Level_10" type="Node2D"]
+script = ExtResource("1_7k0sd")
+
+[node name="Level_Walls" parent="." instance=ExtResource("2_r2nnw")]
+visible = false
+
+[node name="camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
+
+[node name="centerpoint" type="Node2D" parent="."]
+position = Vector2(576, 320)
+
+[node name="paddle" parent="." instance=ExtResource("3_r1juy")]
+position = Vector2(574, 592)
+
+[node name="ball" parent="." instance=ExtResource("4_5m630")]
+position = Vector2(575, 572)
+continuous_cd = 2
+
+[node name="block_container" type="Node" parent="."]
+script = ExtResource("5_h154k")
+
+[node name="block33" parent="block_container" instance=ExtResource("6_6ek1h")]
+position = Vector2(560, 376)
+
+[node name="block34" parent="block_container" instance=ExtResource("6_6ek1h")]
+position = Vector2(592, 376)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 3.0
+offset_top = 630.0
+offset_right = 166.0
+offset_bottom = 645.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 10
+text = "Press Esc to return to Main Menu"
