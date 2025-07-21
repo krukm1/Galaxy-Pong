@@ -10,8 +10,5 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	var collision_info = move_and_collide(block_velocity * delta, false, collision_margin, true)
 	if collision_info and collision_info.get_collider().name != "player_character":
-		#print("Collider Name: ", collision_info.get_collider().name)
-		#print("Collision Depth: ", collision_info.get_depth())
-		#print("+1 Block Destroyed!")
 		Music_Controller.play_block_break()
 		queue_free()

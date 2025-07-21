@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bydj7vv8lr22y"]
+[gd_scene load_steps=8 format=3 uid="uid://bydj7vv8lr22y"]
 
 [ext_resource type="Script" uid="uid://yie6iyqjer5a" path="res://Scripts/game_level_2.gd" id="1_uee3w"]
 [ext_resource type="PackedScene" uid="uid://cwsrahpfkndmv" path="res://Scenes/level_walls.tscn" id="2_df86t"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_yw441"]
 [ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_bepv1"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="5_qpnds"]
+[ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_yw441"]
 [ext_resource type="PackedScene" uid="uid://dec6ygnre6t4q" path="res://Scenes/block_2hit.tscn" id="6_df86t"]
 
 [node name="Game_Level_2" type="Node2D"]
@@ -26,148 +27,6 @@ continuous_cd = 2
 [node name="camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
 
-[node name="block" type="Node" parent="."]
-
-[node name="block3" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(560, 264)
-
-[node name="block4" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(592, 264)
-
-[node name="block8" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(540, 283)
-
-[node name="block9" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(560, 283)
-
-[node name="block10" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(592, 283)
-
-[node name="block11" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(612, 283)
-
-[node name="block13" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(520, 304)
-
-[node name="block14" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(540, 304)
-
-[node name="block15" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(560, 304)
-
-[node name="block16" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(592, 304)
-
-[node name="block17" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(612, 304)
-
-[node name="block18" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(632, 304)
-
-[node name="block19" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(520, 336)
-
-[node name="block20" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(540, 336)
-
-[node name="block21" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(560, 336)
-
-[node name="block22" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(592, 336)
-
-[node name="block23" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(612, 336)
-
-[node name="block24" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(632, 336)
-
-[node name="block26" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(540, 357)
-
-[node name="block27" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(560, 357)
-
-[node name="block28" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(592, 357)
-
-[node name="block29" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(612, 357)
-
-[node name="block33" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(560, 376)
-
-[node name="block34" parent="block" instance=ExtResource("5_qpnds")]
-position = Vector2(592, 376)
-
-[node name="block_2hit" type="Node" parent="."]
-
-[node name="block_2hit1" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(576, 240)
-
-[node name="block_2hit2" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(600, 244)
-
-[node name="block_2hit3" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(624, 252)
-
-[node name="block_2hit4" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(640, 270)
-
-[node name="block_2hit5" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(656, 290)
-
-[node name="block_2hit6" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(664, 310)
-
-[node name="block_2hit7" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(664, 330)
-
-[node name="block_2hit8" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(656, 351)
-
-[node name="block_2hit9" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(640, 370)
-
-[node name="block_2hit10" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(624, 388)
-
-[node name="block_2hit11" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(600, 396)
-
-[node name="block_2hit12" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(576, 400)
-
-[node name="block_2hit13" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(552, 396)
-
-[node name="block_2hit14" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(528, 388)
-
-[node name="block_2hit15" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(512, 370)
-
-[node name="block_2hit16" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(496, 351)
-
-[node name="block_2hit17" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(488, 330)
-
-[node name="block_2hit18" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(488, 310)
-
-[node name="block_2hit19" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(496, 290)
-
-[node name="block_2hit20" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(512, 270)
-
-[node name="block_2hit21" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(528, 252)
-
-[node name="block_2hit22" parent="block_2hit" instance=ExtResource("6_df86t")]
-position = Vector2(552, 244)
-
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 3.0
 offset_top = 630.0
@@ -177,3 +36,148 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 10
 text = "Press Esc to return to Main Menu"
+
+[node name="block_container" type="Node" parent="."]
+script = ExtResource("5_yw441")
+
+[node name="block" type="Node" parent="block_container"]
+
+[node name="block1" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(560, 264)
+
+[node name="block2" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(592, 264)
+
+[node name="block3" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(540, 283)
+
+[node name="block4" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(560, 283)
+
+[node name="block5" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(592, 283)
+
+[node name="block6" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(612, 283)
+
+[node name="block7" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(520, 304)
+
+[node name="block8" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(540, 304)
+
+[node name="block9" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(560, 304)
+
+[node name="block10" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(592, 304)
+
+[node name="block11" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(612, 304)
+
+[node name="block12" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(632, 304)
+
+[node name="block13" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(520, 336)
+
+[node name="block14" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(540, 336)
+
+[node name="block15" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(560, 336)
+
+[node name="block16" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(592, 336)
+
+[node name="block17" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(612, 336)
+
+[node name="block18" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(632, 336)
+
+[node name="block19" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(540, 357)
+
+[node name="block20" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(560, 357)
+
+[node name="block21" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(592, 357)
+
+[node name="block22" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(612, 357)
+
+[node name="block23" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(560, 376)
+
+[node name="block24" parent="block_container/block" instance=ExtResource("5_qpnds")]
+position = Vector2(592, 376)
+
+[node name="block_2hit" type="Node" parent="block_container"]
+
+[node name="block_2hit1" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(576, 240)
+
+[node name="block_2hit2" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(600, 244)
+
+[node name="block_2hit3" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(624, 252)
+
+[node name="block_2hit4" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(640, 270)
+
+[node name="block_2hit5" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(656, 290)
+
+[node name="block_2hit6" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(664, 310)
+
+[node name="block_2hit7" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(664, 330)
+
+[node name="block_2hit8" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(656, 351)
+
+[node name="block_2hit9" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(640, 370)
+
+[node name="block_2hit10" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(624, 388)
+
+[node name="block_2hit11" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(600, 396)
+
+[node name="block_2hit12" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(576, 400)
+
+[node name="block_2hit13" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(552, 396)
+
+[node name="block_2hit14" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(528, 388)
+
+[node name="block_2hit15" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(512, 370)
+
+[node name="block_2hit16" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(496, 351)
+
+[node name="block_2hit17" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(488, 330)
+
+[node name="block_2hit18" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(488, 310)
+
+[node name="block_2hit19" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(496, 290)
+
+[node name="block_2hit20" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(512, 270)
+
+[node name="block_2hit21" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(528, 252)
+
+[node name="block_2hit22" parent="block_container/block_2hit" instance=ExtResource("6_df86t")]
+position = Vector2(552, 244)

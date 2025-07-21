@@ -9,7 +9,7 @@ var is_locked := true  # While true, the ball stays attached in front of the pad
 @onready var paddle: CharacterBody2D = $"../paddle"  # Reference to the paddle node (assumes it's a sibling)
 
 # --- Called every physics frame ---
-func _physics_process(delta: float) -> void:
+func _physics_process(delta: float) -> void:		
 	if is_locked and paddle: 		# Lock the ball in front of the paddle until it's launched
 		# The 12.0 defines the distance between the ball and paddle face
 		global_position = paddle.global_position - (paddle.global_position - paddle.center).normalized() * 12.0
