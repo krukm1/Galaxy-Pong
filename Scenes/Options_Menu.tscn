@@ -11,6 +11,9 @@ anchors_preset = 0
 theme = SubResource("Theme_vmg2h")
 script = ExtResource("1_hex8v")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
+
 [node name="PanelContainer" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1

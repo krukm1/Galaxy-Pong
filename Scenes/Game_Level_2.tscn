@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="5_qpnds"]
 [ext_resource type="PackedScene" uid="uid://dec6ygnre6t4q" path="res://Scenes/block_2hit.tscn" id="6_df86t"]
 
-[node name="Game_Level_1" type="Node2D"]
+[node name="Game_Level_2" type="Node2D"]
 script = ExtResource("1_uee3w")
 
 [node name="Level_Walls" parent="." instance=ExtResource("2_df86t")]
@@ -170,9 +170,9 @@ position = Vector2(552, 244)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 3.0
-offset_top = 632.0
+offset_top = 630.0
 offset_right = 166.0
-offset_bottom = 647.0
+offset_bottom = 645.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 10

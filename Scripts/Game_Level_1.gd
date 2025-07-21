@@ -2,9 +2,6 @@ extends Node2D
 
 func _ready() -> void:
 	Music_Controller.play_level1_music()
-	add_to_group("blocks")
-	
-
 
 #WORKING ON PAUSE BUTTON
 #func _input(event):

@@ -2,6 +2,8 @@ extends Node
 
 var menu_music = load("res://Assets/Music/Developing_Dreams.mp3")
 var level1_music = load("res://Assets/Music/Neutralize.mp3")
+var level2_music = load("res://Assets/Music/Freelancer.mp3")
+var level_complete_music = load("res://Assets/Music/level_complete_sound.mp3")
 var block_break = load("res://Assets/Sounds/block_break_sound.mp3")
 var block_hit = load("res://Assets/Sounds/block_hit_sound.mp3")
 var start_button = load("res://Assets/Sounds/start_button.mp3")
@@ -24,6 +26,16 @@ func play_menu_music():
 func play_level1_music():
 	if not $Music.playing or $Music.stream != level1_music:
 		$Music.stream = level1_music
+		$Music.play()
+		
+func play_level2_music():
+	if not $Music.playing or $Music.stream != level2_music:
+		$Music.stream = level2_music
+		$Music.play()
+		
+func play_level_complete_music():
+	if not $Music.playing or $Music.stream != level_complete_music:
+		$Music.stream = level_complete_music
 		$Music.play()
 
 #------SFXPlayer1------
