@@ -8,6 +8,12 @@ extends RigidBody2D
 var is_locked := true  # While true, the ball stays attached in front of the paddle
 @onready var paddle: CharacterBody2D = $"../paddle"  # Reference to the paddle node (assumes it's a sibling)
 
+func _ready():
+	contact_monitor = true
+	add_to_group("Ball")
+	print("Ball ready and added to group")
+	print("Ball groups: ", get_groups())
+
 # --- Called every physics frame ---
 func _physics_process(delta: float) -> void:		
 	if is_locked and paddle: 		# Lock the ball in front of the paddle until it's launched

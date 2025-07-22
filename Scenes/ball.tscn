@@ -58,7 +58,7 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_07ia0"]
 
-[node name="Ball" type="RigidBody2D" groups=["Ball"]]
+[node name="ball" type="RigidBody2D" groups=["Ball"]]
 collision_layer = 3
 mass = 0.001
 physics_material_override = SubResource("PhysicsMaterial_ij5cq")

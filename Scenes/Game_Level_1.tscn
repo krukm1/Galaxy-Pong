@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://by6b56obrm1sf"]
+[gd_scene load_steps=6 format=3 uid="uid://by6b56obrm1sf"]
 
 [ext_resource type="Script" uid="uid://dbogqekd7ifej" path="res://Scripts/game_level_1.gd" id="1_uqoqq"]
-[ext_resource type="PackedScene" uid="uid://cwsrahpfkndmv" path="res://Scenes/level_walls.tscn" id="2_sfp2t"]
 [ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_qibkd"]
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_xw3eb"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="7_tl1kq"]
@@ -9,8 +8,6 @@
 
 [node name="Game_Level_1" type="Node2D"]
 script = ExtResource("1_uqoqq")
-
-[node name="Level_Walls" parent="." instance=ExtResource("2_sfp2t")]
 
 [node name="centerpoint" type="Node2D" parent="."]
 position = Vector2(576, 320)
@@ -49,35 +46,11 @@ position = Vector2(626, 271)
 [node name="block7" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 290)
 
-[node name="block8" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(546, 290)
-
-[node name="block9" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(566, 290)
-
-[node name="block10" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(586, 290)
-
-[node name="block11" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(606, 290)
-
 [node name="block12" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 290)
 
 [node name="block13" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 310)
-
-[node name="block14" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(546, 310)
-
-[node name="block15" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(566, 310)
-
-[node name="block16" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(586, 310)
-
-[node name="block17" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(606, 310)
 
 [node name="block18" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 310)
@@ -85,35 +58,11 @@ position = Vector2(626, 310)
 [node name="block19" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 329)
 
-[node name="block20" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(546, 329)
-
-[node name="block21" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(566, 329)
-
-[node name="block22" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(586, 329)
-
-[node name="block23" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(606, 329)
-
 [node name="block24" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 329)
 
 [node name="block25" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 348)
-
-[node name="block26" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(546, 348)
-
-[node name="block27" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(566, 348)
-
-[node name="block28" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(586, 348)
-
-[node name="block29" parent="block_container" instance=ExtResource("7_tl1kq")]
-position = Vector2(606, 348)
 
 [node name="block30" parent="block_container" instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 348)

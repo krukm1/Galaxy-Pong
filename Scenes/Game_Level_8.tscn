@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://ct2fsc5e88rjf"]
+[gd_scene load_steps=6 format=3 uid="uid://ct2fsc5e88rjf"]
 
 [ext_resource type="Script" uid="uid://cgk70skprurp1" path="res://Scripts/game_level_8.gd" id="1_ykyxx"]
-[ext_resource type="PackedScene" uid="uid://cwsrahpfkndmv" path="res://Scenes/level_walls.tscn" id="2_csrdh"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_ghf3m"]
 [ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_o3gpf"]
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_8wggk"]
@@ -9,9 +8,6 @@
 
 [node name="Game_Level_8" type="Node2D"]
 script = ExtResource("1_ykyxx")
-
-[node name="Level_Walls" parent="." instance=ExtResource("2_csrdh")]
-visible = false
 
 [node name="camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
