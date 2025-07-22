@@ -13,12 +13,13 @@ var level9_music = load("res://Assets/Music/Retrofuturism.mp3")
 var level10_music = load("res://Assets/Music/Late_Ignition.mp3")
 var level_complete_music = load("res://Assets/Music/level_complete_sound.mp3")
 var block_break = load("res://Assets/Sounds/block_break_sound.mp3")
-var block_hit = load("res://Assets/Sounds/block_hit_sound.mp3")
 var start_button = load("res://Assets/Sounds/start_button.mp3")
 var exit_esc_button = load("res://Assets/Sounds/exit_esc_button.mp3")
 var menu_forward_button = load("res://Assets/Sounds/button1.mp3")
 var menu_back_button = load("res://Assets/Sounds/button2.mp3")
 var button_hover = load("res://Assets/Sounds/button_hover.mp3")
+var block_hit = load("res://Assets/Sounds/block_hit_sound.mp3")
+var ball_lost = load("res://Assets/Sounds/ball_lost3.mp3")
 
 func _ready():
 	pass
@@ -113,5 +114,9 @@ func play_button_hover():
 		$SFXPlayer2.play()
 		
 func play_block_hit():
-		$SFXPlayer1.stream = block_hit
-		$SFXPlayer1.play()
+		$SFXPlayer2.stream = block_hit
+		$SFXPlayer2.play()
+
+func play_ball_lost():
+		$SFXPlayer2.stream = ball_lost
+		$SFXPlayer2.play()

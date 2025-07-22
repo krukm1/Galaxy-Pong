@@ -32,8 +32,16 @@ func _physics_process(delta: float) -> void:
 				var to_center = (paddle.center - global_position).normalized() * velocity.length()
 				# Blend the bounce with the assist vector, then normalize to maintain constant speed.
 				velocity = bounced_velocity.lerp(to_center, 0.35).normalized() * base_speed
+			elif collider.is_in_group("Wall"):
+				print("Ball hit wall — losing life.")
+				Music_Controller.play_ball_lost()
+				queue_free()
+				GameState.balls_left -= 1
+				if GameState.balls_left > 0:
+					get_parent().call_deferred("_respawn_ball")  # Make sure this exists
+				else:
+					print("Game Over")
 			else:
-				# For all other collisions, bounce and reset speed to base_speed
 				velocity = bounced_velocity.normalized() * base_speed
 
 # --- Called when a player presses a key or button ---

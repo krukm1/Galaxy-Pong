@@ -19,6 +19,7 @@ config/icon="uid://cw2gc8v4l337j"
 
 Background_Star_Fields="*res://Scenes/AutoLoads/background_star_fields.tscn"
 Music_Controller="*res://Scenes/AutoLoads/Music_Controller.tscn"
+GameState="*res://Scripts/GameState.gd"
 
 [display]
 

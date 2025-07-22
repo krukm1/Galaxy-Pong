@@ -1,20 +1,23 @@
-extends Area2D
+extends StaticBody2D
 
 func _ready():
-	connect("body_entered", Callable(self, "_on_body_entered"))
-	print("bottom_wall ready")
+	if not is_connected("body_entered", Callable(self, "_on_body_entered")):
+		connect("body_entered", Callable(self, "_on_body_entered"))
+	print(name, " ready")
 
 func _on_body_entered(body):
-	print("Something entered bottom wall: ", body)
+	print(name, " hit by: ", body)
 	if body and body.is_in_group("Ball"):
 		print("Ball detected — life lost!")
 		body.queue_free()
+
 		GameState.balls_left -= 1
 
 		if GameState.balls_left > 0:
 			call_deferred("_respawn_ball")
 		else:
-			print("Game Over")
+			print("GAME OVER")
+			# TODO: trigger game over screen or reset
 
 func _respawn_ball():
 	var ball_scene = preload("res://Scenes/ball.tscn")

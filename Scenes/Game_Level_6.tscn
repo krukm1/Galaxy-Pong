@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c6jt31lmqpi35"]
+[gd_scene load_steps=7 format=3 uid="uid://c6jt31lmqpi35"]
 
 [ext_resource type="Script" uid="uid://mhibdqtatusv" path="res://Scripts/game_level_6.gd" id="1_cmvd5"]
+[ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cmvd5"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_fr5ht"]
 [ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_oq3kd"]
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_4boi4"]
@@ -9,17 +10,19 @@
 [node name="Game_Level_6" type="Node2D"]
 script = ExtResource("1_cmvd5")
 
-[node name="camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 320)
+[node name="level_walls" parent="." instance=ExtResource("2_cmvd5")]
 
 [node name="centerpoint" type="Node2D" parent="."]
 position = Vector2(576, 320)
 
+[node name="camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
+
 [node name="paddle" parent="." instance=ExtResource("3_fr5ht")]
-position = Vector2(574, 592)
+position = Vector2(576, 619)
 
 [node name="ball" parent="." instance=ExtResource("4_oq3kd")]
-position = Vector2(575, 572)
+position = Vector2(575, 605)
 continuous_cd = 2
 
 [node name="block_container" type="Node" parent="."]
@@ -40,3 +43,13 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 10
 text = "Press Esc to return to Main Menu"
+
+[node name="level_label" type="RichTextLabel" parent="."]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 166.0
+offset_bottom = 12.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 10
+text = "Level 6"
