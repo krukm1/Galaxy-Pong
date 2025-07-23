@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1753156895
+::res://::1753241682
 galaxy-pong-icon.png::CompressedTexture2D/CompressedTexture2D::6373103767371845545::1752805933::1752805933::1::::<><><>0<>0<>93a47455b69ac85060e366959c871bcb<>res://.godot/imported/galaxy-pong-icon.png-231beab21fb3e665548374fe0d3ebfcc.ctex::
 README.md::TextFile/TextFile::-1::1753059539::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1752801824
@@ -18,8 +18,8 @@ Montreal-Bold.ttf::FontFile/FontFile::507583591941745798::1748707524::1748707725
 Poco.ttf::FontFile/FontFile::5337250782204784793::1748707524::1748707725::1::::<><><>0<>0<>565c96f6122805025eb7f4a470c0c8b8<>res://.godot/imported/Poco.ttf-e9fb7ccb22ae482a26826b478259e715.fontdata::
 ::res://Assets/Fonts/Title Screen Font Theme/::1753151015
 Organic Relief.ttf::FontFile/FontFile::8692691831746706164::1748707524::1748707725::1::::<><><>0<>0<>b83bfdfcb236ea14530dec859acacf25<>res://.godot/imported/Organic Relief.ttf-ee84e451974b1786251ee36e70f17ff6.fontdata::
-Title Button Theme.tres::Theme::8258038536869127257::1753151015::0::1::::<><><>0<>0<><>::uid://dv32mnkmt7xdc::::res://Assets/Fonts/Title Screen Font Theme/Organic Relief.ttf
-::res://Assets/Music/::1753146568
+Title Button Theme.tres::Theme/Theme::8258038536869127257::1753151015::0::1::::<><><>0<>0<><>::uid://dv32mnkmt7xdc::::res://Assets/Fonts/Title Screen Font Theme/Organic Relief.ttf
+::res://Assets/Music/::1753241752
 Developing_Dreams.mp3::AudioStreamMP3/AudioStreamMP3::3625061304010293386::1748707524::1752803531::1::::<><><>0<>0<>0ed267e35c48718eb1baab56d8527c32<>res://.godot/imported/Developing_Dreams.mp3-10628b75d57e1d156a64ed131b823146.mp3str::
 Escape_Route.mp3::AudioStreamMP3/AudioStreamMP3::8038646442853600783::1748707524::1753063876::1::::<><><>0<>0<>b49a5e4e5c5139f693906148ad50de59<>res://.godot/imported/Escape_Route.mp3-6bc6ecc3e1aaac02c4e6baf91b9f2f76.mp3str::
 Farm_Lands.mp3::AudioStreamMP3/AudioStreamMP3::4393327366136717380::1753146533::1753146534::1::::<><><>0<>0<>c1141c5442672cc1032f4df18e4890ea<>res://.godot/imported/Farm_Lands.mp3-69a6b4c43a444ce5f86e62379edd4cf9.mp3str::
@@ -30,8 +30,8 @@ Moon_Cheese_Burger.mp3::AudioStreamMP3/AudioStreamMP3::8994706995761427651::1748
 Neutralize.mp3::AudioStreamMP3/AudioStreamMP3::9123262972525453339::1748707524::1752803539::1::::<><><>0<>0<>55f59c71f2b249861cd64dd3a3763649<>res://.godot/imported/Neutralize.mp3-d4745fd3b61e1b3f7a5221792a5f54a0.mp3str::
 Retrofuturism.mp3::AudioStreamMP3/AudioStreamMP3::7864536532501970810::1748707524::1753063876::1::::<><><>0<>0<>b6a2bf135e341358283e393df4848bc6<>res://.godot/imported/Retrofuturism.mp3-320dedc93dfbe6c879d2a83d08ce90ca.mp3str::
 Samurais_Call.mp3::AudioStreamMP3/AudioStreamMP3::7987934074043108100::1753146533::1753146534::1::::<><><>0<>0<>309dba73d80be2005efb259790705cf1<>res://.godot/imported/Samurais_Call.mp3-96a1bb18929d2595c3a858ca6648e3d4.mp3str::
-::res://Assets/Sounds/::1753156900
-ball_lost.mp3::AudioStreamMP3/AudioStreamMP3::3969975359371263920::1753156082::1753153850::1::::<><><>0<>0<>4e72b8efa2cca9854c47682a2ec5bc5e<>res://.godot/imported/ball_lost.mp3-09590162bd9fec2d36f6786a6f178d3d.mp3str::
+::res://Assets/Sounds/::1753241752
+ball_lost.mp3::AudioStreamMP3::3969975359371263920::1753241752::1753241760::1::::<><><>0<>0<>4e72b8efa2cca9854c47682a2ec5bc5e<>res://.godot/imported/ball_lost.mp3-09590162bd9fec2d36f6786a6f178d3d.mp3str::
 block_break_sound.mp3::AudioStreamMP3/AudioStreamMP3::5092736863664392196::1748707524::1748707725::1::::<><><>0<>0<>426598f6066508fca61110f2e73db230<>res://.godot/imported/block_break_sound.mp3-04ede11aa7e23aebac719dabb6cffb5a.mp3str::
 block_hit_sound.mp3::AudioStreamMP3/AudioStreamMP3::2657676845595445450::1753037303::1753037447::1::::<><><>0<>0<>f016c0c01eb043d75419abed6176b417<>res://.godot/imported/block_hit_sound.mp3-ef43497d0e83c54209e78892300bd689.mp3str::
 button1.mp3::AudioStreamMP3/AudioStreamMP3::3860758154957872275::1748707524::1748707725::1::::<><><>0<>0<>4d2b2cb08f45a7274bb1f2ee54906f92<>res://.godot/imported/button1.mp3-3cd461406f1c7aae94ddf752fe8f4ef2.mp3str::
@@ -39,7 +39,7 @@ button2.mp3::AudioStreamMP3/AudioStreamMP3::464462615892982444::1748707524::1748
 button_hover.mp3::AudioStreamMP3/AudioStreamMP3::2900592458249907034::1748707524::1748707725::1::::<><><>0<>0<>15f227b1c854ce09ea6bb3d4925ed12a<>res://.godot/imported/button_hover.mp3-73954b79dbba1c3eadcfcdc2183bb1cb.mp3str::
 complete.mp3::AudioStreamMP3/AudioStreamMP3::7239498811016127698::1748707524::1748707725::1::::<><><>0<>0<>03f855d182c4cc0e672f8f80613870c6<>res://.godot/imported/complete.mp3-4fa2f3fec2afc3fb0d78ef966721b8cc.mp3str::
 exit_esc_button.mp3::AudioStreamMP3/AudioStreamMP3::365282253938092987::1748707524::1748707725::1::::<><><>0<>0<>210456598eeea344f7e28995d3fe7b33<>res://.godot/imported/exit_esc_button.mp3-046297d946051ffcf2b7422802006815.mp3str::
-final_level.mp3::AudioStreamMP3::2961826961270189481::1753156900::1753156900::1::::<><><>0<>0<>9424252e9610166e57fc235d9988a24e<>res://.godot/imported/final_level.mp3-a94b38d45b3e99a1f4e527d4c533865b.mp3str::
+final_level.mp3::AudioStreamMP3/AudioStreamMP3::2961826961270189481::1753156900::1753156900::1::::<><><>0<>0<>9424252e9610166e57fc235d9988a24e<>res://.godot/imported/final_level.mp3-a94b38d45b3e99a1f4e527d4c533865b.mp3str::
 gain_ball.mp3::AudioStreamMP3/AudioStreamMP3::1264884473136997464::1748707524::1748707725::1::::<><><>0<>0<>384faaf77ec89dce0c8dde74167dd197<>res://.godot/imported/gain_ball.mp3-0b231fae2a486fde8008a7655900e23a.mp3str::
 load.mp3::AudioStreamMP3/AudioStreamMP3::7011714724938854129::1748707524::1748707725::1::::<><><>0<>0<>120fcf1a6873d8feee710634a6c97745<>res://.godot/imported/load.mp3-3adbf949dca81246eda36b5c711e9da7.mp3str::
 lose_game_sound.mp3::AudioStreamMP3/AudioStreamMP3::5068520574952648218::1753156728::1753156728::1::::<><><>0<>0<>294b86967e467ca10162b6545f929cca<>res://.godot/imported/lose_game_sound.mp3-919534e6013406b669d177dd690e3fc3.mp3str::
@@ -95,36 +95,36 @@ red_paddle_curved.png::CompressedTexture2D/CompressedTexture2D::8976309400037732
 ::res://Assets/Sprites/Planets/PNGs/::1753026205
 Earth-Like planet - Without back glow.png::CompressedTexture2D/CompressedTexture2D::7202853490757489187::1753026204::1753026205::1::::<><><>0<>0<>c78cdda070f9246fc7c291222990d7f9<>res://.godot/imported/Earth-Like planet - Without back glow.png-3b914f02d93564a6b657f6f3ee4c7070.ctex::
 Earth-Like planet.png::CompressedTexture2D/CompressedTexture2D::466009418646074166::1753026204::1753026205::1::::<><><>0<>0<>24aab7d5bf999463ee9394630b7a7061<>res://.godot/imported/Earth-Like planet.png-7980075f53505f310ba83140053f4e0a.ctex::
-::res://Scenes/::1753156788
+::res://Scenes/::1753241752
 Asteroid.tscn::PackedScene/PackedScene::6925192306101897086::1752805248::0::1::::<><><>0<>0<><>::uid://dt5plcjjhdeeu::::res://Assets/Sprites/astroid_sprite.png
-ball.tscn::PackedScene::641910444864671406::1753152683::0::1::::<><><>0<>0<><>::uid://k4w1wuprx84c::::res://Scripts/ball.gd<>uid://co3oy130yl17h::::res://Assets/Sprites/energy_ball.png
+ball.tscn::PackedScene::641910444864671406::1753241752::0::1::::<><><>0<>0<><>::uid://k4w1wuprx84c::::res://Scripts/ball.gd<>uid://co3oy130yl17h::::res://Assets/Sprites/energy_ball.png
 block.tscn::PackedScene/PackedScene::3247062633274058678::1753028550::0::1::::<><><>0<>0<><>::uid://c0axqtxdcqy3v::::res://Scripts/block.gd<>uid://bbha3bvj1hp1p::::res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png
 block_2hit.tscn::PackedScene/PackedScene::7446071602970577358::1753040243::0::1::::<><><>0<>0<><>::uid://cer00wtmgp4k8::::res://Scripts/block_2hit.gd<>uid://bbha3bvj1hp1p::::res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png
-Game_Level_1.tscn::PackedScene::4135064582111416417::1753155186::0::1::::<><><>0<>0<><>::uid://dbogqekd7ifej::::res://Scripts/game_level_1.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn
-Game_Level_2.tscn::PackedScene::4077750799553927218::1753155180::0::1::::<><><>0<>0<><>::uid://yie6iyqjer5a::::res://Scripts/game_level_2.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://dec6ygnre6t4q::::res://Scenes/block_2hit.tscn
-Game_Level_3.tscn::PackedScene::6839219647762101785::1753156788::0::1::::<><><>0<>0<><>::uid://cnbop2mif28f5::::res://Scripts/game_level_3.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-Game_Level_4.tscn::PackedScene::338983533149918661::1753155178::0::1::::<><><>0<>0<><>::uid://ca65kej6av1e1::::res://Scripts/game_level_4.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-Game_Level_5.tscn::PackedScene::8971785911109391472::1753155226::0::1::::<><><>0<>0<><>::uid://dd1grnb5whgpj::::res://Scripts/game_level_5.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-Game_Level_6.tscn::PackedScene::6968479928210802478::1753155249::0::1::::<><><>0<>0<><>::uid://mhibdqtatusv::::res://Scripts/game_level_6.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-Game_Level_7.tscn::PackedScene::1614376576366619072::1753155274::0::1::::<><><>0<>0<><>::uid://d2jc27hf1cpqc::::res://Scripts/game_level_7.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-Game_Level_8.tscn::PackedScene::6162503476740542355::1753155292::0::1::::<><><>0<>0<><>::uid://cgk70skprurp1::::res://Scripts/game_level_8.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-Game_Level_9.tscn::PackedScene::3781936718694502053::1753155316::0::1::::<><><>0<>0<><>::uid://cj1aspemivuc6::::res://Scripts/game_level_9.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-Game_Level_10.tscn::PackedScene::979654238843915850::1753156223::0::1::::<><><>0<>0<><>::uid://d174fldt65rn1::::res://Scripts/game_level_10.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
-level_walls.tscn::PackedScene::3281540254661483271::1753153596::0::1::::<><><>0<>0<><>::
-Options_Menu.tscn::PackedScene::4301641105491787283::1753151016::0::1::::<><><>0<>0<><>::uid://cvtlrenhjj8v1::::res://Scripts/options_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
+Game_Level_1.tscn::PackedScene::4135064582111416417::1753241752::0::1::::<><><>0<>0<><>::uid://dbogqekd7ifej::::res://Scripts/game_level_1.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn
+Game_Level_2.tscn::PackedScene/PackedScene::4077750799553927218::1753155180::0::1::::<><><>0<>0<><>::uid://yie6iyqjer5a::::res://Scripts/game_level_2.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://dec6ygnre6t4q::::res://Scenes/block_2hit.tscn
+Game_Level_3.tscn::PackedScene/PackedScene::6839219647762101785::1753241752::0::1::::<><><>0<>0<><>::uid://cnbop2mif28f5::::res://Scripts/game_level_3.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+Game_Level_4.tscn::PackedScene/PackedScene::338983533149918661::1753155178::0::1::::<><><>0<>0<><>::uid://ca65kej6av1e1::::res://Scripts/game_level_4.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+Game_Level_5.tscn::PackedScene/PackedScene::8971785911109391472::1753155226::0::1::::<><><>0<>0<><>::uid://dd1grnb5whgpj::::res://Scripts/game_level_5.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+Game_Level_6.tscn::PackedScene/PackedScene::6968479928210802478::1753155249::0::1::::<><><>0<>0<><>::uid://mhibdqtatusv::::res://Scripts/game_level_6.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+Game_Level_7.tscn::PackedScene/PackedScene::1614376576366619072::1753155274::0::1::::<><><>0<>0<><>::uid://d2jc27hf1cpqc::::res://Scripts/game_level_7.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+Game_Level_8.tscn::PackedScene/PackedScene::6162503476740542355::1753155292::0::1::::<><><>0<>0<><>::uid://cgk70skprurp1::::res://Scripts/game_level_8.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+Game_Level_9.tscn::PackedScene/PackedScene::3781936718694502053::1753155316::0::1::::<><><>0<>0<><>::uid://cj1aspemivuc6::::res://Scripts/game_level_9.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+Game_Level_10.tscn::PackedScene/PackedScene::979654238843915850::1753156223::0::1::::<><><>0<>0<><>::uid://d174fldt65rn1::::res://Scripts/game_level_10.gd<>uid://bm0uqu1f7vhqd::::res://Scenes/level_walls.tscn<>uid://dcpol23arf233::::res://Scenes/paddle.tscn<>uid://je7f27rxtiks::::res://Scenes/ball.tscn<>uid://ctynpx2edx0vv::::res://Scripts/block_container.gd<>uid://bmi5waekhgxo5::::res://Scenes/block.tscn
+level_walls.tscn::PackedScene/PackedScene::3281540254661483271::1753153596::0::1::::<><><>0<>0<><>::
+Options_Menu.tscn::PackedScene/PackedScene::4301641105491787283::1753151016::0::1::::<><><>0<>0<><>::uid://cvtlrenhjj8v1::::res://Scripts/options_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
 paddle.tscn::PackedScene/PackedScene::7331476547705872888::1752938579::0::1::::<><><>0<>0<><>::uid://bp223ehsa1aan::::res://Scripts/paddle.gd<>uid://k1l5v03ccmyk::::res://Assets/Sprites/paddle_sprites/green_paddle_curved.png
 Pause_Menu.tscn::PackedScene/PackedScene::8599179814012605099::1753066321::0::1::::<><><>0<>0<><>::uid://broc2673awmki::::res://Scripts/Pause_Menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
-Title_Menu.tscn::PackedScene::6981931694438665791::1753150852::0::1::::<><><>0<>0<><>::uid://cgvw1iq1qdx0l::::res://Scripts/title_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
+Title_Menu.tscn::PackedScene/PackedScene::6981931694438665791::1753150852::0::1::::<><><>0<>0<><>::uid://cgvw1iq1qdx0l::::res://Scripts/title_menu.gd<>uid://dpwixnssaflu4::::res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
 ::res://Scenes/AutoLoads/::1753040243
 background_star_fields.tscn::PackedScene/PackedScene::7279675772893937745::1748707524::0::1::::<><><>0<>0<><>::
 Music_Controller.tscn::PackedScene/PackedScene::1123613197834867472::1753040243::0::1::::<><><>0<>0<><>::uid://bodoybu2govkk::::res://Scripts/Music_Controller.gd
-::res://Scripts/::1753156220
-ball.gd::GDScript::763138782845430536::1753153362::0::1::::<>RigidBody2D<><>0<>0<><>::
+::res://Scripts/::1753241752
+ball.gd::GDScript/GDScript::763138782845430536::1753241752::0::1::::<>RigidBody2D<><>0<>0<><>::
 block.gd::GDScript/GDScript::6528988555486909549::1753068905::0::1::::<>StaticBody2D<><>0<>0<><>::
 block_2hit.gd::GDScript/GDScript::5090254918842985473::1753036745::0::1::::<>StaticBody2D<><>0<>0<><>::
 block_container.gd::GDScript/GDScript::6156791820354246379::1753070669::0::1::::<>Node<><>0<>0<><>::
-GameState.gd::GDScript::5442377738906655210::1753147038::0::1::::<>Node<><>0<>0<><>::
-game_level_1.gd::GDScript::7258745283654083653::1753153611::0::1::::<>Node2D<><>0<>0<><>::
+GameState.gd::GDScript/GDScript::5442377738906655210::1753147038::0::1::::<>Node<><>0<>0<><>::
+Game_Level_1.gd::GDScript::-1::1753241752::0::1::::<>Node2D<><>0<>0<><>::
 game_level_2.gd::GDScript/GDScript::1701345954928651888::1753065610::0::1::::<>Node2D<><>0<>0<><>::
 game_level_3.gd::GDScript/GDScript::5688238974281358324::1753071188::0::1::::<>Node2D<><>0<>0<><>::
 game_level_4.gd::GDScript/GDScript::4838676670890092114::1753070755::0::1::::<>Node2D<><>0<>0<><>::
@@ -134,10 +134,10 @@ game_level_7.gd::GDScript/GDScript::9073111571336534510::1753070964::0::1::::<>N
 game_level_8.gd::GDScript/GDScript::5216606756944545516::1753070978::0::1::::<>Node2D<><>0<>0<><>::
 game_level_9.gd::GDScript/GDScript::5458247720610570075::1753071033::0::1::::<>Node2D<><>0<>0<><>::
 game_level_10.gd::GDScript/GDScript::9052002378854973464::1753071068::0::1::::<>Node2D<><>0<>0<><>::
-main_menu.gd::GDScript::8740632870246258073::1753153631::0::1::::<>CanvasLayer<><>0<>0<><>::
-Music_Controller.gd::GDScript::3376150609494969570::1753156220::0::1::::<>Node<><>0<>0<><>::
+main_menu.gd::GDScript/GDScript::8740632870246258073::1753153631::0::1::::<>CanvasLayer<><>0<>0<><>::
+Music_Controller.gd::GDScript::3376150609494969570::1753241752::0::1::::<>Node<><>0<>0<><>::
 options_menu.gd::GDScript/GDScript::6286728737035157856::1752951562::0::1::::<>Control<><>0<>0<><>::
 paddle.gd::GDScript/GDScript::3496681120383123421::1752948554::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Pause_Menu.gd::GDScript/GDScript::3608703643448120124::1752952989::0::1::::<>Control<><>0<>0<><>::
 title_menu.gd::GDScript/GDScript::5238709012638560785::1748707524::0::1::::<>Control<><>0<>0<><>::
-wall_kill.gd::GDScript::2211723059986746187::1753152394::0::1::::<>StaticBody2D<><>0<>0<><>::
+wall_kill.gd::GDScript/GDScript::2211723059986746187::1753152394::0::1::::<>StaticBody2D<><>0<>0<><>::
