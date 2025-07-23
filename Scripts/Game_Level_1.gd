@@ -7,6 +7,12 @@ func _ready() -> void:
 	Music_Controller.play_level1_music()
 	_respawn_ball()
 
+func _fade_out_nodes():
+	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
+		if node is CanvasItem:  # Makes sure it has modulate property (e.g., Sprite2D, Label, etc.)
+			var tween := create_tween()
+			tween.tween_property(node, "modulate:a", 0.0, 8)  # Fade alpha to 0 over 1.5 seconds
+
 func _respawn_ball():
 	var new_ball = ball_scene.instantiate()
 	new_ball.paddle = paddle
@@ -23,7 +29,10 @@ func _on_ball_lost():
 	else:
 		print("Game Over")
 		Music_Controller.play_game_over_music()   
-		await get_tree().create_timer(10.0).timeout
+		
+		_fade_out_nodes()  # ← Fade paddle & blocks
+		
+		await get_tree().create_timer(25.0).timeout
 		get_tree().change_scene_to_file("res://Scenes/Title_Menu.tscn")
 		# TODO: show a retry screen or restart
 

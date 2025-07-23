@@ -17,70 +17,70 @@ position = Vector2(576, 320)
 [node name="camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
 
-[node name="paddle" parent="." instance=ExtResource("8_egejd")]
+[node name="paddle" parent="." groups=["FadeOnGameOver"] instance=ExtResource("8_egejd")]
 position = Vector2(576, 619)
 
 [node name="block_container" type="Node" parent="."]
 script = ExtResource("5_xw3eb")
 
-[node name="block1" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block1" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 271)
 
-[node name="block2" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block2" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(546, 271)
 
-[node name="block3" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block3" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(566, 271)
 
-[node name="block4" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block4" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(586, 271)
 
-[node name="block5" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block5" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(606, 271)
 
-[node name="block6" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block6" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 271)
 
-[node name="block7" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block7" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 290)
 
-[node name="block12" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block12" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 290)
 
-[node name="block13" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block13" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 310)
 
-[node name="block18" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block18" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 310)
 
-[node name="block19" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block19" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 329)
 
-[node name="block24" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block24" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 329)
 
-[node name="block25" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block25" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 348)
 
-[node name="block30" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block30" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 348)
 
-[node name="block31" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block31" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(526, 367)
 
-[node name="block32" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block32" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(546, 367)
 
-[node name="block33" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block33" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(566, 367)
 
-[node name="block34" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block34" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(586, 367)
 
-[node name="block35" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block35" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(606, 367)
 
-[node name="block36" parent="block_container" instance=ExtResource("7_tl1kq")]
+[node name="block36" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
 position = Vector2(626, 367)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]

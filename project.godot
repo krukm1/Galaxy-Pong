@@ -25,6 +25,10 @@ GameState="*res://Scripts/GameState.gd"
 
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+FadeOnGameOver=""
+
 [input]
 
 ui_left={
