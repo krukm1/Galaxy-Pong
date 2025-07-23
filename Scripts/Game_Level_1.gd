@@ -18,6 +18,7 @@ func _respawn_ball():
 func _on_ball_lost():
 	GameState.balls_left -= 1
 	if GameState.balls_left > 0:
+		Music_Controller.play_ball_lost()
 		_respawn_ball()
 	else:
 		print("Game Over")

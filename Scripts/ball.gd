@@ -37,7 +37,6 @@ func _physics_process(delta: float) -> void:
 				# ... collision logic ...
 			elif collider.is_in_group("Wall"):
 					print("Ball hit wall — losing life.")
-					Music_Controller.play_ball_lost()
 					queue_free()
 					emit_signal("ball_lost")  # ← Step 2: Emit the signal
 
