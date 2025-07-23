@@ -19,7 +19,7 @@ var menu_forward_button = load("res://Assets/Sounds/button1.mp3")
 var menu_back_button = load("res://Assets/Sounds/button2.mp3")
 var button_hover = load("res://Assets/Sounds/button_hover.mp3")
 var block_hit = load("res://Assets/Sounds/block_hit_sound.mp3")
-var ball_lost = load("res://Assets/Sounds/ball_lost3.mp3")
+var ball_lost = load("res://Assets/Sounds/ball_lost.mp3")
 
 func _ready():
 	pass
