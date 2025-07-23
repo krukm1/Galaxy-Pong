@@ -15,9 +15,9 @@ Medium Priority
 - Add freezing astroid
 
 Low Priority
-- Add life visual indocator
+- Add life visual indicator
 - Add effects when blocks break
 - add level complete visual celebration
 - add fade in before level starts
-- add fade out when legel is complete
+- add fade out when level is complete
 - Add last block aim assist
