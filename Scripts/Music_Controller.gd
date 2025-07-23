@@ -12,6 +12,7 @@ var level8_music = load("res://Assets/Music/Retrofuturism.mp3")
 var level9_music = load("res://Assets/Music/Retrofuturism.mp3")
 var level10_music = load("res://Assets/Music/Late_Ignition.mp3")
 var level_complete_music = load("res://Assets/Music/level_complete_sound.mp3")
+var game_over_music = load("res://Assets/Music/game_over2.mp3")
 var block_break = load("res://Assets/Sounds/block_break_sound.mp3")
 var start_button = load("res://Assets/Sounds/start_button.mp3")
 var exit_esc_button = load("res://Assets/Sounds/exit_esc_button.mp3")
@@ -19,7 +20,7 @@ var menu_forward_button = load("res://Assets/Sounds/button1.mp3")
 var menu_back_button = load("res://Assets/Sounds/button2.mp3")
 var button_hover = load("res://Assets/Sounds/button_hover.mp3")
 var block_hit = load("res://Assets/Sounds/block_hit_sound.mp3")
-var ball_lost = load("res://Assets/Sounds/ball_lost.mp3")
+var ball_lost = load("res://Assets/Sounds/lost_ball2.mp3")
 
 func _ready():
 	pass
@@ -85,6 +86,11 @@ func play_level10_music():
 func play_level_complete_music():
 	if not $Music.playing or $Music.stream != level_complete_music:
 		$Music.stream = level_complete_music
+		$Music.play()
+		
+func play_game_over_music():
+	if not $Music.playing or $Music.stream != game_over_music:
+		$Music.stream = game_over_music
 		$Music.play()
 
 #------SFXPlayer1------

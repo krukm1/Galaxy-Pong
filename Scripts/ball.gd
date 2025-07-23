@@ -1,5 +1,7 @@
 extends RigidBody2D
 
+signal ball_lost  # ← Step 1: Define the signal
+
 # --- Exported variables ---
 @export var base_speed := 250.0  # The consistent speed the ball should maintain after bouncing
 @export var velocity := Vector2(0, -250)  # The initial direction and speed of the ball (upward)
@@ -32,17 +34,12 @@ func _physics_process(delta: float) -> void:
 				var to_center = (paddle.center - global_position).normalized() * velocity.length()
 				# Blend the bounce with the assist vector, then normalize to maintain constant speed.
 				velocity = bounced_velocity.lerp(to_center, 0.35).normalized() * base_speed
+				# ... collision logic ...
 			elif collider.is_in_group("Wall"):
-				print("Ball hit wall — losing life.")
-				Music_Controller.play_ball_lost()
-				queue_free()
-				GameState.balls_left -= 1
-				if GameState.balls_left > 0:
-					get_parent().call_deferred("_respawn_ball")  # Make sure this exists
-				else:
-					print("Game Over")
-			else:
-				velocity = bounced_velocity.normalized() * base_speed
+					print("Ball hit wall — losing life.")
+					Music_Controller.play_ball_lost()
+					queue_free()
+					emit_signal("ball_lost")  # ← Step 2: Emit the signal
 
 # --- Called when a player presses a key or button ---
 func _input(event: InputEvent) -> void:
