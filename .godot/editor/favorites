@@ -1,0 +1,6 @@
+res://Scripts/ball.gd
+res://Scripts/block.gd
+res://Scenes/Game_Level_1.tscn
+res://Scripts/Game_Level_1.gd
+res://Scripts/Music_Controller.gd
+res://Scripts/paddle.gd
