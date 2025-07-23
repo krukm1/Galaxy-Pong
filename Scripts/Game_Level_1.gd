@@ -23,7 +23,7 @@ func _on_ball_lost():
 	else:
 		print("Game Over")
 		Music_Controller.play_game_over_music()   
-		await get_tree().create_timer(6.0).timeout
+		await get_tree().create_timer(10.0).timeout
 		get_tree().change_scene_to_file("res://Scenes/Title_Menu.tscn")
 		# TODO: show a retry screen or restart
 
