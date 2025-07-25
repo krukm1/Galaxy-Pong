@@ -17,16 +17,16 @@ position = Vector2(576, 320)
 [node name="camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
 
-[node name="paddle" parent="." groups=["FadeOnGameOver"] instance=ExtResource("3_0idtv")]
+[node name="paddle" parent="." instance=ExtResource("3_0idtv")]
 position = Vector2(576, 619)
 
-[node name="block_container" type="Node" parent="." groups=["FadeOnGameOver"]]
+[node name="block_container" type="Node" parent="."]
 script = ExtResource("5_cfxxc")
 
-[node name="block33" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("5_lvtny")]
+[node name="block33" parent="block_container" instance=ExtResource("5_lvtny")]
 position = Vector2(560, 376)
 
-[node name="block34" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("5_lvtny")]
+[node name="block34" parent="block_container" instance=ExtResource("5_lvtny")]
 position = Vector2(592, 376)
 
 [node name="esc_label" type="RichTextLabel" parent="."]

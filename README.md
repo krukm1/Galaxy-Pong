@@ -1,18 +1,18 @@
 # Galaxy-Pong
 
 Critical Priority
-- Fix ball not bouncing
 - Add Pause button
+- Design all levels
 
 High Priority
 - Add volume control
 - Add rolling credits scene
-- Design all levels
 
 Medium Priority
 - Add +1 ball life object
 - Add duplicate ball object
 - Add freezing astroid
+- Add slow-mo for 5 seconds on pressing CTRL
 
 Low Priority
 - Add life visual indicator

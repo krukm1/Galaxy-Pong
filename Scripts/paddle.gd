@@ -20,6 +20,7 @@ func _ready() -> void:
 	print("centerpoint position: ", cp.global_position)  # Debug: print its position
 	center = cp.global_position  # Store the centerpoint's world position
 	angle = PI / 2  # Start at the bottom of the circle (facing up)
+	add_to_group("FadeOnGameOver")  # 👈 Add this line
 
 # --- Called every physics frame ---
 func _physics_process(delta: float) -> void:
