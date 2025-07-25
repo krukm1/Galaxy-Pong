@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://by6b56obrm1sf"]
 
-[ext_resource type="Script" uid="uid://dbogqekd7ifej" path="res://Scripts/Game_Level_1.gd" id="1_uqoqq"]
+[ext_resource type="Script" uid="uid://dbogqekd7ifej" path="res://Scripts/game_level_1.gd" id="1_uqoqq"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_sfp2t"]
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_xw3eb"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="7_tl1kq"]
@@ -24,64 +24,64 @@ position = Vector2(576, 619)
 script = ExtResource("5_xw3eb")
 
 [node name="block1" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(526, 271)
+position = Vector2(516, 259)
 
 [node name="block2" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(546, 271)
+position = Vector2(540, 259)
 
 [node name="block3" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(566, 271)
+position = Vector2(564, 259)
 
 [node name="block4" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(586, 271)
+position = Vector2(588, 259)
 
 [node name="block5" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(606, 271)
+position = Vector2(612, 259)
 
 [node name="block6" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(626, 271)
+position = Vector2(636, 259)
 
 [node name="block7" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(526, 290)
+position = Vector2(516, 283)
 
 [node name="block12" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(626, 290)
+position = Vector2(636, 283)
 
 [node name="block13" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(526, 310)
+position = Vector2(516, 307)
 
 [node name="block18" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(626, 310)
+position = Vector2(636, 307)
 
 [node name="block19" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(526, 329)
+position = Vector2(516, 331)
 
 [node name="block24" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(626, 329)
+position = Vector2(636, 331)
 
 [node name="block25" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(526, 348)
+position = Vector2(516, 355)
 
 [node name="block30" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(626, 348)
+position = Vector2(636, 355)
 
 [node name="block31" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(526, 367)
+position = Vector2(516, 379)
 
 [node name="block32" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(546, 367)
+position = Vector2(540, 379)
 
 [node name="block33" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(566, 367)
+position = Vector2(564, 379)
 
 [node name="block34" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(586, 367)
+position = Vector2(588, 379)
 
 [node name="block35" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(606, 367)
+position = Vector2(612, 379)
 
 [node name="block36" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("7_tl1kq")]
-position = Vector2(626, 367)
+position = Vector2(636, 379)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 3.0

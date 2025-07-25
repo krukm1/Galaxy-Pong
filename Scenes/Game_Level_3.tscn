@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c4o77ik8gkm2d"]
+[gd_scene load_steps=6 format=3 uid="uid://c4o77ik8gkm2d"]
 
 [ext_resource type="Script" uid="uid://cnbop2mif28f5" path="res://Scripts/game_level_3.gd" id="1_cfxxc"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cfxxc"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_0idtv"]
-[ext_resource type="PackedScene" uid="uid://je7f27rxtiks" path="res://Scenes/ball.tscn" id="4_0ueq1"]
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_cfxxc"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="5_lvtny"]
 
@@ -18,20 +17,16 @@ position = Vector2(576, 320)
 [node name="camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
 
-[node name="paddle" parent="." instance=ExtResource("3_0idtv")]
+[node name="paddle" parent="." groups=["FadeOnGameOver"] instance=ExtResource("3_0idtv")]
 position = Vector2(576, 619)
 
-[node name="ball" parent="." instance=ExtResource("4_0ueq1")]
-position = Vector2(575, 605)
-continuous_cd = 2
-
-[node name="block_container" type="Node" parent="."]
+[node name="block_container" type="Node" parent="." groups=["FadeOnGameOver"]]
 script = ExtResource("5_cfxxc")
 
-[node name="block33" parent="block_container" instance=ExtResource("5_lvtny")]
+[node name="block33" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("5_lvtny")]
 position = Vector2(560, 376)
 
-[node name="block34" parent="block_container" instance=ExtResource("5_lvtny")]
+[node name="block34" parent="block_container" groups=["FadeOnGameOver"] instance=ExtResource("5_lvtny")]
 position = Vector2(592, 376)
 
 [node name="esc_label" type="RichTextLabel" parent="."]

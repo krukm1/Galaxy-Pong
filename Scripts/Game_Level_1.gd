@@ -11,7 +11,7 @@ func _fade_out_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
 		if node is CanvasItem:  # Makes sure it has modulate property (e.g., Sprite2D, Label, etc.)
 			var tween := create_tween()
-			tween.tween_property(node, "modulate:a", 0.0, 8)  # Fade alpha to 0 over 1.5 seconds
+			tween.tween_property(node, "modulate:a", 0.0, 6)  # Fade alpha to 0 over 1.5 seconds
 
 func _respawn_ball():
 	var new_ball = ball_scene.instantiate()
