@@ -13,7 +13,7 @@ func _fade_in_all():
 		if node is CanvasItem:
 			node.modulate.a = 0.0  # Start invisible
 			var tween := create_tween()
-			tween.tween_property(node, "modulate:a", 1.0, 1.5)  # Fade in over 1.5 sec
+			tween.tween_property(node, "modulate:a", 1.0, 2)
 
 func _fade_out_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
