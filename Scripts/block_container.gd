@@ -19,8 +19,8 @@ func _process(_delta):
 		level_completed = true
 
 		# Hide the ball
-		var ball = get_tree().current_scene.get_node_or_null("ball")
-		if ball:
+		var balls = get_tree().get_nodes_in_group("Ball")
+		for ball in balls:
 			ball.hide()
 			ball.set_process(false)
 			ball.set_physics_process(false)

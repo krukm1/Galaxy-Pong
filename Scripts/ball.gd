@@ -35,10 +35,22 @@ func _physics_process(delta: float) -> void:
 				# Blend the bounce with the assist vector, then normalize to maintain constant speed.
 				velocity = bounced_velocity.lerp(to_center, 0.35).normalized() * base_speed
 				# ... collision logic ...
-			elif collider.is_in_group("Wall"):
+			
+			#Ball needs to hit Block_2hit twice and bounces off each time
+			if collider.is_in_group("Block"):
+				velocity = bounced_velocity.normalized() * base_speed
+
+				if collider.has_method("register_hit"):
+					collider.register_hit()  # Let the block decide what to do
+				else:
+					Music_Controller.play_block_break()
+					collider.queue_free()
+				
+			if collider.is_in_group("Wall"):
 					print("Ball hit wall — losing life.")
 					queue_free()
-					emit_signal("ball_lost")  # ← Step 2: Emit the signal
+					emit_signal("ball_lost")
+					return  # Stop further code execution for this frame
 
 # --- Called when a player presses a key or button ---
 func _input(event: InputEvent) -> void:

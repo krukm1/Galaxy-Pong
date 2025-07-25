@@ -131,4 +131,5 @@ func play_block_hit():
 
 func play_ball_lost():
 		$SFXPlayer2.stream = ball_lost
+		$SFXPlayer2.volume_db = -20  # Lower volume by 10 decibels (you can adjust this value)
 		$SFXPlayer2.play()
