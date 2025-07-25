@@ -1,3 +1,4 @@
+res://Scenes/ball.tscn
 res://Scripts/ball.gd
 res://Scripts/block.gd
 res://Scenes/Game_Level_1.tscn
