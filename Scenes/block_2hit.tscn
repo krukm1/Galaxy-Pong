@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dec6ygnre6t4q"]
+[gd_scene load_steps=5 format=3 uid="uid://dec6ygnre6t4q"]
 
 [ext_resource type="Script" uid="uid://cer00wtmgp4k8" path="res://Scripts/block_2hit.gd" id="1_s2q1d"]
 [ext_resource type="Texture2D" uid="uid://bbha3bvj1hp1p" path="res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png" id="2_u3ck5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2q1d"]
+size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2iur"]
 size = Vector2(16, 16)
@@ -10,7 +13,7 @@ size = Vector2(16, 16)
 script = ExtResource("1_s2q1d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_c2iur")
+shape = SubResource("RectangleShape2D_s2q1d")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
 modulate = Color(1, 0.623529, 1, 1)

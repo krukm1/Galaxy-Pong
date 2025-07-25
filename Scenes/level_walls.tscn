@@ -4,40 +4,39 @@
 size = Vector2(1279, 61)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m1qcd"]
-size = Vector2(70, 717)
+size = Vector2(70, 737)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_12exr"]
-size = Vector2(57, 717)
+size = Vector2(57, 737)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_24eqq"]
-size = Vector2(1152, 69)
+size = Vector2(1192, 69)
 
 [node name="level_walls" type="Node2D"]
 
 [node name="top_wall" type="StaticBody2D" parent="." groups=["Wall"]]
-collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="top_wall"]
-position = Vector2(569.5, -30.5)
+position = Vector2(569.5, -50.5)
 shape = SubResource("RectangleShape2D_0cmnv")
 
 [node name="bottom_wall" type="StaticBody2D" parent="." groups=["Wall"]]
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bottom_wall"]
-position = Vector2(-35, 358.5)
+position = Vector2(-55, 348.5)
 shape = SubResource("RectangleShape2D_m1qcd")
 
 [node name="left_wall" type="StaticBody2D" parent="." groups=["Wall"]]
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="left_wall"]
-position = Vector2(1180.5, 358.5)
+position = Vector2(1200.5, 348.5)
 shape = SubResource("RectangleShape2D_12exr")
 
 [node name="right_wall" type="StaticBody2D" parent="." groups=["Wall"]]
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="right_wall"]
-position = Vector2(576, 682.5)
+position = Vector2(576, 702.5)
 shape = SubResource("RectangleShape2D_24eqq")
