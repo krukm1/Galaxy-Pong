@@ -21,7 +21,8 @@ var menu_forward_button = load("res://Assets/Sounds/button1.mp3")
 var menu_back_button = load("res://Assets/Sounds/button2.mp3")
 var button_hover = load("res://Assets/Sounds/button_hover.mp3")
 var block_hit = load("res://Assets/Sounds/block_hit_sound.mp3")
-var ball_lost = load("res://Assets/Sounds/lost_ball2.mp3")
+var ball_lost = load("res://Assets/Sounds/lost_ball1.mp3")
+var block_indestructible = load("res://Assets/Sounds/block_indestructible.mp3")
 
 func _ready():
 	pass
@@ -131,5 +132,11 @@ func play_block_hit():
 
 func play_ball_lost():
 		$SFXPlayer2.stream = ball_lost
-		$SFXPlayer2.volume_db = -20  # Lower volume by 10 decibels (you can adjust this value)
+		$SFXPlayer2.volume_db = -30  # Lower volume by 10 decibels (you can adjust this value)
 		$SFXPlayer2.play()
+
+#------SFXPlayer3------
+func play_block_indestructible():
+		$SFXPlayer3.stream = block_indestructible
+		$SFXPlayer3.volume_db = -30  # Lower volume by 10 decibels (you can adjust this value)
+		$SFXPlayer3.play()

@@ -45,6 +45,14 @@ func _physics_process(delta: float) -> void:
 				else:
 					Music_Controller.play_block_break()
 					collider.queue_free()
+			
+			if collider.is_in_group("Block_Indestructible"):
+				velocity = bounced_velocity.normalized() * base_speed
+
+				if collider.has_method("register_hit"):
+					collider.register_hit()  # Let the block decide what to do
+				else:
+					Music_Controller.play_block_indestructible()
 				
 			if collider.is_in_group("Wall"):
 					print("Ball hit wall — losing life.")
