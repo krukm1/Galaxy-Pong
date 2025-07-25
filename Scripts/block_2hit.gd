@@ -10,7 +10,8 @@ const MAX_HITS := 2
 
 func _ready() -> void:
 	add_to_group("Block")  # So ball can detect it
-	add_to_group("FadeOnGameOver")  # 👈 Add this line
+	add_to_group("FadeOnGameStart")
+	add_to_group("FadeOnGameOver")
 	pass
 
 func _physics_process(delta: float) -> void:

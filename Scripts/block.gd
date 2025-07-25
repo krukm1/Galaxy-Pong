@@ -1,5 +1,6 @@
 extends StaticBody2D
 
 func _ready():
-	add_to_group("Block")  # ← Add block to group from code
-	add_to_group("FadeOnGameOver")  # 👈 Add this line
+	add_to_group("Block")
+	add_to_group("FadeOnGameStart")
+	add_to_group("FadeOnGameOver")
