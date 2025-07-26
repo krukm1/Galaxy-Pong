@@ -2,11 +2,17 @@ extends Node2D
 
 @onready var paddle = $paddle  # or however you get your paddle node
 @onready var ball_scene = preload("res://Scenes/ball.tscn")
+@onready var pause_menu = $CanvasLayer/Pause_Menu
 
 func _ready() -> void:
 	Music_Controller.play_level1_music()
 	_respawn_ball()
 	_fade_in_nodes()
+
+func _unhandled_input(event):
+	if event.is_action_pressed("ui_cancel"):
+		if not get_tree().paused:
+			pause_menu.show_pause_menu()
 
 func _fade_in_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameStart"):
@@ -56,7 +62,7 @@ func _on_ball_lost():
 		#else:
 			#hide()
 
-func _input(event):
-	if event.is_action_pressed("ui_cancel"):
-		Music_Controller.play_exit_esc_button()
-		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
+#func _input(event):
+	#if event.is_action_pressed("ui_cancel"):
+		#Music_Controller.play_exit_esc_button()
+		#get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
