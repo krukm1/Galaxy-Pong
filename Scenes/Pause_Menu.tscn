@@ -26,3 +26,10 @@ size_flags_vertical = 4
 size_flags_stretch_ratio = 0.0
 theme = ExtResource("2_81e3q")
 text = "Resume"
+
+[node name="MainMenuButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_81e3q")
+text = "Main Menu"

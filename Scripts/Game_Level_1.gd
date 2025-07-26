@@ -10,9 +10,8 @@ func _ready() -> void:
 	_fade_in_nodes()
 
 func _unhandled_input(event):
-	if event.is_action_pressed("ui_cancel"):
-		if not get_tree().paused:
-			pause_menu.show_pause_menu()
+	if event.is_action_pressed("ui_cancel") and not get_tree().paused:
+		pause_menu.show_pause_menu()
 
 func _fade_in_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameStart"):
