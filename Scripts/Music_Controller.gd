@@ -37,6 +37,9 @@ func pause_music():
 func resume_music():
 	if $Music.stream_paused:
 		$Music.stream_paused = false
+		
+func stop_music():
+	$Music.stop()
 
 func play_menu_music():
 	if not $Music.playing or $Music.stream != menu_music:
@@ -129,11 +132,11 @@ func play_menu_back_button():
 		$SFXPlayer1.stream = menu_back_button
 		$SFXPlayer1.play()
 
-#------SFXPlayer2------
+#------SFXPlayer2------		
 func play_button_hover():
 		$SFXPlayer2.stream = button_hover
 		$SFXPlayer2.play()
-		
+
 func play_block_hit():
 		$SFXPlayer2.stream = block_hit
 		$SFXPlayer2.play()

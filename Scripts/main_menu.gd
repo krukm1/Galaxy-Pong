@@ -17,7 +17,7 @@ func _ready() -> void:
 # Mouse hover → play hover sound
 func _on_button_mouse_entered() -> void:
 	Music_Controller.play_button_hover()
-
+	
 #Start Button → Game Level 1
 func _on_start_button_pressed() -> void:
 	Music_Controller.play_start_button()
