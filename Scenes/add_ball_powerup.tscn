@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1sfpqpx0qm3m"]
+
+[ext_resource type="Texture2D" uid="uid://jf3rtudbqaqe" path="res://Assets/Sprites/basic_block_set.png" id="1_1uae2"]
+[ext_resource type="Script" uid="uid://dxw4satl2ni2i" path="res://Scripts/add_ball_powerup.gd" id="1_akun5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2gyc"]
+size = Vector2(16, 16)
+
+[node name="Add_Ball_PowerUp" type="Area2D"]
+script = ExtResource("1_akun5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l2gyc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1uae2")
+region_enabled = true
+region_rect = Rect2(48, 7, 15, 15)

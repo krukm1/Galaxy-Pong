@@ -3,6 +3,8 @@ extends Node2D
 @onready var paddle = $paddle  # or however you get your paddle node
 @onready var ball_scene = preload("res://Scenes/ball.tscn")
 @onready var pause_menu = $CanvasLayer/Pause_Menu
+var destroyed_times: Array = []
+var powerup_scene = preload("res://Scenes/add_ball_powerup.tscn")
 
 func _ready() -> void:
 	Music_Controller.play_level1_music()
