@@ -1,4 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dbylgxbr5yl6h"]
+[gd_scene load_steps=5 format=3 uid="uid://dbylgxbr5yl6h"]
+
+[sub_resource type="GDScript" id="GDScript_xr35t"]
+script/source = "extends Node
+#
+#func _ready():
+	#$CanvasLayer.layer = 0  # or something low
+"
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_g2nsx"]
 particle_flag_disable_z = true
@@ -32,6 +39,7 @@ scale_min = 3.0
 scale_max = 3.0
 
 [node name="BackgroundStarFields" type="Node"]
+script = SubResource("GDScript_xr35t")
 
 [node name="StarFieldBack" type="GPUParticles2D" parent="."]
 z_index = -100
