@@ -33,10 +33,10 @@ func _on_ball_lost():
 		_fade_out_nodes()  # ← Fade paddle & blocks
 		
 		await get_tree().create_timer(25.0).timeout
-		get_tree().change_scene_to_file("res://Scenes/Title_Menu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
 		# TODO: show a retry screen or restart
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		Music_Controller.play_exit_esc_button()
-		get_tree().change_scene_to_file("res://Scenes/Title_Menu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
