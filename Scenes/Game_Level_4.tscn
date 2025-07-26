@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=4 uid="uid://e3hakye8cugj"]
+[gd_scene load_steps=13 format=4 uid="uid://e3hakye8cugj"]
 
 [ext_resource type="Script" uid="uid://ca65kej6av1e1" path="res://Scripts/game_level_4.gd" id="1_5kso0"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_5kso0"]
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_aytf1"]
+[ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="2_smjwb"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_smjwb"]
 [ext_resource type="PackedScene" uid="uid://dec6ygnre6t4q" path="res://Scenes/block_2hit.tscn" id="5_5kso0"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="6_5755x"]
@@ -24,6 +25,8 @@ sources/2 = SubResource("TileSetScenesCollectionSource_2qlin")
 
 [node name="Game_Level_4" type="Node2D"]
 script = ExtResource("1_5kso0")
+
+[node name="Level_Complete_Watcher" parent="." instance=ExtResource("2_smjwb")]
 
 [node name="GameController" parent="." instance=ExtResource("2_aytf1")]
 

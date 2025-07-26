@@ -1,13 +1,16 @@
-[gd_scene load_steps=6 format=4 uid="uid://c4o77ik8gkm2d"]
+[gd_scene load_steps=7 format=4 uid="uid://c4o77ik8gkm2d"]
 
 [ext_resource type="Script" uid="uid://cnbop2mif28f5" path="res://Scripts/game_level_3.gd" id="1_cfxxc"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cfxxc"]
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_fe1pv"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_0idtv"]
+[ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="3_cfxxc"]
 [ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/Sprites/Block_Tile_Set.tres" id="5_40dpq"]
 
 [node name="Game_Level_3" type="Node2D"]
 script = ExtResource("1_cfxxc")
+
+[node name="Level_Complete_Watcher" parent="." instance=ExtResource("3_cfxxc")]
 
 [node name="GameController" parent="." instance=ExtResource("2_fe1pv")]
 

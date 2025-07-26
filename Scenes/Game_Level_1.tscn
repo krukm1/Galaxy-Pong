@@ -1,16 +1,16 @@
-[gd_scene load_steps=6 format=4 uid="uid://by6b56obrm1sf"]
+[gd_scene load_steps=7 format=4 uid="uid://by6b56obrm1sf"]
 
 [ext_resource type="Script" uid="uid://dbogqekd7ifej" path="res://Scripts/game_level_1.gd" id="1_uqoqq"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_sfp2t"]
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_wmfp0"]
+[ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="4_xw3eb"]
 [ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/Sprites/Block_Tile_Set.tres" id="5_o1grb"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="8_egejd"]
 
 [node name="Game_Level_1" type="Node2D"]
 script = ExtResource("1_uqoqq")
 
-[node name="paddle" parent="." instance=ExtResource("8_egejd")]
-position = Vector2(576, 619)
+[node name="Level_Complete_Watcher" parent="." instance=ExtResource("4_xw3eb")]
 
 [node name="GameController" parent="." instance=ExtResource("2_wmfp0")]
 
@@ -22,7 +22,10 @@ position = Vector2(576, 320)
 [node name="camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="paddle" parent="." instance=ExtResource("8_egejd")]
+position = Vector2(576, 619)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." groups=["FadeOnGameOver", "FadeOnGameStart"]]
 position = Vector2(-8, 8)
 tile_map_data = PackedByteArray("AAAfABgAAQAAAAAAAQAfABYAAQAAAAAAAQAfABQAAQAAAAAAAQAfABIAAQAAAAAAAQAfABAAAQAAAAAAAQAfAA4AAQAAAAAAAQAhAA4AAQAAAAAAAQAjAA4AAQAAAAAAAQAlAA4AAQAAAAAAAQAnAA4AAQAAAAAAAQApAA4AAQAAAAAAAQApABAAAQAAAAAAAQApABIAAQAAAAAAAQApABQAAQAAAAAAAQApABYAAQAAAAAAAQApABgAAQAAAAAAAQAnABgAAQAAAAAAAQAlABgAAQAAAAAAAQAjABgAAQAAAAAAAQAhABgAAQAAAAAAAQA=")
 tile_set = ExtResource("5_o1grb")
