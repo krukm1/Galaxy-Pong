@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://mhibdqtatusv" path="res://Scripts/game_level_6.gd" id="1_cmvd5"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cmvd5"]
-[ext_resource type="PackedScene" uid="uid://nxk3uji6wq01" path="res://Scenes/Pause_Menu.tscn" id="2_m1w8f"]
+[ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_m1w8f"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_fr5ht"]
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_4boi4"]
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="6_wdtuf"]
@@ -10,10 +10,7 @@
 [node name="Game_Level_6" type="Node2D"]
 script = ExtResource("1_cmvd5")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("2_m1w8f")]
-visible = false
+[node name="GameController" parent="." instance=ExtResource("2_m1w8f")]
 
 [node name="level_walls" parent="." instance=ExtResource("2_cmvd5")]
 

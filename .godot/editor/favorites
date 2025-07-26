@@ -5,3 +5,4 @@ res://Scenes/Game_Level_1.tscn
 res://Scripts/game_level_1.gd
 res://Scripts/Music_Controller.gd
 res://Scripts/paddle.gd
+res://Scenes/GameController.tscn

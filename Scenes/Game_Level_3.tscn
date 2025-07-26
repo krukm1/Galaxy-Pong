@@ -1,34 +1,15 @@
-[gd_scene load_steps=12 format=4 uid="uid://c4o77ik8gkm2d"]
+[gd_scene load_steps=6 format=4 uid="uid://c4o77ik8gkm2d"]
 
 [ext_resource type="Script" uid="uid://cnbop2mif28f5" path="res://Scripts/game_level_3.gd" id="1_cfxxc"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cfxxc"]
-[ext_resource type="PackedScene" uid="uid://nxk3uji6wq01" path="res://Scenes/Pause_Menu.tscn" id="2_fe1pv"]
+[ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_fe1pv"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_0idtv"]
-[ext_resource type="PackedScene" uid="uid://dec6ygnre6t4q" path="res://Scenes/block_2hit.tscn" id="5_40dpq"]
-[ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="5_lvtny"]
-[ext_resource type="PackedScene" uid="uid://cht7n2j3t0y0c" path="res://Scenes/block_indestructible.tscn" id="6_cfxxc"]
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_40dpq"]
-scenes/1/scene = ExtResource("5_40dpq")
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_cfxxc"]
-scenes/1/scene = ExtResource("5_lvtny")
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_fe1pv"]
-scenes/1/scene = ExtResource("6_cfxxc")
-
-[sub_resource type="TileSet" id="TileSet_cfxxc"]
-sources/0 = SubResource("TileSetScenesCollectionSource_40dpq")
-sources/1 = SubResource("TileSetScenesCollectionSource_cfxxc")
-sources/2 = SubResource("TileSetScenesCollectionSource_fe1pv")
+[ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/Sprites/Block_Tile_Set.tres" id="5_40dpq"]
 
 [node name="Game_Level_3" type="Node2D"]
 script = ExtResource("1_cfxxc")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("2_fe1pv")]
-visible = false
+[node name="GameController" parent="." instance=ExtResource("2_fe1pv")]
 
 [node name="level_walls" parent="." instance=ExtResource("2_cfxxc")]
 
@@ -44,7 +25,7 @@ position = Vector2(576, 619)
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(0, -32)
 tile_map_data = PackedByteArray("AAAjABEAAAAAAAAAAQAkABEAAAAAAAAAAQAiABAAAAAAAAAAAQAlABAAAAAAAAAAAQAhAA8AAAAAAAAAAQAgAA8AAAAAAAAAAQAfAA8AAAAAAAAAAQAmAA8AAAAAAAAAAQAnAA8AAAAAAAAAAQAoAA8AAAAAAAAAAQAeABAAAAAAAAAAAQAdABEAAgAAAAAAAQAcABIAAAAAAAAAAQAcABMAAAAAAAAAAQAcABQAAgAAAAAAAQAcABUAAAAAAAAAAQApABAAAAAAAAAAAQAqABEAAgAAAAAAAQArABIAAAAAAAAAAQArABMAAAAAAAAAAQArABQAAgAAAAAAAQArABUAAAAAAAAAAQAdABYAAAAAAAAAAQAdABcAAgAAAAAAAQAqABYAAAAAAAAAAQAqABcAAAAAAAAAAQAeABgAAAAAAAAAAQAfABkAAgAAAAAAAQAgABoAAAAAAAAAAQAhABsAAAAAAAAAAQApABgAAAAAAAAAAQAoABkAAgAAAAAAAQAnABoAAAAAAAAAAQAmABsAAAAAAAAAAQAlABwAAgAAAAAAAQAiABwAAgAAAAAAAQAjAB0AAAAAAAAAAQAkAB0AAAAAAAAAAQAeABMAAQAAAAAAAQAfABYAAQAAAAAAAQAgABcAAQAAAAAAAQAhABgAAQAAAAAAAQAiABkAAQAAAAAAAQAjABoAAQAAAAAAAQAkABoAAQAAAAAAAQAlABkAAQAAAAAAAQAmABgAAQAAAAAAAQAnABcAAQAAAAAAAQAoABYAAQAAAAAAAQAoABUAAQAAAAAAAQAoABIAAQAAAAAAAQAiABIAAQAAAAAAAQAfABUAAQAAAAAAAQAhABEAAQAAAAAAAQAnABEAAQAAAAAAAQApABMAAQAAAAAAAQApABQAAQAAAAAAAQAeABQAAQAAAAAAAQAlABIAAQAAAAAAAQAmABEAAQAAAAAAAQAmABMAAQAAAAAAAQAhABMAAQAAAAAAAQAgABEAAQAAAAAAAQAfABIAAQAAAAAAAQAjABMAAQAAAAAAAQAkABMAAQAAAAAAAQAgABQAAQAAAAAAAQAhABUAAQAAAAAAAQAiABYAAQAAAAAAAQAlABYAAQAAAAAAAQAmABUAAQAAAAAAAQAnABQAAQAAAAAAAQAnABMAAQAAAAAAAQAgABMAAQAAAAAAAQAkABcAAQAAAAAAAQAjABcAAQAAAAAAAQA=")
-tile_set = SubResource("TileSet_cfxxc")
+tile_set = ExtResource("5_40dpq")
 
 [node name="esc_label" type="RichTextLabel" parent="."]
 offset_left = 3.0

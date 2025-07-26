@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bt487ewq38uef"]
 
 [ext_resource type="Script" uid="uid://cj1aspemivuc6" path="res://Scripts/game_level_9.gd" id="1_ls3hp"]
-[ext_resource type="PackedScene" uid="uid://nxk3uji6wq01" path="res://Scenes/Pause_Menu.tscn" id="2_i0osj"]
+[ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_i0osj"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_ls3hp"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_e4h3l"]
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/block_container.gd" id="5_x5amu"]
@@ -10,10 +10,7 @@
 [node name="Game_Level_9" type="Node2D"]
 script = ExtResource("1_ls3hp")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("2_i0osj")]
-visible = false
+[node name="GameController" parent="." instance=ExtResource("2_i0osj")]
 
 [node name="level_walls" parent="." instance=ExtResource("2_ls3hp")]
 

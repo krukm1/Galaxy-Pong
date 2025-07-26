@@ -5,7 +5,6 @@ extends Node2D
 @onready var pause_menu = $CanvasLayer/Pause_Menu
 
 func _ready() -> void:
-	Music_Controller.play_level2_music()
 	_respawn_ball()
 	_fade_in_nodes()
 
