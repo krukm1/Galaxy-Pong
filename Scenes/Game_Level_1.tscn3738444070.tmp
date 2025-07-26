@@ -10,9 +10,7 @@
 [node name="Game_Level_1" type="Node2D"]
 script = ExtResource("1_uqoqq")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("2_xw3eb")]
+[node name="Pause_Menu" parent="." instance=ExtResource("2_xw3eb")]
 
 [node name="level_walls" parent="." instance=ExtResource("2_sfp2t")]
 

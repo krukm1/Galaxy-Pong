@@ -30,6 +30,14 @@ func _ready():
 #Note: Keep audio files in separate sections below if you want them to play at the same time.
 	
 #------Music------
+func pause_music():
+	if $Music.playing:
+		$Music.stream_paused = true
+
+func resume_music():
+	if $Music.stream_paused:
+		$Music.stream_paused = false
+
 func play_menu_music():
 	if not $Music.playing or $Music.stream != menu_music:
 		$Music.stream = menu_music
