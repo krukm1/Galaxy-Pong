@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://csyhi5dkmdro4"]
+
+[ext_resource type="Texture2D" uid="uid://ch2d4k02tdugm" path="res://Assets/Sprites/CelestialObjects.png" id="1_50m74"]
+
+[node name="Boss_Level_10" type="Sprite2D"]
+texture = ExtResource("1_50m74")
+region_enabled = true
+region_rect = Rect2(0, 64, 64, 64)
