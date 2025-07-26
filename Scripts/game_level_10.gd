@@ -2,10 +2,23 @@ extends Node2D
 
 @onready var paddle = $paddle  # or however you get your paddle node
 @onready var ball_scene = preload("res://Scenes/ball.tscn")
+@onready var pause_menu = $CanvasLayer/Pause_Menu
 
 func _ready() -> void:
 	Music_Controller.play_level10_music()
 	_respawn_ball()
+	_fade_in_nodes()
+
+func _unhandled_input(event):
+	if event.is_action_pressed("ui_cancel") and not get_tree().paused:
+		pause_menu.show_pause_menu()
+
+func _fade_in_nodes():
+	for node in get_tree().get_nodes_in_group("FadeOnGameStart"):
+		if node is CanvasItem:
+			node.modulate.a = 0.0  # Start fully transparent
+			var tween := create_tween()
+			tween.tween_property(node, "modulate:a", 1.0, 2)  # Fade in over 1.5 seconds
 
 func _fade_out_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
@@ -33,10 +46,3 @@ func _on_ball_lost():
 		_fade_out_nodes()  # ← Fade paddle & blocks
 		
 		await get_tree().create_timer(25.0).timeout
-		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
-		# TODO: show a retry screen or restart
-
-func _input(event):
-	if event.is_action_pressed("ui_cancel"):
-		Music_Controller.play_exit_esc_button()
-		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
