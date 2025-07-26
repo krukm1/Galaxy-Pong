@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ch2d4k02tdugm" path="res://Assets/Sprites/CelestialObjects.png" id="1_50m74"]
 
-[node name="Boss_Level_10" type="Sprite2D"]
+[node name="Boss_1" type="Sprite2D"]
 texture = ExtResource("1_50m74")
 region_enabled = true
-region_rect = Rect2(0, 64, 64, 64)
+region_rect = Rect2(128, 0, 64, 64)

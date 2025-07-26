@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cj1aspemivuc6" path="res://Scripts/game_level_9.gd" id="1_ls3hp"]
 [ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="2_e4h3l"]
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_i0osj"]
-[ext_resource type="PackedScene" uid="uid://csyhi5dkmdro4" path="res://Scenes/Boss_Level_10.tscn" id="2_ihwyo"]
+[ext_resource type="PackedScene" uid="uid://csyhi5dkmdro4" path="res://Scenes/Boss_1.tscn" id="2_ihwyo"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_ls3hp"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_e4h3l"]
 [ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/Sprites/Block_Tile_Set.tres" id="6_ls3hp"]
@@ -13,10 +13,11 @@
 [node name="Game_Level_9" type="Node2D"]
 script = ExtResource("1_ls3hp")
 
-[node name="Boss_Level_10" parent="." instance=ExtResource("2_ihwyo")]
-modulate = Color(0.09, 0.09, 0.09, 1)
+[node name="Boss_1" parent="." instance=ExtResource("2_ihwyo")]
+modulate = Color(0.06, 0.06, 0.06, 1)
+z_index = -96
 material = SubResource("ShaderMaterial_i0osj")
-position = Vector2(1069, 80)
+position = Vector2(1035, 111)
 scale = Vector2(2.5, 2.5)
 
 [node name="Level_Complete_Watcher" parent="." instance=ExtResource("2_e4h3l")]
