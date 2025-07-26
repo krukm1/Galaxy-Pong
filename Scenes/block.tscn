@@ -13,14 +13,12 @@ script = ExtResource("1_ejx3s")
 shape = SubResource("RectangleShape2D_c2iur")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
-position = Vector2(0.0892507, 0.282199)
-scale = Vector2(0.687533, 2.17709)
+position = Vector2(1.12914, 1.04)
+scale = Vector2(2.28571, 2.28571)
 texture = ExtResource("2_8o1l4")
 offset = Vector2(-0.494, -0.455)
-hframes = 5
-vframes = 10
-frame = 40
-region_rect = Rect2(3.21, 2.92, 0, 0)
+region_enabled = true
+region_rect = Rect2(113, 65, 7, 7)
 
 [node name="Area2D" type="Area2D" parent="."]
 visible = false

@@ -38,7 +38,7 @@ offset_bottom = 645.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 10
-text = "Press Esc to return to Main Menu"
+text = "Press Esc for Menu"
 
 [node name="level_label" type="RichTextLabel" parent="."]
 offset_left = 3.0

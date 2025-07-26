@@ -42,10 +42,13 @@ func _physics_process(delta: float) -> void:
 				velocity = bounced_velocity.normalized() * base_speed
 
 				if collider.has_method("register_hit"):
-					collider.register_hit()  # Let the block decide what to do
+					collider.register_hit()  # Let block_2hit decide what to do
+				elif collider.has_method("_on_destroyed"):
+					Music_Controller.play_block_break()
+					collider._on_destroyed()  # ✅ properly emit signal before freeing
 				else:
 					Music_Controller.play_block_break()
-					collider.queue_free()
+					collider.queue_free()  # fallback, not ideal
 			
 			if collider.is_in_group("Block_Indestructible"):
 				velocity = bounced_velocity.normalized() * base_speed

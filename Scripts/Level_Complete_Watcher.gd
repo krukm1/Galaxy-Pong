@@ -1,5 +1,6 @@
 extends Node
 
+var remaining_blocks := 0
 var level_completed := false
 
 var level_paths := [
@@ -15,32 +16,36 @@ var level_paths := [
 	"res://Scenes/Game_Level_10.tscn",
 ]
 
-func _process(_delta):
-	if level_completed:
-		return
+func _ready():
+	await get_tree().process_frame  # <-- allow one frame for blocks to appear
+	# Count all destructible blocks
+	var blocks = get_tree().get_nodes_in_group("Block")
+	remaining_blocks = blocks.size()
+	print("Blocks found:", remaining_blocks)
 
-	# Get all remaining destructible blocks
-	var remaining_blocks = get_tree().get_nodes_in_group("Block")
+	# Connect their destruction signals
+	for block in blocks:
+		if block.has_signal("block_destroyed"):
+			block.connect("block_destroyed", self._on_block_destroyed)
 
-	if remaining_blocks.is_empty():
+func _on_block_destroyed():
+	remaining_blocks -= 1
+	if remaining_blocks <= 0 and not level_completed:
 		level_completed = true
 		await _on_level_complete()
 
 func _on_level_complete() -> void:
 	print("Level completed!")
 
-	# Hide the ball(s)
 	var balls = get_tree().get_nodes_in_group("Ball")
 	for ball in balls:
 		ball.hide()
 		ball.set_process(false)
 		ball.set_physics_process(false)
 
-	# Play level complete music
 	Music_Controller.play_level_complete_music()
 	await get_tree().create_timer(6.0).timeout
 
-	# Find the next level
 	var current_path = get_tree().current_scene.scene_file_path
 	var current_index = level_paths.find(current_path)
 
@@ -48,5 +53,4 @@ func _on_level_complete() -> void:
 		var next_level = level_paths[current_index + 1]
 		get_tree().change_scene_to_file(next_level)
 	else:
-		print("No more levels or current level not found.")
 		get_tree().change_scene_to_file("res://Scenes/Title_Menu.tscn")

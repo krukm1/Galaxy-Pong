@@ -8,6 +8,8 @@ const MAX_HITS := 2
 
 @onready var sprite_2d: Sprite2D = $CollisionShape2D/Sprite2D
 
+signal block_destroyed
+
 func _ready() -> void:
 	add_to_group("Block")  # So ball can detect it
 	add_to_group("FadeOnGameStart")
@@ -23,7 +25,11 @@ func register_hit() -> void:
 
 	if hit_count >= MAX_HITS:
 		Music_Controller.play_block_break()
-		queue_free()
+		_on_destroyed()  # emit signal and free
 	else:
 		Music_Controller.play_block_hit()
 		sprite_2d.modulate = Color("#ffffff")  # Optional: visual cue for being hit once
+
+func _on_destroyed():
+	emit_signal("block_destroyed")
+	queue_free()  # free the block

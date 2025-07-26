@@ -4,7 +4,13 @@ extends Node
 @onready var paddle = get_tree().current_scene.get_node("paddle")
 @onready var ball_scene = preload("res://Scenes/ball.tscn")
 
+@onready var tilemap_container = get_tree().current_scene.get_node("TileMapLayer")
+
+var block_scene := preload("res://Scenes/block.tscn")
+var block_2hit_scene := preload("res://Scenes/block_2hit.tscn")
+
 func _ready():
+	replace_tiles_with_blocks()
 	# Start level music based on level name
 	var level_name = get_tree().current_scene.name
 	match level_name:
@@ -55,3 +61,23 @@ func _on_ball_lost():
 		Music_Controller.play_game_over_music()
 		await get_tree().create_timer(25.0).timeout
 		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
+
+func replace_tiles_with_blocks():
+	for tilemap_layer in tilemap_container.get_children():
+		if tilemap_layer is TileMapLayer:
+			for cell in tilemap_layer.get_used_cells():
+				var tile_id = tilemap_layer.get_cellv(cell)
+				var scene_to_spawn : PackedScene = null
+				
+				match tile_id:
+					1:
+						scene_to_spawn = block_scene
+					2:
+						scene_to_spawn = block_2hit_scene
+					_:
+						continue
+				
+				var block_instance = scene_to_spawn.instantiate()
+				block_instance.global_position = tilemap_layer.map_to_world(cell)
+				tilemap_container.get_parent().add_child(block_instance)
+				tilemap_layer.set_cellv(cell, -1)  # Erase the tile so it’s gone
