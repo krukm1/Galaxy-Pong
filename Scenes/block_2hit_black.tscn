@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dec6ygnre6t4q"]
+[gd_scene load_steps=5 format=3 uid="uid://bv6g0qqg73ss8"]
 
-[ext_resource type="Script" uid="uid://cer00wtmgp4k8" path="res://Scripts/block_2hit.gd" id="1_s2q1d"]
-[ext_resource type="Texture2D" uid="uid://bbha3bvj1hp1p" path="res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png" id="2_u3ck5"]
+[ext_resource type="Script" uid="uid://dvw07q7guggm8" path="res://Scripts/block_2hit_black.gd" id="1_4y10c"]
+[ext_resource type="Texture2D" uid="uid://bbha3bvj1hp1p" path="res://Assets/Sprites/Arcade_Tetris_Atari_Block_Tiles.png" id="2_k2opq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s2q1d"]
 size = Vector2(16, 16)
@@ -9,20 +9,20 @@ size = Vector2(16, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2iur"]
 size = Vector2(16, 16)
 
-[node name="block_2hit" type="StaticBody2D"]
-script = ExtResource("1_s2q1d")
+[node name="block_2hit_black" type="StaticBody2D"]
+script = ExtResource("1_4y10c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_s2q1d")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
-modulate = Color(1, 0.623529, 1, 1)
-position = Vector2(1.12914, 1.04)
+modulate = Color(0.33, 0.33, 0.33, 1)
+position = Vector2(1.12914, 1.03999)
 scale = Vector2(2.28571, 2.28571)
-texture = ExtResource("2_u3ck5")
+texture = ExtResource("2_k2opq")
 offset = Vector2(-0.494, -0.455)
 region_enabled = true
-region_rect = Rect2(113, 65, 7, 7)
+region_rect = Rect2(113, 57, 7, 7)
 
 [node name="Area2D" type="Area2D" parent="."]
 visible = false

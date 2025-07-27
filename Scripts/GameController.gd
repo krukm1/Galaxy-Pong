@@ -3,10 +3,12 @@ extends Node
 @onready var pause_menu := $Pause_Menu
 @onready var paddle = get_tree().current_scene.get_node("paddle")
 @onready var ball_scene = preload("res://Scenes/ball.tscn")
+@onready var game_over_screen := $Game_Over
 
 @onready var tilemap_container = get_tree().current_scene.get_node("TileMapLayer")
 
 var block_scene := preload("res://Scenes/block.tscn")
+var block_white_scene := preload("res://Scenes/block_white.tscn")
 var block_2hit_scene := preload("res://Scenes/block_2hit.tscn")
 
 func _ready():
@@ -36,6 +38,19 @@ func _ready():
 			Music_Controller.play_level10_music()
 		# Add more levels as needed
 
+func _fade_in_nodes():
+	for node in get_tree().get_nodes_in_group("FadeOnGameStart"):
+		if node is CanvasItem:
+			node.modulate.a = 0.0
+			var tween := create_tween()
+			tween.tween_property(node, "modulate:a", 1.0, 2)
+
+func _fade_out_nodes():
+	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
+		if node is CanvasItem:
+			var tween := create_tween()
+			tween.tween_property(node, "modulate:a", 0.0, 6)
+
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):
 		if get_tree().paused:
@@ -59,6 +74,13 @@ func _on_ball_lost():
 	else:
 		print("Game Over")
 		Music_Controller.play_game_over_music()
+		_fade_out_nodes()
+		
+		# Fade in Game Over screen
+		game_over_screen.visible = true
+		var tween := create_tween()
+		tween.tween_property(game_over_screen, "modulate:a", 1.0, 5.0)
+		
 		await get_tree().create_timer(25.0).timeout
 		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
 
@@ -74,10 +96,12 @@ func replace_tiles_with_blocks():
 						scene_to_spawn = block_scene
 					2:
 						scene_to_spawn = block_2hit_scene
+					3:
+						scene_to_spawn = block_white_scene
 					_:
 						continue
 				
 				var block_instance = scene_to_spawn.instantiate()
 				block_instance.global_position = tilemap_layer.map_to_world(cell)
 				tilemap_container.get_parent().add_child(block_instance)
-				tilemap_layer.set_cellv(cell, -1)  # Erase the tile so it’s gone
+				tilemap_layer.set_cellv(cell, -1)

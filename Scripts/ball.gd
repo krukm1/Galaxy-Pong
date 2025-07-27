@@ -14,8 +14,7 @@ func _ready():
 	contact_monitor = true
 	add_to_group("FadeOnGameStart")
 	add_to_group("Ball")
-	print("Ball ready and added to group")
-	print("Ball groups: ", get_groups())
+	print("Ball ready and added to FadeOnGameStart and Ball group")
 
 # --- Called every physics frame ---
 func _physics_process(delta: float) -> void:		
