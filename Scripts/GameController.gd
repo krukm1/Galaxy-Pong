@@ -53,6 +53,12 @@ func _fade_out_nodes():
 			var tween := create_tween()
 			tween.tween_property(node, "modulate:a", 0.0, 5)
 
+func level_complete(next_level_path: String):
+	is_game_over = true  # Prevent pause
+	_fade_out_nodes()  # Fade out all FadeOnGameOver nodes
+	await get_tree().create_timer(3.0).timeout  # Wait for fade-out to finish
+	get_tree().change_scene_to_file(next_level_path)
+
 func _unhandled_input(event):
 	if is_game_over:
 		return

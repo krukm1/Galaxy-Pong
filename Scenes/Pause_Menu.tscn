@@ -6,7 +6,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_18nnx"]
 shader = ExtResource("2_gsskx")
-shader_parameter/lod = 4.0
+shader_parameter/lod = 3.0
 
 [node name="Pause_Menu" type="Control"]
 process_mode = 2
@@ -15,6 +15,7 @@ anchors_preset = 0
 script = ExtResource("1_inwkf")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+process_mode = 3
 material = SubResource("ShaderMaterial_18nnx")
 layout_mode = 2
 offset_left = -12.0

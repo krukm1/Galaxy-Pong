@@ -1,35 +1,38 @@
 extends Control
 
 @onready var resume_button = $VBoxContainer/ResumeButton
-@onready var main_menu_button = $VBoxContainer/MainMenuButton
 @onready var restart_button = $VBoxContainer/RestartButton
+@onready var main_menu_button = $VBoxContainer/MainMenuButton
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	set_process_unhandled_input(true)
+	
 	visible = false
+	
+	# Connect button pressed signals
 	resume_button.pressed.connect(_on_resume_pressed)
 	restart_button.pressed.connect(_on_restart_pressed)
 	main_menu_button.pressed.connect(_on_main_menu_pressed)
 	
+	# Connect mouse hover signals to play hover sound
 	var buttons = [
-		$VBoxContainer/ResumeButton,
-		$VBoxContainer/MainMenuButton
+		resume_button,
+		restart_button,
+   		main_menu_button
 	]
 	for button in buttons:
 		button.mouse_entered.connect(_on_button_mouse_entered)
-		
+
 # Mouse hover → play hover sound
 func _on_button_mouse_entered() -> void:
-	print("Mouse entered on button")
-	print("Music_Controller available? ", Music_Controller != null)
 	Music_Controller.play_button_hover()
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):
 		print("Esc pressed - visible:", visible, " | paused:", get_tree().paused)
-	if event.is_action_pressed("ui_cancel") and visible:
-		_on_resume_pressed()
+		if visible:
+			_on_resume_pressed()
 
 func show_pause_menu():
 	get_tree().paused = true
