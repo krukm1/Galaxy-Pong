@@ -13,9 +13,3 @@ func _ready() -> void:
 
 func _process(delta):
 	tilemap_layer.rotation += delta * 0.2  # Rotates at ~0.5 radians/sec (~28 degrees/sec)
-
-func _fade_out_nodes():
-	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
-		if node is CanvasItem:
-			var tween := create_tween()
-			tween.tween_property(node, "modulate:a", 0.0, 6)

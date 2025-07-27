@@ -8,8 +8,6 @@ static var destroyed_count := 0  # Shared across all block instances
 
 func _ready():
 	add_to_group("Block")
-	add_to_group("FadeOnGameStart")
-	add_to_group("FadeOnGameOver")
 
 func _on_destroyed():
 	destroyed_count += 1

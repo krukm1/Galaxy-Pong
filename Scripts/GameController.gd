@@ -11,6 +11,8 @@ var block_scene := preload("res://Scenes/block.tscn")
 var block_white_scene := preload("res://Scenes/block_white.tscn")
 var block_2hit_scene := preload("res://Scenes/block_2hit.tscn")
 
+var is_game_over := false
+
 func _ready():
 	replace_tiles_with_blocks()
 	# Start level music based on level name
@@ -49,9 +51,11 @@ func _fade_out_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
 		if node is CanvasItem:
 			var tween := create_tween()
-			tween.tween_property(node, "modulate:a", 0.0, 6)
+			tween.tween_property(node, "modulate:a", 0.0, 5)
 
 func _unhandled_input(event):
+	if is_game_over:
+		return
 	if event.is_action_pressed("ui_cancel"):
 		if get_tree().paused:
 			pause_menu._on_resume_pressed()
@@ -73,6 +77,7 @@ func _on_ball_lost():
 		spawn_ball()
 	else:
 		print("Game Over")
+		is_game_over = true
 		Music_Controller.play_game_over_music()
 		_fade_out_nodes()
 		

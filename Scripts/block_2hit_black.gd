@@ -12,9 +12,6 @@ signal block_destroyed
 
 func _ready() -> void:
 	add_to_group("Block")  # So ball can detect it
-	add_to_group("FadeOnGameStart")
-	add_to_group("FadeOnGameOver")
-	pass
 
 func _physics_process(delta: float) -> void:
 	move_and_collide(block_velocity * delta, false, collision_margin, true)
