@@ -2,6 +2,7 @@ extends Area2D
 
 func _ready():
 	connect("body_entered", Callable(self, "_on_body_entered"))
+	add_to_group("FadeOnGameOver")
 	
 func _on_body_entered(body):
 	if body.name == "paddle":  # Adjust name as needed

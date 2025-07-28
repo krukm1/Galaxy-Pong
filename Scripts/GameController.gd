@@ -86,14 +86,8 @@ func _on_ball_lost():
 		is_game_over = true
 		Music_Controller.play_game_over_music()
 		_fade_out_nodes()
-		
-		# Fade in Game Over screen
-		game_over_screen.visible = true
-		var tween := create_tween()
-		tween.tween_property(game_over_screen, "modulate:a", 1.0, 5.0)
-		
-		await get_tree().create_timer(25.0).timeout
-		get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
+
+		game_over_screen.start_fade()
 
 func replace_tiles_with_blocks():
 	for tilemap_layer in tilemap_container.get_children():
