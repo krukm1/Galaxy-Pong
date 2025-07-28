@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://csyhi5dkmdro4" path="res://Scenes/Boss_1.tscn" id="2_o3gpf"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_ykyxx"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_ghf3m"]
-[ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/Sprites/Block_Tile_Set.tres" id="6_ykyxx"]
+[ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/TileSets/Block_Tile_Set.tres" id="6_ykyxx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8wggk"]
 

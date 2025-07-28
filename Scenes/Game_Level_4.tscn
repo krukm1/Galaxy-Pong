@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_aytf1"]
 [ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="2_smjwb"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_smjwb"]
-[ext_resource type="TileSet" uid="uid://cfj31vbmn18ix" path="res://Assets/Sprites/block_tile_set2.tres" id="6_5kso0"]
+[ext_resource type="TileSet" uid="uid://cfj31vbmn18ix" path="res://Assets/TileSets/block_tile_set2.tres" id="6_5kso0"]
 
 [node name="Game_Level_4" type="Node2D"]
 script = ExtResource("1_5kso0")

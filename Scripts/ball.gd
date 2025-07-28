@@ -10,14 +10,32 @@ signal ball_lost  # ← Step 1: Define the signal
 var is_locked := true  # While true, the ball stays attached in front of the paddle
 @onready var paddle: CharacterBody2D = $"../paddle"  # Reference to the paddle node (assumes it's a sibling)
 
+# --- Ball Combo Tracker ---
+var add_ball_powerup_scene := preload("res://Scenes/add_ball_powerup.tscn")
+var combo_timer := 0.0
+var combo_count := 0
+var combo_window := 2  # Seconds allowed between hits
+var powerup_cooldown := 10.0  # seconds
+var time_since_last_powerup := -10.0  # Start ready
+
 func _ready():
 	contact_monitor = true
+	set_process(true)  # So we can track time
 	add_to_group("FadeOnGameStart")
 	add_to_group("Ball")
 
+func _process(delta):
+	time_since_last_powerup += delta
+
 # --- Called every physics frame ---
-func _physics_process(delta: float) -> void:		
-	if is_locked and paddle: 		# Lock the ball in front of the paddle until it's launched
+func _physics_process(delta: float) -> void:
+	#Combo Tracker
+	if combo_timer > 0:
+		combo_timer -= delta
+		if combo_timer <= 0:
+			combo_count = 0  # Combo expired
+	# Lock the ball in front of the paddle until it's launched
+	if is_locked and paddle:
 		# The 12.0 defines the distance between the ball and paddle face
 		global_position = paddle.global_position - (paddle.global_position - paddle.center).normalized() * 12.0
 	else:
@@ -38,6 +56,18 @@ func _physics_process(delta: float) -> void:
 			#Ball needs to hit Block_2hit twice and bounces off each time
 			if collider.is_in_group("Block"):
 				velocity = bounced_velocity.normalized() * base_speed
+				
+				# Combo logic
+				combo_count += 1
+				combo_timer = combo_window
+				
+				if combo_count >= 3:
+					# Spawn powerup from this block
+					var powerup = add_ball_powerup_scene.instantiate()
+					powerup.global_position = collider.global_position
+					get_tree().current_scene.add_child(powerup)
+
+					combo_count = 0  # Reset combo after reward
 
 				if collider.has_method("register_hit"):
 					collider.register_hit()  # Let block_2hit decide what to do

@@ -11,6 +11,6 @@ func _ready():
 
 func _on_destroyed():
 	destroyed_count += 1
-	print("Blocks destroyed: ", destroyed_count)
+	print("Block destroyed")
 	emit_signal("block_destroyed")
 	queue_free()  # free the block

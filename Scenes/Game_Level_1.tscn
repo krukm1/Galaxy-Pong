@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://by6b56obrm1sf"]
+[gd_scene load_steps=7 format=4 uid="uid://by6b56obrm1sf"]
 
 [ext_resource type="Script" uid="uid://dbogqekd7ifej" path="res://Scripts/game_level_1.gd" id="1_uqoqq"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_sfp2t"]
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_wmfp0"]
 [ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="4_xw3eb"]
-[ext_resource type="TileSet" uid="uid://cfj31vbmn18ix" path="res://Assets/Sprites/block_tile_set2.tres" id="6_xw3eb"]
-[ext_resource type="PackedScene" uid="uid://b1sfpqpx0qm3m" path="res://Scenes/add_ball_powerup.tscn" id="7_wmfp0"]
+[ext_resource type="TileSet" uid="uid://cfj31vbmn18ix" path="res://Assets/TileSets/block_tile_set2.tres" id="6_xw3eb"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="8_egejd"]
 
 [node name="Game_Level_1" type="Node2D"]
@@ -28,11 +27,8 @@ position = Vector2(576, 619)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." groups=["FadeOnGameOver", "FadeOnGameStart"]]
 position = Vector2(-8, 8)
-tile_map_data = PackedByteArray(0, 0, 35, 0, 24, 0, 0, 0, 0, 0, 0, 0, 1, 0)
+tile_map_data = PackedByteArray("AAAiABkAAAAAAAAAAQAlABkAAAAAAAAAAQAhABgAAAAAAAAAAQAhABcAAAAAAAAAAQAhABYAAAAAAAAAAQAhABUAAAAAAAAAAQAiABUAAAAAAAAAAQAiABQAAAAAAAAAAQAjABQAAAAAAAAAAQAkABQAAAAAAAAAAQAlABQAAAAAAAAAAQAlABUAAAAAAAAAAQAmABUAAAAAAAAAAQAmABYAAAAAAAAAAQAnABYAAAAAAAAAAQAnABcAAAAAAAAAAQAmABcAAAAAAAAAAQAmABgAAAAAAAAAAQAnABgAAAAAAAAAAQAhABkAAAAAAAAAAQAiABoAAAAAAAAAAQAlABoAAAAAAAAAAQAmABoAAAAAAAAAAQAmABkAAAAAAAAAAQAlABsAAAAAAAAAAQAiABsAAAAAAAAAAQAhABsAAAAAAAAAAQAhABoAAAAAAAAAAQAgABkAAAAAAAAAAQAgABgAAAAAAAAAAQAgABcAAAAAAAAAAQAgABYAAAAAAAAAAQAgABUAAAAAAAAAAQAgABQAAAAAAAAAAQAhABQAAAAAAAAAAQAhABMAAAAAAAAAAQAiABMAAAAAAAAAAQAjABMAAAAAAAAAAQAkABMAAAAAAAAAAQAlABMAAAAAAAAAAQAmABMAAAAAAAAAAQAmABQAAAAAAAAAAQAnABQAAAAAAAAAAQAnABUAAAAAAAAAAQA=")
 tile_set = ExtResource("6_xw3eb")
-
-[node name="Add_Ball_PowerUp" parent="." instance=ExtResource("7_wmfp0")]
-position = Vector2(658, 613)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 3.0
