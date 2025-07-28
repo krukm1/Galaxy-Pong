@@ -3,6 +3,7 @@ extends Control
 @onready var resume_button = $VBoxContainer/ResumeButton
 @onready var restart_button = $VBoxContainer/RestartButton
 @onready var main_menu_button = $VBoxContainer/MainMenuButton
+@onready var ball_lives_label = $ball_lives_counter
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
@@ -35,6 +36,7 @@ func _unhandled_input(event):
 			_on_resume_pressed()
 
 func show_pause_menu():
+	update_ball_lives_display()
 	get_tree().paused = true
 	visible = true
 
@@ -55,3 +57,6 @@ func _on_main_menu_pressed() -> void:
 	get_tree().paused = false  # ✅ unpause BEFORE switching scenes
 	Music_Controller.play_exit_esc_button()
 	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
+
+func update_ball_lives_display() -> void:
+	ball_lives_label.text = "%d ball lives left" % GameState.balls_left

@@ -14,7 +14,6 @@ func _ready():
 	contact_monitor = true
 	add_to_group("FadeOnGameStart")
 	add_to_group("Ball")
-	print("Ball ready and added to FadeOnGameStart and Ball group")
 
 # --- Called every physics frame ---
 func _physics_process(delta: float) -> void:		
@@ -58,7 +57,8 @@ func _physics_process(delta: float) -> void:
 					Music_Controller.play_block_indestructible()
 				
 			if collider.is_in_group("Wall"):
-					print("Ball hit wall — losing life.")
+					print("Ball hit wall — losing 1 ball life.")
+					print("Lives remaining after: ", GameState.balls_left - 1)
 					queue_free()
 					emit_signal("ball_lost")
 					return  # Stop further code execution for this frame
