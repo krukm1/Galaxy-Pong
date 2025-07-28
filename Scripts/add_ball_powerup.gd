@@ -20,4 +20,6 @@ func _process(delta):
 func _on_body_entered(body):
 	if body.is_in_group("Paddle"):
 		GameState.balls_left += 1  # Or trigger spawn_ball()
+		print("+1 to ball lives")
+		Music_Controller.play_add_ball_powerup()
 		queue_free()

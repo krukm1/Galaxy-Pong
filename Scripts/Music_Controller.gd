@@ -23,6 +23,8 @@ var button_hover = load("res://Assets/Sounds/button_hover.mp3")
 var block_hit = load("res://Assets/Sounds/block_hit_sound.mp3")
 var ball_lost = load("res://Assets/Sounds/lost_ball1.mp3")
 var block_indestructible = load("res://Assets/Sounds/block_indestructible.mp3")
+var add_ball_powerup_spawned = load("res://Assets/Sounds/gain_ball.mp3")
+var add_ball_powerup = load("res://Assets/Sounds/gain_ball2.mp3")
 
 func _ready():
 	pass
@@ -135,6 +137,7 @@ func play_menu_back_button():
 #------SFXPlayer2------		
 func play_button_hover():
 		$SFXPlayer2.stream = button_hover
+		$SFXPlayer2.volume_db = +5
 		$SFXPlayer2.play()
 
 func play_block_hit():
@@ -149,5 +152,15 @@ func play_ball_lost():
 #------SFXPlayer3------
 func play_block_indestructible():
 		$SFXPlayer3.stream = block_indestructible
+		$SFXPlayer3.volume_db = -30  # Lower volume by 10 decibels (you can adjust this value)
+		$SFXPlayer3.play()
+
+func play_add_ball_powerup_spawned():
+		$SFXPlayer3.stream = add_ball_powerup_spawned
+		$SFXPlayer3.volume_db = -30  # Lower volume by 10 decibels (you can adjust this value)
+		$SFXPlayer3.play()
+
+func play_add_ball_powerup():
+		$SFXPlayer3.stream = add_ball_powerup
 		$SFXPlayer3.volume_db = -30  # Lower volume by 10 decibels (you can adjust this value)
 		$SFXPlayer3.play()

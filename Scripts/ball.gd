@@ -57,6 +57,7 @@ func _physics_process(delta: float) -> void:
 				
 				if combo_count >= 3:
 					# Spawn powerup from this block
+					Music_Controller.play_add_ball_powerup_spawned()
 					var powerup = add_ball_powerup_scene.instantiate()
 					powerup.global_position = collider.global_position
 					get_tree().current_scene.add_child(powerup)
