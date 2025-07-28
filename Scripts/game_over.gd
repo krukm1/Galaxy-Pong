@@ -26,6 +26,7 @@ func _ready() -> void:
 func start_fade() -> void:
 	visible = true
 	modulate.a = 1.0  # Make the root Control node visible
+	
 	vbox.modulate.a = 0.0
 	title_label.modulate.a = 0.0
 
@@ -33,8 +34,8 @@ func start_fade() -> void:
 	main_menu_button.disabled = true
 
 	var tween = create_tween()
-	tween.tween_property(title_label, "modulate:a", 1.0, 6.0).set_delay(0.0)
-	tween.tween_property(vbox, "modulate:a", 1.0, 4.0).set_delay(2.0)
+	tween.tween_property(title_label, "modulate:a", 1.0, 6.0)
+	tween.tween_property(vbox, "modulate:a", 1.0, 2.0).set_delay(0.0)
 
 	can_hover = false
 	interactivity_enabled = false

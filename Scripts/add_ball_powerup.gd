@@ -5,6 +5,7 @@ extends Area2D
 var velocity := Vector2.ZERO
 
 func _ready():
+	add_to_group("FadeOnGameOver")
 	# Random direction in a full 360° circle
 	var random_angle_rad = randf_range(0.0, TAU)  # TAU is 2π radians (360°)
 	velocity = Vector2.RIGHT.rotated(random_angle_rad) * speed

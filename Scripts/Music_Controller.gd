@@ -4,7 +4,7 @@ var menu_music = load("res://Assets/Music/Developing_Dreams.mp3")
 var level1_music = load("res://Assets/Music/Neutralize.mp3")
 var level2_music = load("res://Assets/Music/Freelancer.mp3")
 var level3_music = load("res://Assets/Music/Retrofuturism.mp3")
-var level4_music = load("res://Assets/Music/Samurais_Call.mp3")
+var level4_music = load("res://Assets/Music/Drifted_Wind.mp3")
 var level5_music = load("res://Assets/Music/Retrofuturism.mp3")
 var level6_music = load("res://Assets/Music/Retrofuturism.mp3")
 var level7_music = load("res://Assets/Music/Retrofuturism.mp3")
@@ -137,7 +137,7 @@ func play_menu_back_button():
 #------SFXPlayer2------		
 func play_button_hover():
 		$SFXPlayer2.stream = button_hover
-		$SFXPlayer2.volume_db = +5
+		$SFXPlayer2.volume_db = +1
 		$SFXPlayer2.play()
 
 func play_block_hit():
