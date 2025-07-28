@@ -15,8 +15,6 @@ var add_ball_powerup_scene := preload("res://Scenes/add_ball_powerup.tscn")
 var combo_timer := 0.0
 var combo_count := 0
 var combo_window := 2  # Seconds allowed between hits
-var powerup_cooldown := 10.0
-var time_since_last_powerup := 10.0
 
 func _ready():
 	contact_monitor = true
