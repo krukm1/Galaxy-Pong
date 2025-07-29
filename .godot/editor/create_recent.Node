@@ -1,3 +1,4 @@
+Button
 Label
 VBoxContainer
 AnimatedSprite2D
@@ -12,4 +13,3 @@ CollisionShape2D
 Container
 ColorRect
 CanvasLayer
-Control

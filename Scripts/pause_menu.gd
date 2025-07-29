@@ -38,6 +38,7 @@ func show_pause_menu():
 	update_ball_lives_display()
 	Music_Controller.play_menu_back_button()
 	get_tree().paused = true
+	Music_Controller.play_pause_menu_music()
 	visible = true
 
 func _on_resume_pressed() -> void:

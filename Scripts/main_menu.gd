@@ -8,6 +8,7 @@ func _ready() -> void:
 	var buttons = [
 		$Panel_Container/Main_Menu/VBoxContainer/StartButton,
 		$Panel_Container/Main_Menu/VBoxContainer/OptionsButton,
+		$Panel_Container/Main_Menu/VBoxContainer/LevelListButton,
 		$Panel_Container/Main_Menu/VBoxContainer/CreditsButton,
 		$Panel_Container/Main_Menu/VBoxContainer/ExitButton
 	]
@@ -22,6 +23,11 @@ func _on_button_mouse_entered() -> void:
 func _on_start_button_pressed() -> void:
 	Music_Controller.play_start_button()
 	get_tree().change_scene_to_file("res://Scenes/Game_Level_1.tscn")
+
+#Level List button -> Level List Menu
+func _on_level_list_button_pressed() -> void:
+	Music_Controller.play_menu_forward_button()
+	get_tree().change_scene_to_file("res://Scenes/Level_List_Menu.tscn")
 
 #Options button -> Options Menu
 func _on_options_button_pressed() -> void:

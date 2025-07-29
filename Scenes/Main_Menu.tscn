@@ -24,9 +24,9 @@ anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = 305.0
-offset_top = 133.0
+offset_top = 72.0
 offset_right = 832.0
-offset_bottom = 496.0
+offset_bottom = 559.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -55,6 +55,13 @@ size_flags_vertical = 4
 size_flags_stretch_ratio = 0.0
 theme = ExtResource("2_sigpu")
 text = "Start"
+
+[node name="LevelListButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_sigpu")
+text = "Level List"
 
 [node name="OptionsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
 layout_mode = 2
@@ -93,6 +100,7 @@ text = "Creator
 Special Thanks to Marek"
 
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LevelListButton" to="." method="_on_level_list_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="toggled" from="Panel_Container/Main_Menu/VBoxContainer/CreditsButton" to="." method="_on_credits_button_toggled"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

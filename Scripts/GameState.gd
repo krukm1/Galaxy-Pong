@@ -1,3 +1,3 @@
 extends Node
 
-var balls_left := 1
+var balls_left := 3

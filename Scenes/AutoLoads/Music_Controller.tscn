@@ -6,7 +6,12 @@
 script = ExtResource("1_nxefo")
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
-process_mode = 3
+process_mode = 1
+volume_db = -20.0
+autoplay = true
+
+[node name="Music2" type="AudioStreamPlayer2D" parent="."]
+process_mode = 2
 volume_db = -20.0
 autoplay = true
 
