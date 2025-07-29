@@ -25,8 +25,9 @@ func _ready() -> void:
 		button.mouse_entered.connect(_on_button_mouse_entered)
 
 # Mouse hover → play hover sound
-func _on_button_mouse_entered() -> void:
+func _on_button_mouse_entered():
 	Music_Controller.play_button_hover()
+	print("Mouse Hover is successful!")
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):
