@@ -2,6 +2,7 @@ extends Node
 
 var remaining_blocks := 0
 var level_completed := false
+var game_controller = null
 
 var level_paths := [
 	"res://Scenes/Game_Level_1.tscn",
@@ -17,6 +18,9 @@ var level_paths := [
 ]
 
 func _ready():
+	# Get the GameController node safely after scene loads
+	game_controller = get_tree().current_scene.get_node("GameController")
+	
 	await get_tree().process_frame  # <-- allow one frame for blocks to appear
 	# Count all destructible blocks
 	var blocks = get_tree().get_nodes_in_group("Block")
@@ -36,11 +40,13 @@ func _on_block_destroyed():
 
 func _on_level_complete() -> void:
 	print("Level completed!")
+	
 	var current_scene = get_tree().current_scene
 	var match = current_scene.name.match("^Game_Level_(\\d+)$")
 	if match:
 		var current_level = int(match[1])
 		GameState.unlock_level(current_level + 1)
+		game_controller.level_complete(current_level)
 
 	var balls = get_tree().get_nodes_in_group("Ball")
 	for ball in balls:

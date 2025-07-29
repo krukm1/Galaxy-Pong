@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dknh2sxwl82ig"]
+
+[ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/Level_Complete_Watcher.gd" id="1_ldvp4"]
+
+[node name="Level_Complete_Watcher" type="Node"]
+script = ExtResource("1_ldvp4")

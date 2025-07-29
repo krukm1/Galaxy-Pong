@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dknh2sxwl82ig"]
+[gd_scene load_steps=3 format=3 uid="uid://dknh2sxwl82ig"]
 
 [ext_resource type="Script" uid="uid://ctynpx2edx0vv" path="res://Scripts/Level_Complete_Watcher.gd" id="1_ldvp4"]
+[ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_w6uq4"]
 
 [node name="Level_Complete_Watcher" type="Node"]
 script = ExtResource("1_ldvp4")
+
+[node name="GameController" parent="." instance=ExtResource("2_w6uq4")]
