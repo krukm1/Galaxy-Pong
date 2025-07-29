@@ -40,5 +40,8 @@ func _get_unlocked_level() -> int:
 	var config = ConfigFile.new()
 	var err = config.load("user://save_data.cfg")
 	if err == OK:
-		return int(config.get_value("Progress", "highest_unlocked", 1))
+		var unlocked = int(config.get_value("Progress", "highest_unlocked", 1))
+		print("Loaded highest unlocked level:", unlocked)
+		return unlocked
+	print("No save data found, defaulting to level 1")
 	return 1

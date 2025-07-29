@@ -122,10 +122,19 @@ func unlock_next_level(current_level: int):
 	var path = "user://save_data.cfg"
 
 	var err = config.load(path)
-	var highest = 1
-	if err == OK:
-		highest = int(config.get_value("Progress", "highest_unlocked", 1))
+	if err != OK:
+		print("No existing save file. Creating new one.")
+
+	var highest = int(config.get_value("Progress", "highest_unlocked", 1))
+	print("Current highest unlocked from save:", highest)
 
 	if current_level + 1 > highest:
+		print("Unlocking new level:", current_level + 1)
 		config.set_value("Progress", "highest_unlocked", current_level + 1)
-		config.save(path)
+		var save_err = config.save(path)
+		if save_err != OK:
+			print("❌ Save failed with error code:", save_err)
+		else:
+			print("✅ Progress saved successfully!")
+	else:
+		print("Level already unlocked or not higher than saved.")
