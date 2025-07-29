@@ -9,7 +9,7 @@ shader = ExtResource("2_gsskx")
 shader_parameter/lod = 3.0
 
 [node name="Pause_Menu" type="Control"]
-process_mode = 2
+process_mode = 3
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_inwkf")

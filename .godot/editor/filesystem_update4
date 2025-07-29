@@ -7,3 +7,4 @@ res://Scenes/GameController.tscn
 res://Scenes/Game_Level_4.tscn
 res://Scenes/Pause_Menu.tscn
 res://Scripts/pause_menu.gd
+res://Scenes/AutoLoads/Music_Controller.tscn

@@ -6,7 +6,6 @@ extends Control
 @onready var ball_lives_label = $ball_lives_counter
 
 func _ready() -> void:
-	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	set_process_unhandled_input(true)
 	
 	visible = false
