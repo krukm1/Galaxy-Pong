@@ -57,6 +57,7 @@ func level_complete(next_level_path: String):
 	is_game_over = true  # Prevent pause
 	_fade_out_nodes()  # Fade out all FadeOnGameOver nodes
 	await get_tree().create_timer(3.0).timeout  # Wait for fade-out to finish
+	unlock_next_level(1)
 	get_tree().change_scene_to_file(next_level_path)
 
 func _unhandled_input(event):
@@ -110,3 +111,16 @@ func replace_tiles_with_blocks():
 				block_instance.global_position = tilemap_layer.map_to_world(cell)
 				tilemap_container.get_parent().add_child(block_instance)
 				tilemap_layer.set_cellv(cell, -1)
+
+func unlock_next_level(current_level: int):
+	var config = ConfigFile.new()
+	var path = "user://save_data.cfg"
+
+	var err = config.load(path)
+	var highest = 1
+	if err == OK:
+		highest = int(config.get_value("Progress", "highest_unlocked", 1))
+
+	if current_level + 1 > highest:
+		config.set_value("Progress", "highest_unlocked", current_level + 1)
+		config.save(path)

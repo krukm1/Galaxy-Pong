@@ -36,6 +36,11 @@ func _on_block_destroyed():
 
 func _on_level_complete() -> void:
 	print("Level completed!")
+	var current_scene = get_tree().current_scene
+	var match = current_scene.name.match("^Game_Level_(\\d+)$")
+	if match:
+		var current_level = int(match[1])
+		GameState.unlock_level(current_level + 1)
 
 	var balls = get_tree().get_nodes_in_group("Ball")
 	for ball in balls:

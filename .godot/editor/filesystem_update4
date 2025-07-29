@@ -17,3 +17,5 @@ res://Scripts/level_list_menu.gd
 res://Scenes/Main_Menu.tscn
 res://Scripts/main_menu.gd
 res://Scenes/Options_Menu.tscn
+res://Scripts/GameController.gd
+res://Scripts/Level_Complete_Watcher.gd
