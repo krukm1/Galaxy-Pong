@@ -58,6 +58,7 @@ func _on_button_mouse_entered() -> void:
 func _on_restart_pressed() -> void:
 	print("Restart button clicked")
 	Music_Controller.stop_music()
+	Music_Controller.play_start_button()
 	get_tree().reload_current_scene()
 
 func _on_main_menu_pressed() -> void:

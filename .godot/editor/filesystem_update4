@@ -1,0 +1,12 @@
+res://Scenes/Pause_Menu.tscn
+res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
+res://Scripts/Pause_Menu.gdshader
+res://Assets/TileSets/block_tile_set2.tres
+res://Scripts/pause_menu.gd
+res://Scenes/Game_Level_1.tscn
+res://Scenes/add_ball_powerup.tscn
+res://Scenes/GameController.tscn
+res://Scenes/Game_Level_4.tscn
+res://Scenes/AutoLoads/Music_Controller.tscn
+res://Scripts/Music_Controller.gd
+res://Scripts/game_over.gd

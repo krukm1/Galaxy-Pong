@@ -27,7 +27,6 @@ func _ready() -> void:
 # Mouse hover → play hover sound
 func _on_button_mouse_entered():
 	Music_Controller.play_button_hover()
-	print("Mouse Hover is successful!")
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):
@@ -37,11 +36,13 @@ func _unhandled_input(event):
 
 func show_pause_menu():
 	update_ball_lives_display()
+	Music_Controller.play_menu_back_button()
 	get_tree().paused = true
 	visible = true
 
 func _on_resume_pressed() -> void:
 	print("Resume button clicked")
+	Music_Controller.play_menu_forward_button()
 	visible = false
 	await get_tree().process_frame  # Let UI logic finish
 	get_tree().paused = false
@@ -50,6 +51,7 @@ func _on_restart_pressed() -> void:
 	print("Restart button clicked")
 	get_tree().paused = false  # Unpause before reloading
 	Music_Controller.stop_music()  # Add this line
+	Music_Controller.play_exit_esc_button()
 	get_tree().reload_current_scene()
 
 func _on_main_menu_pressed() -> void:
