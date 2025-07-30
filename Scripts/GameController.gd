@@ -57,8 +57,6 @@ func level_complete(current_level: int):
 	_fade_out_nodes()  # Fade out all FadeOnGameOver nodes
 	await get_tree().create_timer(3.0).timeout  # Wait for fade-out to finish
 
-	unlock_next_level(current_level)
-
 	var next_level = current_level + 1
 	var next_level_path = "res://Scenes/Game_Level_%d.tscn" % next_level
 
@@ -115,25 +113,3 @@ func replace_tiles_with_blocks():
 				block_instance.global_position = tilemap_layer.map_to_world(cell)
 				tilemap_container.get_parent().add_child(block_instance)
 				tilemap_layer.set_cellv(cell, -1)
-
-func unlock_next_level(current_level: int):
-	var config = ConfigFile.new()
-	var path = "user://save_data.cfg"
-
-	var err = config.load(path)
-	if err != OK:
-		print("No existing save file. Creating new one.")
-
-	var highest = int(config.get_value("Progress", "highest_unlocked", 1))
-	print("Current highest unlocked from save:", highest)
-
-	if current_level + 1 > highest:
-		print("Unlocking new level:", current_level + 1)
-		config.set_value("Progress", "highest_unlocked", current_level + 1)
-		var save_err = config.save(path)
-		if save_err != OK:
-			print("❌ Save failed with error code:", save_err)
-		else:
-			print("✅ Progress saved successfully!")
-	else:
-		print("Level already unlocked or not higher than saved.")

@@ -13,3 +13,5 @@ res://Scripts/GameController.gd
 res://Scenes/Game_Level_4.tscn
 res://Scenes/Main_Menu.tscn
 res://Scripts/main_menu.gd
+res://Scenes/Game_Over.tscn
+res://Scripts/game_over.gd

@@ -55,6 +55,7 @@ func _on_restart_pressed() -> void:
 	get_tree().paused = false  # Unpause before reloading
 	Music_Controller.stop_music()  # Add this line
 	Music_Controller.play_exit_esc_button()
+	GameState.soft_reset()
 	get_tree().reload_current_scene()
 
 func _on_main_menu_pressed() -> void:
