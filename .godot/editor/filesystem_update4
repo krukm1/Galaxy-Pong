@@ -15,3 +15,11 @@ res://Scenes/Main_Menu.tscn
 res://Scripts/main_menu.gd
 res://Scenes/Game_Over.tscn
 res://Scripts/game_over.gd
+res://Scenes/Game_Level_5.tscn
+res://Assets/TileSets/Block_Tile_Set.tres
+res://Scripts/Music_Controller.gd
+res://Scenes/block_indestructible.tscn
+res://Scenes/block_2hit_blue.tscn
+res://Scripts/block_2hit.gd
+res://Scripts/block_2_hit_blue.gd
+res://Scenes/block_2hit.tscn
