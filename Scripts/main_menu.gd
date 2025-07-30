@@ -2,14 +2,14 @@ extends Control
 
 func _ready() -> void:
 	Music_Controller.play_menu_music()
-	$Credits_Text.visible = false
+	$Controls_Text.visible = false
 	
 	#Connect mouse_entered signal for all buttons
 	var buttons = [
 		$Panel_Container/Main_Menu/VBoxContainer/StartButton,
 		$Panel_Container/Main_Menu/VBoxContainer/OptionsButton,
 		$Panel_Container/Main_Menu/VBoxContainer/LevelListButton,
-		$Panel_Container/Main_Menu/VBoxContainer/CreditsButton,
+		$Panel_Container/Main_Menu/VBoxContainer/ControlsButton,
 		$Panel_Container/Main_Menu/VBoxContainer/ExitButton
 	]
 	for button in buttons:
@@ -34,13 +34,13 @@ func _on_options_button_pressed() -> void:
 	Music_Controller.play_menu_forward_button()
 	get_tree().change_scene_to_file("res://Scenes/Options_Menu.tscn")
 
-#Credits Toggle Button → Toggle Credits_Text visibility
-func _on_credits_button_toggled(toggled_on: bool) -> void:
+#Controls Toggle Button → Toggle Controls_Text visibility
+func _on_controls_button_toggled(toggled_on: bool) -> void:
 	if toggled_on:
 		Music_Controller.play_menu_forward_button()
 	else:
 		Music_Controller.play_menu_back_button()
-	$Credits_Text.visible = toggled_on
+	$Controls_Text.visible = toggled_on
 
 #Exit Button → Quit game
 func _on_exit_button_pressed() -> void:

@@ -70,13 +70,13 @@ size_flags_vertical = 4
 theme = ExtResource("2_sigpu")
 text = "Options"
 
-[node name="CreditsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+[node name="ControlsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_sigpu")
 toggle_mode = true
-text = "Credits"
+text = "Controls"
 
 [node name="ExitButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
 layout_mode = 2
@@ -86,21 +86,22 @@ theme = ExtResource("2_sigpu")
 text = "Exit
 "
 
-[node name="Credits_Text" type="RichTextLabel" parent="."]
+[node name="Controls_Text" type="RichTextLabel" parent="."]
 layout_mode = 2
 offset_left = 706.0
 offset_top = 325.0
-offset_right = 921.0
+offset_right = 1000.0
 offset_bottom = 489.0
 theme = ExtResource("2_sigpu")
 theme_override_font_sizes/normal_font_size = 14
-text = "Creator
-     Mateusz
+text = "A / D key or Arrowkeys to move
 
-Special Thanks to Marek"
+Space to shoot initial ball
+
+Shift for paddle speed increase"
 
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LevelListButton" to="." method="_on_level_list_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="toggled" from="Panel_Container/Main_Menu/VBoxContainer/CreditsButton" to="." method="_on_credits_button_toggled"]
+[connection signal="toggled" from="Panel_Container/Main_Menu/VBoxContainer/ControlsButton" to="." method="_on_controls_button_toggled"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
