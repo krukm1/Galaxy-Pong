@@ -11,9 +11,8 @@ var block_scene := preload("res://Scenes/block.tscn")
 var block_white_scene := preload("res://Scenes/block_white.tscn")
 var block_2hit_scene := preload("res://Scenes/block_2hit.tscn")
 
-var is_game_over := false
-
 func _ready():
+	GameState.is_game_over = false
 	replace_tiles_with_blocks()
 	# Start level music based on level name
 	var level_name = get_tree().current_scene.name
@@ -54,7 +53,7 @@ func _fade_out_nodes():
 			tween.tween_property(node, "modulate:a", 0.0, 5)
 
 func level_complete(current_level: int):
-	is_game_over = true  # Prevent pause
+	GameState.is_game_over = true  # Prevent pause
 	_fade_out_nodes()  # Fade out all FadeOnGameOver nodes
 	await get_tree().create_timer(3.0).timeout  # Wait for fade-out to finish
 
@@ -66,7 +65,7 @@ func level_complete(current_level: int):
 	get_tree().change_scene_to_file(next_level_path)
 
 func _unhandled_input(event):
-	if is_game_over:
+	if GameState.is_game_over:
 		return
 	if event.is_action_pressed("ui_cancel"):
 		if get_tree().paused:
@@ -89,7 +88,7 @@ func _on_ball_lost():
 		spawn_ball()
 	else:
 		print("Game Over")
-		is_game_over = true
+		GameState.is_game_over = true
 		Music_Controller.play_game_over_music()
 		_fade_out_nodes()
 

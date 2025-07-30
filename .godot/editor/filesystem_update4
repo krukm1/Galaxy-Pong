@@ -9,3 +9,4 @@ res://Scripts/GameState.gd
 res://Scenes/Pause_Menu.tscn
 res://Scripts/pause_menu.gd
 res://Scripts/game_level_1.gd
+res://Scripts/GameController.gd
