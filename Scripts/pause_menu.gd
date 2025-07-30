@@ -29,12 +29,14 @@ func _on_button_mouse_entered():
 	Music_Controller.play_button_hover()
 
 func _unhandled_input(event):
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed("ui_cancel") and not GameState.is_game_over:
 		print("Esc pressed - visible:", visible, " | paused:", get_tree().paused)
 		if visible:
 			_on_resume_pressed()
 
 func show_pause_menu():
+	if GameState.is_game_over:
+		return
 	update_ball_lives_display()
 	Music_Controller.play_menu_back_button()
 	get_tree().paused = true
