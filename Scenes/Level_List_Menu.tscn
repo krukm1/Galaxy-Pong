@@ -138,4 +138,5 @@ size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 10"
 
+[connection signal="mouse_entered" from="BackButton" to="." method="_on_back_button_mouse_entered"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

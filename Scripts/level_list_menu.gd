@@ -57,19 +57,22 @@ func _ready() -> void:
 		if not button.pressed.is_connected(_on_level_selected):
 			button.pressed.connect(_on_level_selected.bind(level_num))
 		if not button.mouse_entered.is_connected(_on_button_mouse_entered):
-			button.mouse_entered.connect(_on_button_mouse_entered)
-	
-	# Back button setup
-	back_button.pressed.connect(_on_back_button_pressed)
-	back_button.mouse_entered.connect(_on_button_mouse_entered)
+			button.mouse_entered.connect(func(): _on_button_mouse_entered(button))
 	
 func _on_level_selected(level_number: int):
 	var level_path = "res://Scenes/Game_Level_%d.tscn" % level_number
 	get_tree().change_scene_to_file(level_path)
 	
-func _on_button_mouse_entered() -> void:
-	Music_Controller.play_button_hover()
+func _on_button_mouse_entered(button: Button) -> void:
+	var button_name = button.name  # e.g., "Level_2"
+	var level_key = button_name.to_lower()  # "level_2"
+
+	if GameState.level_unlocks.get(level_key, false):
+		Music_Controller.play_button_hover()
 	
+#Back button hover and click
 func _on_back_button_pressed() -> void:
 	Music_Controller.play_menu_back_button()
 	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
+func _on_back_button_mouse_entered() -> void:
+	Music_Controller.play_button_hover()
