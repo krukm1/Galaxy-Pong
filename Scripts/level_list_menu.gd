@@ -30,19 +30,24 @@ func _ready() -> void:
 	
 	# Connect mouse hover signals to play hover sound
 	var buttons = [
-		level_1,
-		level_2,
-   		level_3,
-		level_4,
-		level_5,
-		level_6,
-		level_7,
-		level_8,
-		level_9,
-		level_10
+	level_1,
+	level_2,
+	level_3,
+	level_4,
+	level_5,
+	level_6,
+	level_7,
+	level_8,
+	level_9,
+	level_10
 	]
-	for button in buttons:
-		button.mouse_entered.connect(_on_button_mouse_entered)
+
+	for i in range(buttons.size()):
+		var button = buttons[i]
+		if not button.pressed.is_connected(_on_level_selected):
+			button.pressed.connect(_on_level_selected.bind(i + 1))
+		if not button.mouse_entered.is_connected(_on_button_mouse_entered):
+			button.mouse_entered.connect(_on_button_mouse_entered)
 	
 	#Connect mouse_entered signal for all buttons
 	back_button.mouse_entered.connect(_on_button_mouse_entered)
