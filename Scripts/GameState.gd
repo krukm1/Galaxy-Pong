@@ -26,3 +26,11 @@ func full_reset():
 # Use when continuing to next level — keep ball count
 func soft_reset():
 	is_game_over = false
+	
+func unlock_level(level_number: int) -> void:
+	var key = "level_%d" % level_number
+	if level_unlocks.has(key):
+		level_unlocks[key] = true
+		print("Unlocked: ", key)
+	else:
+		print("Level key not found:", key)

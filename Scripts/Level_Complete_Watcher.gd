@@ -40,13 +40,18 @@ func _on_block_destroyed():
 
 func _on_level_complete() -> void:
 	print("Level completed!")
-	
-	var current_scene = get_tree().current_scene
-	var match = current_scene.name.match("^Game_Level_(\\d+)$")
-	if match:
-		var current_level = int(match[1])
+
+	var current_path = get_tree().current_scene.scene_file_path
+	var regex = RegEx.new()
+	regex.compile("^res://Scenes/Game_Level_(\\d+)\\.tscn$")
+
+	var result = regex.search(current_path)
+	if result:
+		var current_level = int(result.get_string(1))
+		print("Current level:", current_level)
 		GameState.unlock_level(current_level + 1)
-		game_controller.level_complete(current_level)
+	else:
+		print("Scene path did not match expected pattern:", current_path)
 
 	var balls = get_tree().get_nodes_in_group("Ball")
 	for ball in balls:
@@ -57,7 +62,7 @@ func _on_level_complete() -> void:
 	Music_Controller.play_level_complete_music()
 	await get_tree().create_timer(6.0).timeout
 
-	var current_path = get_tree().current_scene.scene_file_path
+	# Re-use current_path instead of redeclaring it
 	var current_index = level_paths.find(current_path)
 
 	if current_index != -1 and current_index + 1 < level_paths.size():

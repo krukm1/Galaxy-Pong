@@ -12,3 +12,4 @@ res://Scenes/Game_Level_4.tscn
 res://Scripts/GameState.gd
 res://Scenes/Level_List_Menu.tscn
 res://Scripts/level_list_menu.gd
+res://Scripts/Level_Complete_Watcher.gd

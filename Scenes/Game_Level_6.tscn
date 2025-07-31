@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://c6jt31lmqpi35"]
+[gd_scene load_steps=8 format=4 uid="uid://c6jt31lmqpi35"]
 
 [ext_resource type="Script" uid="uid://mhibdqtatusv" path="res://Scripts/game_level_6.gd" id="1_cmvd5"]
 [ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cmvd5"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_m1w8f"]
 [ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_fr5ht"]
 [ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/TileSets/Block_Tile_Set.tres" id="6_cmvd5"]
+[ext_resource type="Texture2D" uid="uid://ch2d4k02tdugm" path="res://Assets/Sprites/CelestialObjects.png" id="7_m1w8f"]
 
 [node name="Game_Level_6" type="Node2D"]
 script = ExtResource("1_cmvd5")
@@ -50,3 +51,12 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 10
 text = "Level 6"
+
+[node name="galaxysprite" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.501961)
+z_index = -1
+position = Vector2(576, 320)
+scale = Vector2(2.30599, 2.30599)
+texture = ExtResource("7_m1w8f")
+region_enabled = true
+region_rect = Rect2(256, 96, 128, 127)
