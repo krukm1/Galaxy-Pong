@@ -54,7 +54,7 @@ offset_bottom = 512.0
 alignment = 1
 vertical = true
 
-[node name="Level1" type="Button" parent="LevelListContainer1"]
+[node name="Level_1" type="Button" parent="LevelListContainer1"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -62,7 +62,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 1
 "
 
-[node name="Level2" type="Button" parent="LevelListContainer1"]
+[node name="Level_2" type="Button" parent="LevelListContainer1"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -70,7 +70,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 2
 "
 
-[node name="Level3" type="Button" parent="LevelListContainer1"]
+[node name="Level_3" type="Button" parent="LevelListContainer1"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -78,7 +78,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 3
 "
 
-[node name="Level4" type="Button" parent="LevelListContainer1"]
+[node name="Level_4" type="Button" parent="LevelListContainer1"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -86,7 +86,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 4
 "
 
-[node name="Level5" type="Button" parent="LevelListContainer1"]
+[node name="Level_5" type="Button" parent="LevelListContainer1"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -95,7 +95,6 @@ text = "Level 5
 "
 
 [node name="LevelListContainer2" type="BoxContainer" parent="."]
-visible = false
 layout_mode = 2
 offset_left = 610.0
 offset_top = 192.0
@@ -104,35 +103,35 @@ offset_bottom = 512.0
 alignment = 1
 vertical = true
 
-[node name="Level6" type="Button" parent="LevelListContainer2"]
+[node name="Level_6" type="Button" parent="LevelListContainer2"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 6"
 
-[node name="Level7" type="Button" parent="LevelListContainer2"]
+[node name="Level_7" type="Button" parent="LevelListContainer2"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 7"
 
-[node name="Level8" type="Button" parent="LevelListContainer2"]
+[node name="Level_8" type="Button" parent="LevelListContainer2"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 8"
 
-[node name="Level9" type="Button" parent="LevelListContainer2"]
+[node name="Level_9" type="Button" parent="LevelListContainer2"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 9"
 
-[node name="Level10" type="Button" parent="LevelListContainer2"]
+[node name="Level_10" type="Button" parent="LevelListContainer2"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
