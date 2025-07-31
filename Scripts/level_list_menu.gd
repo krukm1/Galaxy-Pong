@@ -1,6 +1,5 @@
 extends Control
 
-@onready var button_container = $LevelListContainer1
 @onready var back_button = $BackButton
 @onready var level_1: Button = $LevelListContainer1/Level_1
 @onready var level_2: Button = $LevelListContainer1/Level_2
@@ -44,21 +43,33 @@ func _ready() -> void:
 
 	for i in range(buttons.size()):
 		var button = buttons[i]
+		var level_num = i + 1
+		var level_key = "level_%d" % level_num
+
+		# Enable or disable based on unlock state
+		var is_unlocked = GameState.level_unlocks.get(level_key, false)
+		button.disabled = not is_unlocked
+
+		# Optional: visually mark locked buttons (gray out, change text, etc.)
+		# Example: if not is_unlocked: button.text = "Locked"
+
+		# Connect signals
 		if not button.pressed.is_connected(_on_level_selected):
-			button.pressed.connect(_on_level_selected.bind(i + 1))
+			button.pressed.connect(_on_level_selected.bind(level_num))
 		if not button.mouse_entered.is_connected(_on_button_mouse_entered):
 			button.mouse_entered.connect(_on_button_mouse_entered)
 	
-	#Connect mouse_entered signal for all buttons
+	# Back button setup
+	back_button.pressed.connect(_on_back_button_pressed)
 	back_button.mouse_entered.connect(_on_button_mouse_entered)
-
-func _on_button_mouse_entered() -> void:
-	Music_Controller.play_button_hover()
-
-func _on_back_button_pressed() -> void:
-	Music_Controller.play_menu_back_button()
-	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
-
+	
 func _on_level_selected(level_number: int):
 	var level_path = "res://Scenes/Game_Level_%d.tscn" % level_number
 	get_tree().change_scene_to_file(level_path)
+	
+func _on_button_mouse_entered() -> void:
+	Music_Controller.play_button_hover()
+	
+func _on_back_button_pressed() -> void:
+	Music_Controller.play_menu_back_button()
+	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")

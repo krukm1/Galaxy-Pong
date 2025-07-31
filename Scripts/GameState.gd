@@ -5,8 +5,8 @@ var is_game_over := false
 
 var level_unlocks := {
 	"level_1": true,
-	"level_2": false,
-	"level_3": false,
+	"level_2": true,
+	"level_3": true,
 	"level_4": false,
 	"level_5": false,
 	"level_6": false,
