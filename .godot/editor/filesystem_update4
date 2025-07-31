@@ -14,3 +14,4 @@ res://Scenes/Level_List_Menu.tscn
 res://Scripts/level_list_menu.gd
 res://Scripts/Level_Complete_Watcher.gd
 res://README.md
+res://Scripts/Music_Controller.gd

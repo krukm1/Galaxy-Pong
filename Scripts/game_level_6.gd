@@ -14,4 +14,4 @@ func _ready() -> void:
 
 func _process(delta):
 	tilemap_layer.rotation += delta * -0.4  # Rotates at ~0.5 radians/sec (~28 degrees/sec)
-	galaxysprite.rotation += delta * -0.4  # Rotates at ~0.5 radians/sec (~28 degrees/sec)
+	galaxysprite.rotation += delta * +0.4  # Rotates at ~0.5 radians/sec (~28 degrees/sec)
