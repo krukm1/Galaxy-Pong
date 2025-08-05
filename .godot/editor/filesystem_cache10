@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1754021452
+::res://::1754350578
 galaxy-pong-icon.png::CompressedTexture2D/CompressedTexture2D::6373103767371845545::1752805933::1752805933::1::::<><><>0<>0<>93a47455b69ac85060e366959c871bcb<>res://.godot/imported/galaxy-pong-icon.png-231beab21fb3e665548374fe0d3ebfcc.ctex::
 README.md::TextFile/TextFile::-1::1753932195::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1753668892
@@ -145,7 +145,7 @@ Pause_Menu.tscn::PackedScene/PackedScene::960593892570834060::1753837055::0::1::
 ::res://Scenes/AutoLoads/::1753816759
 background_star_fields.tscn::PackedScene/PackedScene::7279675772893937745::1753561771::0::1::::<><><>0<>0<><>::
 Music_Controller.tscn::PackedScene/PackedScene::1123613197834867472::1753816759::0::1::::<><><>0<>0<><>::uid://bodoybu2govkk::::res://Scripts/Music_Controller.gd
-::res://Scripts/::1754022417
+::res://Scripts/::1754024396
 add_ball_powerup.gd::GDScript/GDScript::8820814732311554422::1753673104::0::1::::<>Area2D<><>0<>0<><>::
 ball.gd::GDScript/GDScript::763138782845430536::1753672295::0::1::::<>RigidBody2D<><>0<>0<><>::
 block.gd::GDScript/GDScript::6528988555486909549::1753667945::0::1::::<>StaticBody2D<><>0<>0<><>::
@@ -173,6 +173,5 @@ Music_Controller.gd::GDScript/GDScript::3376150609494969570::1753932813::0::1:::
 options_menu.gd::GDScript/GDScript::6286728737035157856::1753497540::0::1::::<>Control<><>0<>0<><>::
 paddle.gd::GDScript/GDScript::3496681120383123421::1753667869::0::1::::<>CharacterBody2D<><>0<>0<><>::
 pause_menu.gd::GDScript/GDScript::4007389755538709113::1753840066::0::1::::<>Control<><>0<>0<><>::
-Pause_Menu.gdshader::Shader::5060434156310710852::1754022417::0::1::::<><><>0<>0<><>::
-SameGame.gd::GDScript::661742128523574935::1754022781::0::1::::<>Node<><>0<>0<><>::
+Pause_Menu.gdshader::Shader::5060434156310710852::1754024396::0::1::::<><><>0<>0<><>::
 wall_kill.gd::GDScript/GDScript::2211723059986746187::1753152394::0::1::::<>StaticBody2D<><>0<>0<><>::

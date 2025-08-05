@@ -9,6 +9,7 @@ Critical Priority
 High Priority
 - Add volume control
 - Add rolling credits scene
+- fix bug where locked ball on paddle can be destroyed. It doesn't be.
 
 Medium Priority
 - Add duplicate ball object

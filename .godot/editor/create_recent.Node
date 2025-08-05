@@ -1,7 +1,10 @@
-Sprite2D
-CollisionShape2D
-StaticBody2D
+Area2D
 Node2D
+RigidBody2D
+CollisionShape2D
+Sprite2D
+AnimatableBody2D
+StaticBody2D
 BoxContainer
 Button
 Label
@@ -9,6 +12,3 @@ VBoxContainer
 AnimatedSprite2D
 GPUParticles2D
 TileMapLayer
-TileMap
-Node
-Area2D

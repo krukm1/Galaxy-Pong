@@ -82,7 +82,7 @@ func _physics_process(delta: float) -> void:
 					Music_Controller.play_block_indestructible()
 				
 			if collider.is_in_group("Wall"):
-					print("Ball hit wall — losing 1 ball life.")
+					print("Ball destoyed — losing 1 ball life.")
 					print("Lives remaining after: ", GameState.balls_left - 1)
 					queue_free()
 					emit_signal("ball_lost")

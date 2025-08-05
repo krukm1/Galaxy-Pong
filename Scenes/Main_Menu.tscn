@@ -98,7 +98,9 @@ text = "A / D key or Arrowkeys to move
 
 Space to shoot initial ball
 
-Shift for paddle speed increase"
+Shift for increased paddle speed
+
+Esc key to pause"
 
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LevelListButton" to="." method="_on_level_list_button_pressed"]
