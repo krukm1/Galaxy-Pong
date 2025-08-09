@@ -88,10 +88,10 @@ text = "Exit
 
 [node name="Controls_Text" type="RichTextLabel" parent="."]
 layout_mode = 2
-offset_left = 706.0
-offset_top = 325.0
-offset_right = 1000.0
-offset_bottom = 489.0
+offset_left = 768.0
+offset_top = 256.0
+offset_right = 1062.0
+offset_bottom = 467.0
 theme = ExtResource("2_sigpu")
 theme_override_font_sizes/normal_font_size = 14
 text = "A / D key or Arrowkeys to move
