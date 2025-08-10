@@ -16,6 +16,20 @@ script = ExtResource("1_vr14v")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
 
+[node name="FeedbackButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 1000.0
+offset_top = 568.0
+offset_right = 1147.0
+offset_bottom = 636.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_sigpu")
+theme_override_font_sizes/font_size = 17
+toggle_mode = true
+text = "Submit
+Feedback/Bug"
+
 [node name="Panel_Container" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -102,6 +116,7 @@ Shift for increased paddle speed
 
 Esc key to pause"
 
+[connection signal="pressed" from="FeedbackButton" to="." method="_on_feedback_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LevelListButton" to="." method="_on_level_list_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]

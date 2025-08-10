@@ -10,7 +10,8 @@ func _ready() -> void:
 		$Panel_Container/Main_Menu/VBoxContainer/OptionsButton,
 		$Panel_Container/Main_Menu/VBoxContainer/LevelListButton,
 		$Panel_Container/Main_Menu/VBoxContainer/ControlsButton,
-		$Panel_Container/Main_Menu/VBoxContainer/ExitButton
+		$Panel_Container/Main_Menu/VBoxContainer/ExitButton,
+		$FeedbackButton
 	]
 	for button in buttons:
 		button.mouse_entered.connect(_on_button_mouse_entered)
@@ -47,3 +48,7 @@ func _on_exit_button_pressed() -> void:
 	Music_Controller.play_exit_esc_button()
 	await get_tree().create_timer(0.8).timeout  # Wait half a second
 	get_tree().quit()
+
+func _on_feedback_button_pressed() -> void:
+	Music_Controller.play_menu_forward_button()
+	
