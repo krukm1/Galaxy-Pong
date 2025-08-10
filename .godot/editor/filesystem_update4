@@ -4,4 +4,4 @@ res://Scripts/Pause_Menu.gdshader
 res://Assets/TileSets/Block_Tile_Set.tres
 res://Scenes/Game_Level_6.tscn
 res://Scenes/Game_Level_5.tscn
-res://Scripts/main_menu.gd
+res://Scripts/game_level_6.gd

@@ -13,5 +13,5 @@ func _ready() -> void:
 	game_controller._fade_in_nodes()
 
 func _process(delta):
-	tilemap_layer.rotation += delta * -0.4  # Rotates at ~0.5 radians/sec (~28 degrees/sec)
-	galaxysprite.rotation += delta * +0.4  # Rotates at ~0.5 radians/sec (~28 degrees/sec)
+	tilemap_layer.rotation += delta * -1.0  # Rotates at ~0.5 radians/sec (~28 degrees/sec)
+	galaxysprite.rotation += delta * -0.5  # Rotates at ~0.5 radians/sec (~28 degrees/sec)

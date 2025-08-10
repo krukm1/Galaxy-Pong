@@ -16,19 +16,20 @@ script = ExtResource("1_vr14v")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 320)
 
-[node name="FeedbackButton" type="Button" parent="."]
+[node name="FeedbackButton" type="LinkButton" parent="."]
 layout_mode = 2
-offset_left = 1000.0
-offset_top = 568.0
-offset_right = 1147.0
-offset_bottom = 636.0
+offset_left = 16.0
+offset_top = 599.0
+offset_right = 240.0
+offset_bottom = 633.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_sigpu")
 theme_override_font_sizes/font_size = 17
 toggle_mode = true
-text = "Submit
-Feedback/Bug"
+text = "Submit Feedback or Bug"
+underline = 1
+uri = "https://forms.clickup.com/14190252/f/dh1nc-1437/LCQLO5SKRQYAR0LZDK"
 
 [node name="Panel_Container" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
