@@ -1,7 +1,9 @@
-res://Scenes/Main_Menu.tscn
+res://Scenes/Game_Level_6.tscn
 res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
 res://Scripts/Pause_Menu.gdshader
 res://Assets/TileSets/Block_Tile_Set.tres
-res://Scenes/Game_Level_6.tscn
 res://Scenes/Game_Level_5.tscn
-res://Scripts/game_level_6.gd
+res://Scenes/Game_Level_7.tscn
+res://Scenes/block_2hit_blue.tscn
+res://Scenes/block_red.tscn
+res://Scripts/game_level_7.gd
