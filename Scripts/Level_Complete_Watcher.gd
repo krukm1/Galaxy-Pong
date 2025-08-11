@@ -70,3 +70,10 @@ func _on_level_complete() -> void:
 		get_tree().change_scene_to_file(next_level)
 	else:
 		get_tree().change_scene_to_file("res://Scenes/Title_Menu.tscn")
+
+func _unhandled_input(event):
+	# ✅ Press "P" to instantly complete the level (testing only)
+	if event.is_action_pressed("complete_level_test"): # Change in Input Map to use "P" or any key you want
+		if not level_completed:
+			level_completed = true
+			await _on_level_complete()
