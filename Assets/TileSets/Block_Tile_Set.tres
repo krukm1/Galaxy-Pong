@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bmi5waekhgxo5" path="res://Scenes/block.tscn" id="2_5mjpb"]
 [ext_resource type="PackedScene" uid="uid://b3mk1mr8uh41e" path="res://Scenes/block_white.tscn" id="2_jabrd"]
 [ext_resource type="PackedScene" uid="uid://cht7n2j3t0y0c" path="res://Scenes/block_indestructible.tscn" id="3_jabrd"]
-[ext_resource type="PackedScene" uid="uid://fbbg0cnqj08a" path="res://Scenes/block_red.tscn" id="3_kf2jn"]
+[ext_resource type="PackedScene" uid="uid://fbbg0cnqj08a" path="res://Scenes/block_lightblue.tscn" id="3_kf2jn"]
 [ext_resource type="PackedScene" uid="uid://bv6g0qqg73ss8" path="res://Scenes/block_2hit_black.tscn" id="4_0urw1"]
 [ext_resource type="PackedScene" uid="uid://ccijhhnug4516" path="res://Scenes/block_2hit_blue.tscn" id="5_dwxiu"]
 
