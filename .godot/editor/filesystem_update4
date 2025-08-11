@@ -7,3 +7,11 @@ res://Scenes/Game_Level_7.tscn
 res://Scenes/block_2hit_blue.tscn
 res://Scenes/block_red.tscn
 res://Scripts/game_level_7.gd
+res://Scenes/ball.tscn
+res://Scenes/block.tscn
+res://Scenes/block_2hit_black.tscn
+res://Scenes/block_tan.tscn
+res://Scenes/Game_Level_9.tscn
+res://Scenes/Game_Level_10.tscn
+res://Scenes/Game_Level_8.tscn
+res://Scripts/Music_Controller.gd
