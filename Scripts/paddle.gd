@@ -26,24 +26,26 @@ func _ready() -> void:
 
 # --- Called every physics frame ---
 func _physics_process(delta: float) -> void:
-	var input_direction := Input.get_axis("ui_right", "ui_left")  # Read input for clockwise/counterclockwise rotation
-	# var vertical_input := Input.get_axis("ui_up", "ui_down")  # (Optional: for radius control, currently unused)
+	var input_direction := Input.get_axis("ui_right", "ui_left")
 
-# Check if Shift is held -> apply speed multiplier for paddle
 	var is_shift_pressed := Input.is_action_pressed("ui_shift")
 	var current_rotation_speed = ROTATION_SPEED
 	if is_shift_pressed:
-		current_rotation_speed *= 2.5  # Or any multiplier you want
+		current_rotation_speed *= 2.5
 
-	# If input is pressed, update the angle based on rotation speed
 	if input_direction != 0:
-		angle += input_direction * current_rotation_speed * delta
-		angle = fmod(angle, TAU)  # Wrap the angle so it stays within 0 to 2π
+		# Compute *candidate* new angle and position
+		var new_angle = angle + input_direction * current_rotation_speed * delta
+		var desired_position = center + Vector2(cos(new_angle), sin(new_angle)) * radius
+		var motion = desired_position - global_position
 
-	# Calculate the paddle’s position along the circular path using angle and radius
-	global_position = center + Vector2(cos(angle), sin(angle)) * radius
+		# Try the move
+		var collision = move_and_collide(motion)
+		if not collision:
+			# Only commit if no collision
+			angle = fmod(new_angle, TAU)
+			global_position = desired_position   # 👈 actually move the paddle
 
-	# Make the paddle face toward the centerpoint...
+	# Face the centerpoint
 	look_at(center)
-	# ...then rotate 90° clockwise so it's upright (perpendicular to its orbit direction)
 	rotation += PI / 2
