@@ -14,7 +14,7 @@
 script = ExtResource("1_8pdqn")
 
 [node name="Boss_1" parent="." instance=ExtResource("2_mw1w6")]
-modulate = Color(0.0588235, 0.0588235, 0.0588235, 1)
+modulate = Color(0.0728426, 0.0728426, 0.0728426, 1)
 z_index = -99
 material = SubResource("ShaderMaterial_t3umy")
 position = Vector2(1111, 37)

@@ -14,7 +14,7 @@
 script = ExtResource("1_ls3hp")
 
 [node name="Boss_1" parent="." instance=ExtResource("2_ihwyo")]
-modulate = Color(0.06, 0.06, 0.06, 1)
+modulate = Color(0.0999861, 0.099986, 0.099986, 1)
 z_index = -96
 material = SubResource("ShaderMaterial_i0osj")
 position = Vector2(1040, 104)
