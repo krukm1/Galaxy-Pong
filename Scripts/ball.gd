@@ -9,6 +9,7 @@ signal ball_lost  # ← Step 1: Define the signal
 # --- Internal state ---
 var is_locked := true  # While true, the ball stays attached in front of the paddle
 @onready var paddle: CharacterBody2D = $"../paddle"  # Reference to the paddle node (assumes it's a sibling)
+@onready var dummy_sprite: AnimatedSprite2D = $DummySprite
 
 # --- Ball Combo Tracker ---
 var add_ball_powerup_scene := preload("res://Scenes/add_ball_powerup.tscn")
@@ -30,9 +31,13 @@ func _physics_process(delta: float) -> void:
 			combo_count = 0  # Combo expired
 	# Lock the ball in front of the paddle until it's launched
 	if is_locked and paddle:
+		dummy_sprite.show()
 		# The 12.0 defines the distance between the ball and paddle face
 		global_position = paddle.global_position - (paddle.global_position - paddle.center).normalized() * 12.0
+		sleeping = true   # physics off while locked
 	else:
+		#dummy_sprite.hide()
+		sleeping = false  # re-enable physics
 		# Move the ball according to its velocity and check for collisions
 		var collision_info = move_and_collide(velocity * delta, false, 0.08)
 
@@ -93,5 +98,6 @@ func _input(event: InputEvent) -> void:
 	# Launch the ball when the assigned input action ("launch_ball") is pressed
 	if is_locked and event.is_action_pressed("launch_ball") and paddle:
 		is_locked = false  # Unlock the ball so it starts moving
+		sleeping = false
 		var launch_direction = (paddle.center - paddle.global_position).normalized()
 		velocity = launch_direction * velocity.length()  # Launch in the paddle’s facing direction

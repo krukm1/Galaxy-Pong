@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://je7f27rxtiks"]
+[gd_scene load_steps=13 format=3 uid="uid://je7f27rxtiks"]
 
 [ext_resource type="Script" uid="uid://k4w1wuprx84c" path="res://Scripts/ball.gd" id="1_ij5cq"]
 [ext_resource type="Texture2D" uid="uid://co3oy130yl17h" path="res://Assets/Sprites/energy_ball.png" id="2_ij5cq"]
@@ -56,6 +56,32 @@ animations = [{
 "speed": 15.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_j0xqq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_376qj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk4cr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aw2wy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vblhy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31idh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hk63f")
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_07ia0"]
 
 [node name="ball" type="RigidBody2D" groups=["Ball"]]
@@ -66,10 +92,15 @@ freeze = true
 script = ExtResource("1_ij5cq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
 scale = Vector2(0.8075, 0.8075)
 sprite_frames = SubResource("SpriteFrames_vm4s8")
 autoplay = "default"
 frame_progress = 0.0720267
+
+[node name="DummySprite" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_j0xqq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visibility_layer = 3
