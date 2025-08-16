@@ -4,3 +4,4 @@ res://Scripts/Pause_Menu.gdshader
 res://Assets/TileSets/Block_Tile_Set.tres
 res://Scenes/Game_Level_8.tscn
 res://Scenes/Game_Level_9.tscn
+res://Scenes/paddle.tscn

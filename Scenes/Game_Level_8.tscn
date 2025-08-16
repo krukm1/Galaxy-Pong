@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://ct2fsc5e88rjf"]
+[gd_scene load_steps=10 format=4 uid="uid://ct2fsc5e88rjf"]
 
 [ext_resource type="Script" uid="uid://cgk70skprurp1" path="res://Scripts/game_level_8.gd" id="1_ykyxx"]
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_csrdh"]
@@ -9,6 +9,9 @@
 [ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/TileSets/Block_Tile_Set.tres" id="6_ykyxx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8wggk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_csrdh"]
+size = Vector2(8, 64)
 
 [node name="Game_Level_8" type="Node2D"]
 script = ExtResource("1_ykyxx")
@@ -33,6 +36,7 @@ position = Vector2(576, 320)
 position = Vector2(576, 320)
 
 [node name="paddle" parent="." instance=ExtResource("3_ghf3m")]
+light_mask = 3
 position = Vector2(576, 619)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." groups=["FadeOnGameOver", "FadeOnGameStart"]]
@@ -48,3 +52,11 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 10
 text = "Level 8"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(324, 176)
+shape = SubResource("RectangleShape2D_csrdh")
