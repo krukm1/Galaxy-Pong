@@ -8,6 +8,5 @@ var destroyed_times: Array = []
 var powerup_scene = preload("res://Scenes/add_ball_powerup.tscn")
 
 func _ready() -> void:
-	game_controller.spawn_ball()
 	game_controller._fade_in_nodes()
 	

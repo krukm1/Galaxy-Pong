@@ -70,20 +70,11 @@ func _unhandled_input(event):
 			pause_menu._on_resume_pressed()
 		else:
 			pause_menu.show_pause_menu()
-			
-func spawn_ball():
-	var new_ball = ball_scene.instantiate()
-	new_ball.paddle = paddle
-	new_ball.is_locked = true
-	new_ball.global_position = paddle.global_position - (paddle.global_position - paddle.center).normalized() * 12.0
-	get_tree().current_scene.add_child(new_ball)
-	new_ball.connect("ball_lost", Callable(self, "_on_ball_lost"))
 
 func _on_ball_lost():
 	GameState.balls_left -= 1
 	if GameState.balls_left > 0:
 		Music_Controller.play_ball_lost()
-		spawn_ball()
 	else:
 		print("Game Over")
 		GameState.is_game_over = true
