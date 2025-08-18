@@ -11,6 +11,8 @@ var block_scene := preload("res://Scenes/block.tscn")
 var block_white_scene := preload("res://Scenes/block_white.tscn")
 var block_2hit_scene := preload("res://Scenes/block_2hit.tscn")
 
+var ball_instance: CharacterBody2D = null
+
 func _ready():
 	GameState.is_game_over = false
 	replace_tiles_with_blocks()
@@ -45,6 +47,26 @@ func _fade_in_nodes():
 			node.modulate.a = 0.0
 			var tween := create_tween()
 			tween.tween_property(node, "modulate:a", 1.0, 2)
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("launch_ball") and ball_instance == null:
+		spawn_and_launch_ball()
+
+func spawn_and_launch_ball() -> void:
+	# Instantiate ball
+	ball_instance = ball_scene.instantiate()
+	
+	# Position it just above the paddle
+	ball_instance.global_position = paddle.global_position + Vector2(0, -20)
+	
+	# Optional: set the initial velocity
+	ball_instance.ball_velocity = Vector2(0, -ball_instance.base_speed)
+	
+	# Add to scene
+	get_tree().current_scene.add_child(ball_instance)
+	
+	# Connect signal to reset ball_instance when it’s lost
+	ball_instance.connect("ball_lost", Callable(self, "_on_ball_lost"))
 
 func _fade_out_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameOver"):
