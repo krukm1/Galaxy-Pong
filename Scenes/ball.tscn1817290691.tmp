@@ -57,6 +57,8 @@ animations = [{
 
 [node name="ball" type="RigidBody2D" groups=["Ball"]]
 script = ExtResource("1_ij5cq")
+base_speed = null
+velocity = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.8075, 0.8075)
