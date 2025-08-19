@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://d32spe8nauxsr"]
+
+[ext_resource type="Script" uid="uid://dek7blbkqqjkr" path="res://Scripts/pass_through_ball_powerup.gd" id="1_0kwd3"]
+[ext_resource type="Texture2D" uid="uid://jf3rtudbqaqe" path="res://Assets/Sprites/basic_block_set.png" id="2_0kwd3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_akun5"]
+radius = 8.0
+
+[node name="Pass_Through_Ball_PowerUp" type="Area2D"]
+script = ExtResource("1_0kwd3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_akun5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.55271e-15, -3.55271e-15)
+scale = Vector2(1.23077, 1.23077)
+texture = ExtResource("2_0kwd3")
+region_enabled = true
+region_rect = Rect2(126, 9, 12, 12)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

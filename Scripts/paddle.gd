@@ -32,7 +32,7 @@ func _physics_process(delta: float) -> void:
 	if input_direction == 0:
 		return  # No movement, early exit
 	
-	# Optional: speed boost when Shift is pressed
+	# Speed boost when Shift is pressed
 	var current_rotation_speed = ROTATION_SPEED
 	if Input.is_action_pressed("ui_shift"):
 		current_rotation_speed *= 2.5

@@ -17,10 +17,10 @@ script = ExtResource("1_cfxxc")
 [node name="level_walls" parent="." instance=ExtResource("2_cfxxc")]
 
 [node name="centerpoint" type="Node2D" parent="."]
-position = Vector2(576, 320)
+position = Vector2(576, 321)
 
 [node name="camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 320)
+position = Vector2(576, 321)
 
 [node name="paddle" parent="." instance=ExtResource("3_0idtv")]
 position = Vector2(576, 619)
