@@ -31,7 +31,7 @@ func _physics_process(delta: float) -> void:
 	# Lock the ball in front of the paddle until it's launched
 	if is_locked and paddle:
 		# The 12.0 defines the distance between the ball and paddle face
-		global_position = paddle.global_position - (paddle.global_position - paddle.center).normalized() * 12.0
+		global_position = paddle.global_position - (paddle.global_position - paddle.center).normalized() * 13.0
 	else:
 		# Move the ball according to its velocity and check for collisions
 		var collision_info = move_and_collide(velocity * delta, false, 0.08)
