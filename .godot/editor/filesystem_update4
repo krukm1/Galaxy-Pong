@@ -1,20 +1,6 @@
-res://Scenes/ball.tscn
+res://Scenes/Game_Level_1.tscn
 res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres
 res://Scripts/Pause_Menu.gdshader
-res://Assets/TileSets/Block_Tile_Set.tres
-res://Scripts/ball.gd
-res://Scenes/Game_Level_8.tscn
-res://Scenes/Game_Level_9.tscn
-res://Scenes/paddle.tscn
-res://Scenes/GameController.tscn
-res://Scripts/GameController.gd
-res://Scripts/paddle.gd
-res://Scripts/game_level_8.gd
-res://Scripts/game_level_9.gd
-res://Scenes/Game_Level_3.tscn
-res://Scenes/Game_Level_1.tscn
 res://Assets/TileSets/block_tile_set2.tres
-res://Scripts/game_level_1.gd
-res://Scenes/Game_Level_6.tscn
-res://Scenes/Game_Level_5.tscn
-res://Scenes/Game_Level_4.tscn
+res://Scenes/GameController.tscn
+res://Scripts/paddle.gd
