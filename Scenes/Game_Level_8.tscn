@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://ct2fsc5e88rjf"]
+[gd_scene load_steps=12 format=4 uid="uid://ct2fsc5e88rjf"]
 
 [ext_resource type="Script" uid="uid://cgk70skprurp1" path="res://Scripts/game_level_8.gd" id="1_ykyxx"]
 [ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_csrdh"]
@@ -12,6 +12,12 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_csrdh"]
 size = Vector2(13, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghf3m"]
+size = Vector2(33.2974, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3gpf"]
+size = Vector2(40, 9)
 
 [node name="Game_Level_8" type="Node2D"]
 script = ExtResource("1_ykyxx")
@@ -69,3 +75,19 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(321.5, 176)
 shape = SubResource("RectangleShape2D_csrdh")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(513, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-205, 161)
+rotation = -0.400999
+shape = SubResource("RectangleShape2D_ghf3m")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(508, 5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(343, 164)
+rotation = 0.456611
+shape = SubResource("RectangleShape2D_o3gpf")
