@@ -59,24 +59,24 @@ size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 10
 text = "Level 8"
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_layer = 2
-collision_mask = 0
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["Block_Indestructible"]]
+collision_layer = 1
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(321.5, 176)
 shape = SubResource("RectangleShape2D_csrdh")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="StaticBody2D2" type="StaticBody2D" parent="." groups=["Block_Indestructible"]]
 position = Vector2(510, 0)
-collision_layer = 2
-collision_mask = 0
+collision_layer = 1
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(321.5, 176)
 shape = SubResource("RectangleShape2D_csrdh")
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+[node name="StaticBody2D3" type="StaticBody2D" parent="." groups=["Block_Indestructible"]]
 position = Vector2(513, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
@@ -84,7 +84,7 @@ position = Vector2(-205, 161)
 rotation = -0.400999
 shape = SubResource("RectangleShape2D_ghf3m")
 
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+[node name="StaticBody2D4" type="StaticBody2D" parent="." groups=["Block_Indestructible"]]
 position = Vector2(508, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
