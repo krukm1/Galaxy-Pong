@@ -138,5 +138,14 @@ size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 10"
 
+[node name="DebugUnlockAllButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 580.0
+offset_right = 170.0
+offset_bottom = 625.0
+theme = ExtResource("2_rc3cd")
+text = "Unlock All"
+
 [connection signal="mouse_entered" from="BackButton" to="." method="_on_back_button_mouse_entered"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
