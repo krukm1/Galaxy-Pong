@@ -8,7 +8,8 @@ signal ball_lost  # ← Step 1: Define the signal
 
 # --- Internal state ---
 var is_locked := true  # While true, the ball stays attached in front of the paddle
-@onready var paddle: CharacterBody2D = $"../paddle"  # Reference to the paddle node (assumes it's a sibling)
+@onready var paddle: CharacterBody2D = $"../paddle"
+@onready var collision_shape: CollisionShape2D = $CollisionShape2D
 
 # --- Ball Combo Tracker ---
 var add_ball_powerup_scene := preload("res://Scenes/add_ball_powerup.tscn")
@@ -18,6 +19,10 @@ var combo_window := 2  # Seconds allowed between hits
 
 func _ready():
 	contact_monitor = true
+	set_physics_process_priority(1)
+	freeze_mode = RigidBody2D.FREEZE_MODE_KINEMATIC
+	freeze = true
+	collision_shape.disabled = true
 	add_to_group("FadeOnGameStart")
 	add_to_group("Ball")
 
@@ -92,6 +97,8 @@ func _physics_process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	# Launch the ball when the assigned input action ("launch_ball") is pressed
 	if is_locked and event.is_action_pressed("launch_ball") and paddle:
-		is_locked = false  # Unlock the ball so it starts moving
+		is_locked = false
+		freeze = false
+		collision_shape.disabled = false
 		var launch_direction = (paddle.center - paddle.global_position).normalized()
-		velocity = launch_direction * velocity.length()  # Launch in the paddle’s facing direction
+		velocity = launch_direction * velocity.length()
