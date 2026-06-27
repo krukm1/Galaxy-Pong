@@ -49,6 +49,10 @@ func _on_button_mouse_entered(button: Button) -> void:
 	if GameState.level_unlocks.get(level_key, false):
 		Music_Controller.play_button_hover()
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		_on_back_button_pressed()
+
 func _on_back_button_pressed() -> void:
 	Music_Controller.play_menu_back_button()
 	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")

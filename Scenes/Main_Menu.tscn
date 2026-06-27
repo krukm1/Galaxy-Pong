@@ -71,7 +71,7 @@ size_flags_stretch_ratio = 0.0
 theme = ExtResource("2_sigpu")
 text = "Start"
 
-[node name="LoadGameButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+[node name="LoadGameButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer" unique_id=712235250]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -97,7 +97,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_sigpu")
-toggle_mode = true
 text = "Controls"
 
 [node name="ExitButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer" unique_id=935900250]
@@ -129,5 +128,5 @@ Esc key to pause"
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LoadGameButton" to="." method="_on_load_game_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LevelListButton" to="." method="_on_level_list_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="toggled" from="Panel_Container/Main_Menu/VBoxContainer/ControlsButton" to="." method="_on_controls_button_toggled"]
+[connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/ControlsButton" to="." method="_on_controls_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

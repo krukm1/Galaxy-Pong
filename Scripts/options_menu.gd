@@ -13,6 +13,10 @@ func _ready() -> void:
 func _on_button_mouse_entered() -> void:
 	Music_Controller.play_button_hover()
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		_on_back_button_pressed()
+
 #Back Button takes you back to Main Menu
 func _on_back_button_pressed() -> void:
 	Music_Controller.play_menu_back_button()

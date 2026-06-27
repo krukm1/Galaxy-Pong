@@ -66,3 +66,6 @@ amount = 35
 lifetime = 140.0
 preprocess = 280.0
 process_material = SubResource("ParticleProcessMaterial_rtca2")
+
+[node name="camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)

@@ -1,5 +1,7 @@
 extends Control
 
+var _controls_visible := false
+
 func _ready() -> void:
 	Music_Controller.play_menu_music()
 	$Controls_Text.visible = false
@@ -42,12 +44,13 @@ func _on_options_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Options_Menu.tscn")
 
 # Controls Toggle Button → Toggle Controls_Text visibility
-func _on_controls_button_toggled(toggled_on: bool) -> void:
-	if toggled_on:
+func _on_controls_button_pressed() -> void:
+	_controls_visible = not _controls_visible
+	if _controls_visible:
 		Music_Controller.play_menu_forward_button()
 	else:
 		Music_Controller.play_menu_back_button()
-	$Controls_Text.visible = toggled_on
+	$Controls_Text.visible = _controls_visible
 
 # Exit Button → Quit game
 func _on_exit_button_pressed() -> void:

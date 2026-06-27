@@ -66,6 +66,10 @@ func _on_clear_button_mouse_entered(btn: Button) -> void:
 	if not btn.disabled:
 		Music_Controller.play_button_hover()
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		_on_back_button_pressed()
+
 func _on_back_button_pressed() -> void:
 	Music_Controller.play_menu_back_button()
 	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")

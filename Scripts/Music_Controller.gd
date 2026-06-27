@@ -1,5 +1,6 @@
 extends Node
 
+
 var menu_music = load("res://Assets/Music/Developing_Dreams.mp3")
 var pause_menu_music = load("res://Assets/Music/pause_menu.mp3")
 var level1_music = load("res://Assets/Music/Neutralize.mp3")
@@ -47,98 +48,118 @@ func stop_music():
 func play_menu_music():
 	if not $Music.playing or $Music.stream != menu_music:
 		$Music.stream = menu_music
+		$Music.volume_db = 2
 		$Music.play()
 
 func play_level1_music():
 	if not $Music.playing or $Music.stream != level1_music:
 		$Music.stream = level1_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level2_music():
 	if not $Music.playing or $Music.stream != level2_music:
 		$Music.stream = level2_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level3_music():
 	if not $Music.playing or $Music.stream != level3_music:
 		$Music.stream = level3_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level4_music():
 	if not $Music.playing or $Music.stream != level4_music:
 		$Music.stream = level4_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level5_music():
 	if not $Music.playing or $Music.stream != level5_music:
 		$Music.stream = level5_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level6_music():
 	if not $Music.playing or $Music.stream != level6_music:
 		$Music.stream = level6_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level7_music():
 	if not $Music.playing or $Music.stream != level7_music:
 		$Music.stream = level7_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level8_music():
 	if not $Music.playing or $Music.stream != level8_music:
 		$Music.stream = level8_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level9_music():
 	if not $Music.playing or $Music.stream != level9_music:
 		$Music.stream = level9_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level10_music():
 	if not $Music.playing or $Music.stream != level10_music:
 		$Music.stream = level10_music
+		$Music.volume_db = -5
 		$Music.play()
 
 func play_level_complete_music():
 	if not $Music.playing or $Music.stream != level_complete_music:
 		$Music.stream = level_complete_music
+		$Music.volume_db = 0
 		$Music.play()
 
 func play_game_over_music():
 	if not $Music.playing or $Music.stream != game_over_music:
 		$Music.stream = game_over_music
+		$Music.volume_db = 0
 		$Music.play()
 
 func play_game_credits_music():
 	if not $Music.playing or $Music.stream != game_credits_music:
 		$Music.stream = game_credits_music
+		$Music.volume_db = 0
 		$Music.play()
 
 #------Music2------
 func play_pause_menu_music():
 	if not $Music2.playing or $Music2.stream != pause_menu_music:
 		$Music2.stream = pause_menu_music
+		$Music2.volume_db = 3
 		$Music2.play()
 
 #------SFXPlayer1------
 func play_block_break():
 		$SFXPlayer1.stream = block_break
+		$SFXPlayer1.volume_db = 0
 		$SFXPlayer1.play()
 
 func play_start_button():
 		$SFXPlayer1.stream = start_button
+		$SFXPlayer1.volume_db = 0
 		$SFXPlayer1.play()
 
 func play_exit_esc_button():
 		$SFXPlayer1.stream = exit_esc_button
+		$SFXPlayer1.volume_db = 0
 		$SFXPlayer1.play()
 
 func play_menu_forward_button():
 		$SFXPlayer1.stream = menu_forward_button
+		$SFXPlayer1.volume_db = 0
 		$SFXPlayer1.play()
 
 func play_menu_back_button():
 		$SFXPlayer1.stream = menu_back_button
+		$SFXPlayer1.volume_db = 0
 		$SFXPlayer1.play()
 
 #------SFXPlayer2------
@@ -154,7 +175,7 @@ func play_block_hit():
 
 func play_ball_lost():
 		$SFXPlayer2.stream = ball_lost
-		$SFXPlayer2.volume_db = -30  # Lower volume by 10 decibels (you can adjust this value)
+		$SFXPlayer2.volume_db = -25  # Lower volume by 10 decibels (you can adjust this value)
 		$SFXPlayer2.play()
 
 #------SFXPlayer3------
