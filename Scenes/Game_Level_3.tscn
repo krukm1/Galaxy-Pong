@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=4 uid="uid://c4o77ik8gkm2d"]
+
+[ext_resource type="Script" uid="uid://cnbop2mif28f5" path="res://Scripts/game_level_3.gd" id="1_cfxxc"]
+[ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cfxxc"]
+[ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_fe1pv"]
+[ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_0idtv"]
+[ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="3_cfxxc"]
+[ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/TileSets/Block_Tile_Set.tres" id="5_40dpq"]
+
+[node name="Game_Level_3" type="Node2D"]
+script = ExtResource("1_cfxxc")
+
+[node name="Level_Complete_Watcher" parent="." instance=ExtResource("3_cfxxc")]
+
+[node name="GameController" parent="." instance=ExtResource("2_fe1pv")]
+
+[node name="level_walls" parent="." instance=ExtResource("2_cfxxc")]
+
+[node name="centerpoint" type="Node2D" parent="."]
+position = Vector2(576, 321)
+
+[node name="camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 321)
+
+[node name="paddle" parent="." instance=ExtResource("3_0idtv")]
+position = Vector2(576, 619)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." groups=["FadeOnGameOver", "FadeOnGameStart"]]
+position = Vector2(0, -32)
+tile_map_data = PackedByteArray("AAAjABEAAAAAAAAAAQAkABEAAAAAAAAAAQAiABAAAAAAAAAAAQAlABAAAAAAAAAAAQAhAA8AAAAAAAAAAQAgAA8AAAAAAAAAAQAfAA8AAAAAAAAAAQAmAA8AAAAAAAAAAQAnAA8AAAAAAAAAAQAoAA8AAAAAAAAAAQAeABAAAAAAAAAAAQAdABEAAgAAAAAAAQAcABIAAAAAAAAAAQAcABMAAAAAAAAAAQAcABQAAgAAAAAAAQAcABUAAAAAAAAAAQApABAAAAAAAAAAAQAqABEAAgAAAAAAAQArABIAAAAAAAAAAQArABMAAAAAAAAAAQArABQAAgAAAAAAAQArABUAAAAAAAAAAQAdABYAAAAAAAAAAQAdABcAAgAAAAAAAQAqABYAAAAAAAAAAQAqABcAAAAAAAAAAQAeABgAAAAAAAAAAQAfABkAAgAAAAAAAQAgABoAAAAAAAAAAQAhABsAAAAAAAAAAQApABgAAAAAAAAAAQAoABkAAgAAAAAAAQAnABoAAAAAAAAAAQAmABsAAAAAAAAAAQAlABwAAgAAAAAAAQAiABwAAgAAAAAAAQAjAB0AAAAAAAAAAQAkAB0AAAAAAAAAAQAeABMAAQAAAAAAAQAfABYAAQAAAAAAAQAgABcAAQAAAAAAAQAhABgAAQAAAAAAAQAiABkAAQAAAAAAAQAjABoAAQAAAAAAAQAkABoAAQAAAAAAAQAlABkAAQAAAAAAAQAmABgAAQAAAAAAAQAnABcAAQAAAAAAAQAoABYAAQAAAAAAAQAoABUAAQAAAAAAAQAoABIAAQAAAAAAAQAiABIAAQAAAAAAAQAfABUAAQAAAAAAAQAhABEAAQAAAAAAAQAnABEAAQAAAAAAAQApABMAAQAAAAAAAQApABQAAQAAAAAAAQAeABQAAQAAAAAAAQAlABIAAQAAAAAAAQAmABEAAQAAAAAAAQAmABMAAQAAAAAAAQAhABMAAQAAAAAAAQAgABEAAQAAAAAAAQAfABIAAQAAAAAAAQAjABMAAQAAAAAAAQAkABMAAQAAAAAAAQAgABQAAQAAAAAAAQAhABUAAQAAAAAAAQAiABYAAQAAAAAAAQAlABYAAQAAAAAAAQAmABUAAQAAAAAAAQAnABQAAQAAAAAAAQAnABMAAQAAAAAAAQAgABMAAQAAAAAAAQAkABcAAQAAAAAAAQAjABcAAQAAAAAAAQA=")
+tile_set = ExtResource("5_40dpq")
+
+[node name="level_label" type="RichTextLabel" parent="."]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 166.0
+offset_bottom = 12.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 10
+text = "Level 3"

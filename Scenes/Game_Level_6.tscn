@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=4 uid="uid://c6jt31lmqpi35"]
+
+[ext_resource type="Script" uid="uid://mhibdqtatusv" path="res://Scripts/game_level_6.gd" id="1_cmvd5"]
+[ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_cmvd5"]
+[ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="2_fr5ht"]
+[ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="2_m1w8f"]
+[ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_fr5ht"]
+[ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/TileSets/Block_Tile_Set.tres" id="6_cmvd5"]
+[ext_resource type="Texture2D" uid="uid://ch2d4k02tdugm" path="res://Assets/Sprites/CelestialObjects.png" id="7_m1w8f"]
+
+[node name="Game_Level_6" type="Node2D"]
+script = ExtResource("1_cmvd5")
+
+[node name="Level_Complete_Watcher" parent="." instance=ExtResource("2_fr5ht")]
+
+[node name="GameController" parent="." instance=ExtResource("2_m1w8f")]
+
+[node name="level_walls" parent="." instance=ExtResource("2_cmvd5")]
+
+[node name="centerpoint" type="Node2D" parent="."]
+position = Vector2(576, 320)
+
+[node name="camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
+
+[node name="paddle" parent="." instance=ExtResource("3_fr5ht")]
+position = Vector2(576, 619)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." groups=["FadeOnGameOver", "FadeOnGameStart"]]
+modulate = Color(0, 0.760784, 0.156863, 1)
+position = Vector2(576, 320)
+tile_map_data = PackedByteArray("AAD3//r/AQAAAAAAAQD3//v/AQAAAAAAAQD3//z/AQAAAAAAAQD3/wAAAQAAAAAAAQD3/wEAAQAAAAAAAQD3/wIAAQAAAAAAAQD4//n/AQAAAAAAAQD4/wMAAQAAAAAAAQD5//j/AQAAAAAAAQD5/wQAAQAAAAAAAQD6//f/AQAAAAAAAQD6//z/AQAAAAAAAQD6//3/AQAAAAAAAQD6/wAAAQAAAAAAAQD6/wEAAQAAAAAAAQD6/wUAAQAAAAAAAQD7//b/AQAAAAAAAQD7//v/AQAAAAAAAQD7/wIAAQAAAAAAAQD7/wYAAQAAAAAAAQD8//X/AQAAAAAAAQD8//r/AQAAAAAAAQD8/wMAAQAAAAAAAQD8/wcAAQAAAAAAAQD9//X/AQAAAAAAAQD9//n/AQAAAAAAAQD9//3/AQAAAAAAAQD9////AQAAAAAAAQD9/wQAAQAAAAAAAQD9/wcAAQAAAAAAAQD+//X/AQAAAAAAAQD+//j/AQAAAAAAAQD+//z/AQAAAAAAAQD+/wAAAQAAAAAAAQD///j/AQAAAAAAAQD///v/AQAAAAAAAQD///7/AQAAAAAAAQD//wEAAQAAAAAAAQAAAP7/AQAAAAAAAQAAAAEAAQAAAAAAAQABAPv/AQAAAAAAAQABAP//AQAAAAAAAQABAAAAAQAAAAAAAQABAAQAAQAAAAAAAQABAAcAAQAAAAAAAQACAPj/AQAAAAAAAQACAPz/AQAAAAAAAQACAAMAAQAAAAAAAQACAAcAAQAAAAAAAQADAPX/AQAAAAAAAQADAPj/AQAAAAAAAQADAP3/AQAAAAAAAQADAAIAAQAAAAAAAQADAAYAAQAAAAAAAQAEAPX/AQAAAAAAAQAEAPn/AQAAAAAAAQAEAP7/AQAAAAAAAQAEAAEAAQAAAAAAAQAEAAUAAQAAAAAAAQAFAPX/AQAAAAAAAQAFAPr/AQAAAAAAAQAFAAQAAQAAAAAAAQAFAAkAAQAAAAAAAQAGAPb/AQAAAAAAAQAGAPv/AQAAAAAAAQAGAAMAAQAAAAAAAQAGAAgAAQAAAAAAAQAHAPf/AQAAAAAAAQAHAPz/AQAAAAAAAQAHAP3/AQAAAAAAAQAHAAEAAQAAAAAAAQAHAAIAAQAAAAAAAQAHAAcAAQAAAAAAAQAIAPj/AQAAAAAAAQAIAAYAAQAAAAAAAQAJAPn/AQAAAAAAAQAJAAUAAQAAAAAAAQAKAPr/AQAAAAAAAQAKAPv/AQAAAAAAAQAKAPz/AQAAAAAAAQAKAAIAAQAAAAAAAQAKAAMAAQAAAAAAAQAKAAQAAQAAAAAAAQD8//7/AQAAAAAAAQAAAPr/AQAAAAAAAQAFAP//AQAAAAAAAQAFAAAAAQAAAAAAAQAAAAQAAQAAAAAAAQD+/wQAAQAAAAAAAQD//wUAAQAAAAAAAQD5//7/AQAAAAAAAQD5////AQAAAAAAAQAAAPf/AQAAAAAAAQABAPf/AQAAAAAAAQAIAP7/AQAAAAAAAQAIAP//AQAAAAAAAQAIAAAAAQAAAAAAAQD+/wgAAQAAAAAAAQD//wgAAQAAAAAAAQAAAAgAAQAAAAAAAQD2//3/AQAAAAAAAQD2//7/AQAAAAAAAQD2////AQAAAAAAAQACAPT/AQAAAAAAAQABAPT/AQAAAAAAAQAAAPT/AQAAAAAAAQD///T/AQAAAAAAAQAKAP3/AQAAAAAAAQALAP7/AQAAAAAAAQALAP//AQAAAAAAAQALAAAAAQAAAAAAAQALAAEAAQAAAAAAAQA=")
+tile_set = ExtResource("6_cmvd5")
+
+[node name="level_label" type="RichTextLabel" parent="."]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 166.0
+offset_bottom = 12.0
+scale = Vector2(1.07479, 0.926531)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 10
+text = "Level 6"
+
+[node name="galaxysprite" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.501961)
+z_index = -1
+position = Vector2(576, 320)
+scale = Vector2(3.50747, 3.50747)
+texture = ExtResource("7_m1w8f")
+region_enabled = true
+region_rect = Rect2(257, 96, 127, 127)

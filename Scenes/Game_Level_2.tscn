@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=4 uid="uid://bydj7vv8lr22y"]
+
+[ext_resource type="Script" uid="uid://yie6iyqjer5a" path="res://Scripts/game_level_2.gd" id="1_uee3w"]
+[ext_resource type="PackedScene" uid="uid://dknh2sxwl82ig" path="res://Scenes/Level_Complete_Watcher.tscn" id="2_qpnds"]
+[ext_resource type="PackedScene" uid="uid://bm0uqu1f7vhqd" path="res://Scenes/level_walls.tscn" id="2_yw441"]
+[ext_resource type="PackedScene" uid="uid://b4bsnw8y7ob8k" path="res://Scenes/GameController.tscn" id="3_bepv1"]
+[ext_resource type="PackedScene" uid="uid://dcpol23arf233" path="res://Scenes/paddle.tscn" id="3_yw441"]
+[ext_resource type="TileSet" uid="uid://dkbl7k5j6l1og" path="res://Assets/TileSets/Block_Tile_Set.tres" id="6_df86t"]
+
+[node name="Game_Level_2" type="Node2D"]
+script = ExtResource("1_uee3w")
+
+[node name="Level_Complete_Watcher" parent="." instance=ExtResource("2_qpnds")]
+
+[node name="GameController" parent="." instance=ExtResource("3_bepv1")]
+
+[node name="level_walls" parent="." instance=ExtResource("2_yw441")]
+
+[node name="centerpoint" type="Node2D" parent="."]
+position = Vector2(576, 320)
+
+[node name="camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
+
+[node name="paddle" parent="." instance=ExtResource("3_yw441")]
+position = Vector2(576, 619)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." groups=["FadeOnGameOver", "FadeOnGameStart"]]
+modulate = Color(1, 1, 0.521569, 1)
+position = Vector2(-264, 24)
+tile_map_data = PackedByteArray("AAAzABcAAQAAAAAAAQA1ABcAAQAAAAAAAQAzABUAAQAAAAAAAQAxABUAAQAAAAAAAQAzABMAAAAAAAAAAQAxABMAAQAAAAAAAQAvABMAAQAAAAAAAQA1ABUAAQAAAAAAAQA3ABUAAQAAAAAAAQA1ABMAAAAAAAAAAQA3ABMAAQAAAAAAAQA5ABMAAQAAAAAAAQAxABEAAQAAAAAAAQAvABEAAQAAAAAAAQAzABEAAAAAAAAAAQA1ABEAAAAAAAAAAQA3ABEAAQAAAAAAAQA5ABEAAQAAAAAAAQAxAA8AAQAAAAAAAQAzAA8AAQAAAAAAAQA1AA8AAQAAAAAAAQA3AA8AAQAAAAAAAQAzAA0AAQAAAAAAAQA1AA0AAQAAAAAAAQAxAA0AAAAAAAAAAQAvAA8AAAAAAAAAAQAvABUAAAAAAAAAAQAxABcAAAAAAAAAAQAzABkAAAAAAAAAAQA1ABkAAAAAAAAAAQA5ABUAAAAAAAAAAQA3ABcAAAAAAAAAAQA7ABMAAAAAAAAAAQA7ABEAAAAAAAAAAQAtABEAAAAAAAAAAQAtABMAAAAAAAAAAQA5AA8AAAAAAAAAAQA3AA0AAAAAAAAAAQA1AAsAAAAAAAAAAQAzAAsAAAAAAAAAAQA=")
+tile_set = ExtResource("6_df86t")
+
+[node name="level_label" type="RichTextLabel" parent="."]
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 166.0
+offset_bottom = 12.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 10
+text = "Level 2"

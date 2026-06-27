@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://byunnge8b52gn"]
+
+[ext_resource type="Script" uid="uid://boks5hupda6ua" path="res://Scripts/energy_ball.gd" id="1_q2iea"]
+[ext_resource type="Texture2D" uid="uid://ch2d4k02tdugm" path="res://Assets/Sprites/CelestialObjects.png" id="1_r60jo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r60jo"]
+radius = 14.0
+
+[node name="Energy_Ball" type="Area2D"]
+visibility_layer = 2
+script = ExtResource("1_q2iea")
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["Wall"]]
+visibility_layer = 2
+texture = ExtResource("1_r60jo")
+region_enabled = true
+region_rect = Rect2(192, 193, 32, 31)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Wall"]]
+visibility_layer = 2
+shape = SubResource("CircleShape2D_r60jo")

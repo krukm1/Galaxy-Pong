@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcpol23arf233"]
+
+[ext_resource type="Script" uid="uid://bp223ehsa1aan" path="res://Scripts/paddle.gd" id="1_krcey"]
+[ext_resource type="Texture2D" uid="uid://k1l5v03ccmyk" path="res://Assets/Sprites/paddle_sprites/green_paddle_curved.png" id="2_fe6ia"]
+
+[node name="paddle" type="CharacterBody2D"]
+collision_layer = 7
+collision_mask = 7
+script = ExtResource("1_krcey")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 0.010472
+texture = ExtResource("2_fe6ia")
+offset = Vector2(-1.99, -2.87)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 8, 0, 32, -3, 48, -7, 51, -6, 51, -2, 48, 0, 32, 4, 8, 7, 0.0751114, 7, -8, 7, -8, 7, -32, 4, -48, 0, -52, -2, -52, -6, -48, -7, -32, -3, -8, 0)

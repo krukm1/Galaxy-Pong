@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6qdnosrc0bfj"]
+
+[ext_resource type="Script" uid="uid://cgvw1iq1qdx0l" path="res://Scripts/main_menu.gd" id="1_vr14v"]
+[ext_resource type="Theme" uid="uid://dpwixnssaflu4" path="res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres" id="2_sigpu"]
+
+[sub_resource type="Theme" id="Theme_vmg2h"]
+
+[node name="Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_vmg2h")
+script = ExtResource("1_vr14v")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
+
+[node name="Panel_Container" type="PanelContainer" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 305.0
+offset_top = 133.0
+offset_right = 832.0
+offset_bottom = 496.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Main_Menu" type="VBoxContainer" parent="Panel_Container"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 88
+
+[node name="Title_Label" type="Label" parent="Panel_Container/Main_Menu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = ExtResource("2_sigpu")
+theme_override_font_sizes/font_size = 47
+text = "GALAXY PONG"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel_Container/Main_Menu"]
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+theme = ExtResource("2_sigpu")
+text = "Start"
+
+[node name="OptionsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_sigpu")
+text = "Options"
+
+[node name="CreditsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_sigpu")
+toggle_mode = true
+text = "Credits"
+
+[node name="ExitButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_sigpu")
+text = "Exit
+"
+
+[node name="Credits_Text" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 706.0
+offset_top = 325.0
+offset_right = 921.0
+offset_bottom = 489.0
+theme = ExtResource("2_sigpu")
+theme_override_font_sizes/normal_font_size = 14
+text = "Creator
+     Mateusz
+
+Special Thanks to Marek"
+
+[connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="toggled" from="Panel_Container/Main_Menu/VBoxContainer/CreditsButton" to="." method="_on_credits_button_toggled"]
+[connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
