@@ -1,11 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6qdnosrc0bfj"]
+[gd_scene format=3 uid="uid://c6qdnosrc0bfj"]
 
-[ext_resource type="Script" uid="uid://cgvw1iq1qdx0l" path="res://Scripts/main_menu.gd" id="1_vr14v"]
+[ext_resource type="Script" uid="uid://dwsa7f8mi0m78" path="res://Scripts/main_menu.gd" id="1_vr14v"]
 [ext_resource type="Theme" uid="uid://dpwixnssaflu4" path="res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres" id="2_sigpu"]
 
 [sub_resource type="Theme" id="Theme_vmg2h"]
 
-[node name="Main_Menu" type="Control"]
+[node name="Main_Menu" type="Control" unique_id=1694790730]
 layout_mode = 3
 anchors_preset = 0
 size_flags_horizontal = 4
@@ -13,11 +13,11 @@ size_flags_vertical = 4
 theme = SubResource("Theme_vmg2h")
 script = ExtResource("1_vr14v")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1495662863]
 position = Vector2(576, 320)
 
-[node name="FeedbackButton" type="LinkButton" parent="."]
-layout_mode = 2
+[node name="FeedbackButton" type="LinkButton" parent="." unique_id=1119600072]
+layout_mode = 0
 offset_left = 16.0
 offset_top = 599.0
 offset_right = 240.0
@@ -31,7 +31,7 @@ text = "Submit Feedback or Bug"
 underline = 1
 uri = "https://forms.clickup.com/14190252/f/dh1nc-1437/LCQLO5SKRQYAR0LZDK"
 
-[node name="Panel_Container" type="PanelContainer" parent="."]
+[node name="Panel_Container" type="PanelContainer" parent="." unique_id=1720648068]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 13
@@ -45,13 +45,13 @@ offset_bottom = 559.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Main_Menu" type="VBoxContainer" parent="Panel_Container"]
+[node name="Main_Menu" type="VBoxContainer" parent="Panel_Container" unique_id=2115557075]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 theme_override_constants/separation = 88
 
-[node name="Title_Label" type="Label" parent="Panel_Container/Main_Menu"]
+[node name="Title_Label" type="Label" parent="Panel_Container/Main_Menu" unique_id=2128536356]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
@@ -60,10 +60,10 @@ theme_override_font_sizes/font_size = 47
 text = "GALAXY PONG"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel_Container/Main_Menu"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel_Container/Main_Menu" unique_id=1750950358]
 layout_mode = 2
 
-[node name="StartButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+[node name="StartButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer" unique_id=1300085488]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -71,21 +71,28 @@ size_flags_stretch_ratio = 0.0
 theme = ExtResource("2_sigpu")
 text = "Start"
 
-[node name="LevelListButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+[node name="LoadGameButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_sigpu")
-text = "Level List"
+text = "Load Game"
 
-[node name="OptionsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+[node name="LevelListButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer" unique_id=756519536]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_sigpu")
+text = "Level Select"
+
+[node name="OptionsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer" unique_id=1815418871]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_sigpu")
 text = "Options"
 
-[node name="ControlsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+[node name="ControlsButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer" unique_id=325435435]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -93,7 +100,7 @@ theme = ExtResource("2_sigpu")
 toggle_mode = true
 text = "Controls"
 
-[node name="ExitButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer"]
+[node name="ExitButton" type="Button" parent="Panel_Container/Main_Menu/VBoxContainer" unique_id=935900250]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -101,8 +108,8 @@ theme = ExtResource("2_sigpu")
 text = "Exit
 "
 
-[node name="Controls_Text" type="RichTextLabel" parent="."]
-layout_mode = 2
+[node name="Controls_Text" type="RichTextLabel" parent="." unique_id=1468648879]
+layout_mode = 0
 offset_left = 768.0
 offset_top = 256.0
 offset_right = 1062.0
@@ -119,6 +126,7 @@ Esc key to pause"
 
 [connection signal="pressed" from="FeedbackButton" to="." method="_on_feedback_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LoadGameButton" to="." method="_on_load_game_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/LevelListButton" to="." method="_on_level_list_button_pressed"]
 [connection signal="pressed" from="Panel_Container/Main_Menu/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="toggled" from="Panel_Container/Main_Menu/VBoxContainer/ControlsButton" to="." method="_on_controls_button_toggled"]
