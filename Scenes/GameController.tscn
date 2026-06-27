@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b4bsnw8y7ob8k"]
+[gd_scene load_steps=5 format=3 uid="uid://b4bsnw8y7ob8k"]
 
 [ext_resource type="Script" uid="uid://d1a7mikvx6r4l" path="res://Scripts/GameController.gd" id="1_fyej0"]
 [ext_resource type="PackedScene" uid="uid://nxk3uji6wq01" path="res://Scenes/Pause_Menu.tscn" id="2_liseb"]
 [ext_resource type="PackedScene" uid="uid://cnumc1twqh8xa" path="res://Scenes/Game_Over.tscn" id="3_occvc"]
+[ext_resource type="Theme" uid="uid://dpwixnssaflu4" path="res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres" id="4_gcthm"]
 
 [node name="GameController" type="Node"]
 script = ExtResource("1_fyej0")
@@ -12,3 +13,22 @@ visible = false
 
 [node name="Game_Over" parent="." instance=ExtResource("3_occvc")]
 visible = false
+
+[node name="HUD" type="CanvasLayer" parent="."]
+layer = 1
+
+[node name="LivesLabel" type="Label" parent="HUD"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -220.0
+offset_top = -28.0
+offset_right = -10.0
+offset_bottom = -8.0
+theme = ExtResource("4_gcthm")
+theme_override_font_sizes/font_size = 14
+text = "3 ball lives left"
+horizontal_alignment = 2

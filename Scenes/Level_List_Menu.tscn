@@ -1,21 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://un7syrid2toj"]
+[gd_scene format=3 uid="uid://un7syrid2toj"]
 
 [ext_resource type="Script" uid="uid://gy5t1udi4hjm" path="res://Scripts/level_list_menu.gd" id="1_5kyjc"]
 [ext_resource type="Theme" uid="uid://dpwixnssaflu4" path="res://Assets/Fonts/Title Screen Font Theme/Title Button Theme.tres" id="2_rc3cd"]
 
 [sub_resource type="Theme" id="Theme_vmg2h"]
 
-[node name="Level_List_Menu" type="Control"]
+[node name="Level_List_Menu" type="Control" unique_id=26421419]
 layout_mode = 3
 anchors_preset = 0
 theme = SubResource("Theme_vmg2h")
 script = ExtResource("1_5kyjc")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1192453284]
 position = Vector2(576, 320)
 
-[node name="BackButton" type="Button" parent="."]
-layout_mode = 2
+[node name="BackButton" type="Button" parent="." unique_id=1318566319]
+layout_mode = 0
 offset_left = 540.0
 offset_top = 547.0
 offset_right = 613.0
@@ -26,17 +26,17 @@ theme = ExtResource("2_rc3cd")
 text = "Back
 "
 
-[node name="Title_Container" type="VBoxContainer" parent="."]
-layout_mode = 2
-offset_left = 347.0
+[node name="Title_Container" type="VBoxContainer" parent="." unique_id=1160649206]
+layout_mode = 0
+offset_left = 303.0
 offset_top = 71.0
-offset_right = 790.0
+offset_right = 861.0
 offset_bottom = 164.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 88
 
-[node name="Level_List_Title" type="Label" parent="Title_Container"]
+[node name="Level_List_Title" type="Label" parent="Title_Container" unique_id=979834440]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
@@ -45,8 +45,8 @@ theme_override_font_sizes/font_size = 47
 text = "LEVEL SELECT"
 horizontal_alignment = 1
 
-[node name="LevelListContainer1" type="BoxContainer" parent="."]
-layout_mode = 2
+[node name="LevelListContainer1" type="BoxContainer" parent="." unique_id=1965533319]
+layout_mode = 0
 offset_left = 406.0
 offset_top = 192.0
 offset_right = 544.0
@@ -54,7 +54,7 @@ offset_bottom = 512.0
 alignment = 1
 vertical = true
 
-[node name="Level_1" type="Button" parent="LevelListContainer1"]
+[node name="Level_1" type="Button" parent="LevelListContainer1" unique_id=278130713]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -62,7 +62,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 1
 "
 
-[node name="Level_2" type="Button" parent="LevelListContainer1"]
+[node name="Level_2" type="Button" parent="LevelListContainer1" unique_id=1926621745]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -70,7 +70,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 2
 "
 
-[node name="Level_3" type="Button" parent="LevelListContainer1"]
+[node name="Level_3" type="Button" parent="LevelListContainer1" unique_id=1497390264]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -78,7 +78,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 3
 "
 
-[node name="Level_4" type="Button" parent="LevelListContainer1"]
+[node name="Level_4" type="Button" parent="LevelListContainer1" unique_id=1866205999]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -86,7 +86,7 @@ theme = ExtResource("2_rc3cd")
 text = "Level 4
 "
 
-[node name="Level_5" type="Button" parent="LevelListContainer1"]
+[node name="Level_5" type="Button" parent="LevelListContainer1" unique_id=1057761908]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -94,8 +94,8 @@ theme = ExtResource("2_rc3cd")
 text = "Level 5
 "
 
-[node name="LevelListContainer2" type="BoxContainer" parent="."]
-layout_mode = 2
+[node name="LevelListContainer2" type="BoxContainer" parent="." unique_id=1578504974]
+layout_mode = 0
 offset_left = 610.0
 offset_top = 192.0
 offset_right = 755.0
@@ -103,43 +103,43 @@ offset_bottom = 512.0
 alignment = 1
 vertical = true
 
-[node name="Level_6" type="Button" parent="LevelListContainer2"]
+[node name="Level_6" type="Button" parent="LevelListContainer2" unique_id=117327801]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 6"
 
-[node name="Level_7" type="Button" parent="LevelListContainer2"]
+[node name="Level_7" type="Button" parent="LevelListContainer2" unique_id=655568165]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 7"
 
-[node name="Level_8" type="Button" parent="LevelListContainer2"]
+[node name="Level_8" type="Button" parent="LevelListContainer2" unique_id=1184858985]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 8"
 
-[node name="Level_9" type="Button" parent="LevelListContainer2"]
+[node name="Level_9" type="Button" parent="LevelListContainer2" unique_id=1106900834]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 9"
 
-[node name="Level_10" type="Button" parent="LevelListContainer2"]
+[node name="Level_10" type="Button" parent="LevelListContainer2" unique_id=1915919572]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_rc3cd")
 text = "Level 10"
 
-[node name="DebugUnlockAllButton" type="Button" parent="."]
-layout_mode = 2
+[node name="DebugUnlockAllButton" type="Button" parent="." unique_id=1363630858]
+layout_mode = 0
 offset_left = 10.0
 offset_top = 580.0
 offset_right = 170.0

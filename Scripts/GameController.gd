@@ -4,8 +4,11 @@ extends Node
 @onready var paddle = get_tree().current_scene.get_node("paddle")
 @onready var ball_scene = preload("res://Scenes/ball.tscn")
 @onready var game_over_screen := $Game_Over
+@onready var lives_label: Label = $HUD/LivesLabel
 
 @onready var tilemap_container = get_tree().current_scene.get_node("TileMapLayer")
+
+var _last_balls_left := -1
 
 var block_scene := preload("res://Scenes/block.tscn")
 var block_white_scene := preload("res://Scenes/block_white.tscn")
@@ -38,6 +41,11 @@ func _ready():
 		"Game_Level_10":
 			Music_Controller.play_level10_music()
 		# Add more levels as needed
+
+func _process(_delta: float) -> void:
+	if GameState.balls_left != _last_balls_left:
+		_last_balls_left = GameState.balls_left
+		lives_label.text = "%d ball lives left" % GameState.balls_left
 
 func _fade_in_nodes():
 	for node in get_tree().get_nodes_in_group("FadeOnGameStart"):

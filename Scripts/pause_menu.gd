@@ -7,14 +7,14 @@ extends Control
 
 func _ready() -> void:
 	set_process_unhandled_input(true)
-	
+
 	visible = false
-	
+
 	# Connect button pressed signals
 	resume_button.pressed.connect(_on_resume_pressed)
 	restart_button.pressed.connect(_on_restart_pressed)
 	main_menu_button.pressed.connect(_on_main_menu_pressed)
-	
+
 	# Connect mouse hover signals to play hover sound
 	var buttons = [
 		resume_button,
@@ -60,7 +60,7 @@ func _on_restart_pressed() -> void:
 
 func _on_main_menu_pressed() -> void:
 	print("Main Menu button clicked")
-	get_tree().paused = false  # ✅ unpause BEFORE switching scenes
+	get_tree().paused = false  # unpause BEFORE switching scenes
 	Music_Controller.play_exit_esc_button()
 	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
 

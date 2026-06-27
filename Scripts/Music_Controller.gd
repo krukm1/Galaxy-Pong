@@ -29,9 +29,9 @@ var add_ball_powerup = load("res://Assets/Sounds/gain_ball2.mp3")
 
 func _ready():
 	pass
-	
+
 #Note: Keep audio files in separate sections below if you want them to play at the same time.
-	
+
 #------Music------
 func pause_music():
 	if $Music.playing:
@@ -40,7 +40,7 @@ func pause_music():
 func resume_music():
 	if $Music.stream_paused:
 		$Music.stream_paused = false
-		
+
 func stop_music():
 	$Music.stop()
 
@@ -53,62 +53,62 @@ func play_level1_music():
 	if not $Music.playing or $Music.stream != level1_music:
 		$Music.stream = level1_music
 		$Music.play()
-		
+
 func play_level2_music():
 	if not $Music.playing or $Music.stream != level2_music:
 		$Music.stream = level2_music
 		$Music.play()
-		
+
 func play_level3_music():
 	if not $Music.playing or $Music.stream != level3_music:
 		$Music.stream = level3_music
 		$Music.play()
-		
+
 func play_level4_music():
 	if not $Music.playing or $Music.stream != level4_music:
 		$Music.stream = level4_music
 		$Music.play()
-		
+
 func play_level5_music():
 	if not $Music.playing or $Music.stream != level5_music:
 		$Music.stream = level5_music
 		$Music.play()
-		
+
 func play_level6_music():
 	if not $Music.playing or $Music.stream != level6_music:
 		$Music.stream = level6_music
 		$Music.play()
-		
+
 func play_level7_music():
 	if not $Music.playing or $Music.stream != level7_music:
 		$Music.stream = level7_music
 		$Music.play()
-		
+
 func play_level8_music():
 	if not $Music.playing or $Music.stream != level8_music:
 		$Music.stream = level8_music
 		$Music.play()
-		
+
 func play_level9_music():
 	if not $Music.playing or $Music.stream != level9_music:
 		$Music.stream = level9_music
 		$Music.play()
-		
+
 func play_level10_music():
 	if not $Music.playing or $Music.stream != level10_music:
 		$Music.stream = level10_music
 		$Music.play()
-		
+
 func play_level_complete_music():
 	if not $Music.playing or $Music.stream != level_complete_music:
 		$Music.stream = level_complete_music
 		$Music.play()
-		
+
 func play_game_over_music():
 	if not $Music.playing or $Music.stream != game_over_music:
 		$Music.stream = game_over_music
 		$Music.play()
-		
+
 func play_game_credits_music():
 	if not $Music.playing or $Music.stream != game_credits_music:
 		$Music.stream = game_credits_music
@@ -124,15 +124,15 @@ func play_pause_menu_music():
 func play_block_break():
 		$SFXPlayer1.stream = block_break
 		$SFXPlayer1.play()
-		
+
 func play_start_button():
 		$SFXPlayer1.stream = start_button
 		$SFXPlayer1.play()
-		
+
 func play_exit_esc_button():
 		$SFXPlayer1.stream = exit_esc_button
 		$SFXPlayer1.play()
-		
+
 func play_menu_forward_button():
 		$SFXPlayer1.stream = menu_forward_button
 		$SFXPlayer1.play()
@@ -141,7 +141,7 @@ func play_menu_back_button():
 		$SFXPlayer1.stream = menu_back_button
 		$SFXPlayer1.play()
 
-#------SFXPlayer2------		
+#------SFXPlayer2------
 func play_button_hover():
 		$SFXPlayer2.stream = button_hover
 		$SFXPlayer2.volume_db = +1
