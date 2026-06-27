@@ -10,7 +10,7 @@ const MIN_RADIUS = 150.0  # Minimum allowed radius from center
 const MAX_RADIUS = 300.0  # Maximum allowed radius from center
 
 # --- State variables ---
-@export var radius: float = 280.0  # Distance from the centerpoint (adjustable in editor)
+@export var radius: float = 290.0  # Distance from the centerpoint (adjustable in editor)
 var angle: float = 0.0  # Current angle around the center (in radians)
 var center: Vector2  # World position of the centerpoint
 

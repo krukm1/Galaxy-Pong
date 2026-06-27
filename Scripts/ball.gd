@@ -30,25 +30,24 @@ func _ready():
 
 func _exit_tree() -> void:
 	if launch_grace_timer > 0.0:
-		collision_shape.disabled = false
+		remove_collision_exception_with(paddle)
 
 # --- Called every physics frame ---
 func _physics_process(delta: float) -> void:
 	if launch_grace_timer > 0.0:
 		launch_grace_timer -= delta
 		if launch_grace_timer <= 0.0:
-			collision_shape.disabled = false
+			remove_collision_exception_with(paddle)
 
 	#Combo Tracker
 	if combo_timer > 0:
 		combo_timer -= delta
 		if combo_timer <= 0:
 			combo_count = 0  # Combo expired
+
 	# Lock the ball in front of the paddle until it's launched
 	if is_locked and paddle:
 		global_position = paddle.global_position - (paddle.global_position - paddle.center).normalized() * 13.0
-	elif launch_grace_timer > 0.0:
-		global_position += velocity * delta
 	else:
 		var collision_info = move_and_collide(velocity * delta, false, 0.08)
 
@@ -59,7 +58,7 @@ func _physics_process(delta: float) -> void:
 			if collider == paddle:
 				var to_center = (paddle.center - global_position).normalized() * velocity.length()
 				velocity = bounced_velocity.lerp(to_center, 0.35).normalized() * base_speed
-			
+
 			elif collider.is_in_group("Block"):
 				velocity = bounced_velocity.normalized() * base_speed
 
@@ -109,5 +108,7 @@ func _input(event: InputEvent) -> void:
 		is_locked = false
 		freeze = false
 		linear_velocity = Vector2.ZERO
+		collision_shape.disabled = false
+		add_collision_exception_with(paddle)
 		launch_grace_timer = 0.5
 		velocity = launch_direction * velocity.length()
